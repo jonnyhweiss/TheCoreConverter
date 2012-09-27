@@ -1,4 +1,4 @@
-asdfasdfasdf# THIS FILE IS NOT USED FOR ANYTHING
+THIS FILE IS NOT USED FOR ANYTHING
 
 BonesHeal/Stetmann=
 Consumption/Tosh=
@@ -30,7 +30,6 @@ ResearchSiegeTech/FactoryTechReactor=
 SpectreNukeCalldown/Spectre=
 SpectreWeaponsFree/Spectre=
 SpiderMine/Vulture=
-Thor/Factory=V
 TossGrenade/Raynor=
 TossGrenadeTychus/TychusCommando=
 UltrasonicPulse/Spectre=
