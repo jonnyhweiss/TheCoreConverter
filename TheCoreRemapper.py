@@ -34,7 +34,7 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
                 'ToggleWorldPanel', 'CinematicSkip','AlertRecall','CameraFollow','GameTooltipsOn','IdleWorker','MinimapColors','MinimapPing',
                 'MinimapTerrain','PauseGame','QuickPing','QuickSave','ReplayPlayPause','ReplayRestart','ReplaySkipBack','ReplaySkipNext','ReplaySpeedDec',
                 'ReplaySpeedInc','ReplayStop','ReplayHide','SelectionCancelDrag','SubgroupNext','SubgroupPrev','TeamResources','TownCamera','WarpIn',
-                'Cancel', 'Rally', 'Move', 'RallyEgg']
+                'Cancel']
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
@@ -73,7 +73,7 @@ layoutIndices = {"LMM": 0,
                  "RMM": 1,
                  "RM": 2}
 
-def parse_pair(key, values, map_name, index):
+def parse_pair(key, values, map_name, index, is_rl_shift):
     parsed = ""
     first = True
     for value in values:
@@ -88,7 +88,17 @@ def parse_pair(key, values, map_name, index):
                 bits[len(bits)-1] = settings_parser.get(map_name, last_bit).split(",")[index]
         except:
             last_bit = last_bit # Do nothing
-        parsed += "+".join(bits)
+        if is_rl_shift and "|" in bits[len(bits)-1]:
+            try:
+                unused = settings_parser.get("MappingTypes", key).split(",")
+                bits[len(bits)-1] = bits[len(bits)-1].split("|")[0]
+            except:
+                bits[len(bits)-1] = bits[len(bits)-1].split("|")[1]
+            if not bits[len(bits)-1] == "":
+                parsed += "+".join(bits)
+        elif not bits[len(bits)-1] == "":
+            parsed += "+".join(bits)
+            
         first = False
     return parsed
 
@@ -107,20 +117,20 @@ def generate_layout(filename, race, layout, layoutIndex):
         
         if key in CAMERA_KEYS:
             if "R" in layout:
-                output += parse_pair(key, values, 'GlobalMaps', GLOBAL)
+                output += parse_pair(key, values, 'GlobalMaps', GLOBAL, False)
             else:
                 output += pair[1]
         elif key in CONTROL_GROUP_KEYS:
-            output += parse_pair(key, values, race + 'CGMaps', layoutIndex)
+            output += parse_pair(key, values, race + 'CGMaps', layoutIndex, False)
         elif key in GENERAL_KEYS:
             if "R" in layout:
-                output += parse_pair(key, values, 'GlobalMaps', GLOBAL)
+                output += parse_pair(key, values, 'GlobalMaps', GLOBAL, False)
             else:
                 output += pair[1]
         else:
             try:
                 maptypes = settings_parser.get("MappingTypes", key).split(",")
-                output += parse_pair(key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex)
+                output += parse_pair(key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, False)
             except:
                 output += pair[1]
         output += "\n"
@@ -147,9 +157,9 @@ def shift_hand_size(filename, shift_right, hand_size):
         if key in HAND_SHIFT_EXCLUDE:
             output += pair[1]
         elif shift_right:
-            output += parse_pair(key, values, 'ShiftRightMaps', GLOBAL)
+            output += parse_pair(key, values, 'ShiftRightMaps', GLOBAL, True)
         else:
-            output += parse_pair(key, values, 'ShiftLeftMaps', GLOBAL)        
+            output += parse_pair(key, values, 'ShiftLeftMaps', GLOBAL, True)        
         output += "\n"
     hotkeys_file.close()
     newfilename = ""
