@@ -37,11 +37,21 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
 SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV'],
-              ['Gateway/Probe','SpawningPool/Drone','Barracks/SCV'],
-              ['Assimilator/Probe','Extractor/Drone','Refinery/SCV'],
-              ['PhotonCannon/Probe','SpineCrawler/Drone','Bunker/SCV'],
-              ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV'],
-              ['Forge/Probe','EvolutionChamber/Drone','EngineeringBay/SCV']]
+               ['Assimilator/Probe','Extractor/Drone','Refinery/SCV'],
+               ['Gateway/Probe','Barracks/SCV'],
+               ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV'],
+               ['Forge/Probe','EvolutionChamber/Drone','EngineeringBay/SCV'],
+               ['RoboticsBay/Probe','Factory/SCV'],
+               ['Stargate/Probe','Spire/Drone','Starport/SCV'],
+               ['TwilightCouncil/Probe','Armory/SCV'],
+               ['FleetBeacon/Probe','FusionCore/SCV'],
+               ['PhasingMode/WarpPrism','Stim','MorphToOverseer/Overlord'],
+               ['CommandCenterUnloadAll','BunkerUnloadAll'],
+               ['TransportMode/WarpPrism','Heal/Medivac','GenerateCreep/Overlord'],
+               ['ProtossGroundWeaponsLevel1/Forge','TerranInfantryWeaponsLevel1/EngineeringBay'],
+               ['ProtossGroundArmorLevel1/Forge','TerranInfantryArmorLevel1/EngineeringBay','zerggroundarmor1/EvolutionChamber'],
+               ['ProtossAirWeaponsLevel1/CyberneticsCore','TerranShipWeaponsLevel1/Armory','zergflyerattack1'],
+               ['ProtossAirArmorLevel1/CyberneticsCore','TerranShipPlatingLevel1/Armory','zergflyerarmor1']]
 
 # Read the settings
 settings_parser = SafeConfigParser()
