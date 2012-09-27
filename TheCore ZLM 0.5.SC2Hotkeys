@@ -122,6 +122,25 @@ CameraView6=Y
 CameraView7=J
 
 [Commands]
+VoidRayHallucination/Sentry=V
+TerranVehicleWeaponsLevel1/Armory=E
+Salvage/Bunker=V
+Probe/Nexus=E
+hydraliskspeed/HydraliskDen=G
+Forge/Probe=F
+SiegeMode=E
+Baneling/Zergling=E
+Roach/Larva=R
+EMP/Ghost=E
+PhasingMode/WarpPrism=E
+Snipe/Ghost=R
+Battlecruiser/Starport=B
+EvolveInfestorEnergyUpgrade/InfestationPit=G
+RoboticsFacility/Probe=R
+FusionCore/SCV=C
+EvolveGlialRegeneration/RoachWarren=G
+ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon=G
+Hellion/Factory=E
 250mmStrikeCannons/Thor=E
 AWrp=1
 AnionPulseCrystals/FleetBeacon=E

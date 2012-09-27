@@ -122,6 +122,25 @@ CameraView6=5
 CameraView7=T
 
 [Commands]
+Salvage/Bunker=V
+SpineCrawlerRoot/SpineCrawlerUprooted=R
+ResearchBurrow=B
+hydraliskspeed/HydraliskDen=G
+ProtossGroundWeaponsLevel1/Forge=G
+Overlord/Larva=V
+SporeCrawlerRoot/SporeCrawlerUprooted=R
+BurrowUp=R
+Feedback/HighTemplar=F
+Battlecruiser/Starport=B
+EvolveInfestorEnergyUpgrade/InfestationPit=G
+AnionPulseCrystals/FleetBeacon=R
+SporeCrawlerUproot/SporeCrawler=R
+ResearchWarpGate/CyberneticsCore=G
+FusionCore/SCV=C
+EvolveGlialRegeneration/RoachWarren=G
+SpineCrawlerUproot/SpineCrawler=R
+GreaterSpire/Spire=G
+ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon=G
 250mmStrikeCannons/Thor=R
 AWrp=A
 ArchonHallucination/Sentry=1
