@@ -16,6 +16,7 @@ RMM = 1
 RM = 2
 
 SHOW_HOTS_MISSING = False
+SHOW_DUPLICATES = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
@@ -209,6 +210,27 @@ def verify_file(filename):
                     print(dict[item][2])
     else:
         print(filename + " contains all hotkeys.")
+
+    # Check for duplicates
+    if SHOW_DUPLICATES:
+        verify_parser = SafeConfigParser()
+        verify_parser.optionxform=str
+        dup_dict = {}
+        verify_parser.read(filename)
+        gen_items = verify_parser.items('Hotkeys')
+        for pair in gen_items:
+            if pair[1] in dup_dict:
+                dup_dict[pair[1]].append(pair[0])
+            else:
+                dup_dict[pair[1]] = [pair[0]]
+        for key in dup_dict:
+            array = dup_dict[key]
+            if len(array) > 1:
+                print("============================")
+                print(key + "    DUPLICATES")
+                for a in array:
+                    print(a)
+
     for same_set in SAME_CHECKS:
         mismatched = False
         value = dict[same_set[0]][1]
