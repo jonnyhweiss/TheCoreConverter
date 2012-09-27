@@ -15,6 +15,8 @@ LMM = 0
 RMM = 1
 RM = 2
 
+SHOW_HOTS_MISSING = False
+
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
 
@@ -165,25 +167,36 @@ def verify_file(filename):
     all_items = settings_parser.items('MappingTypes')
     dict = {}
     for item in all_items:
-        dict[item[0]] = [False, "", item[0]]
+        dict[item[0]] = [False, "", item[0], item[1]]
     for line in hotkeys_file:
         line = line.strip()
         if len(line) == 0 or line[0] == "[":
             continue
         pair = line.split("=")
         key = pair[0]
-        dict[key] = [True, pair[1], key]
+        if key in dict:
+            dict[key] = [True, pair[1], key, dict[key][3]]
+        else:
+            dict[key] = [True, pair[1], key, ""]
         
     count = 0
     for item in dict:
         if not dict[item][0]:
-            count += 1
+            if "HOTS" in dict[item][3]:
+                if SHOW_HOTS_MISSING:
+                    count += 1
+            else:
+                count += 1
     if count > 0:        
         print(filename + " is missing " + str(count) + " hotkeys: ")
         #print "NOTE: Capitalization is not correct. Check settings.ini for correct capitalization."
         for item in dict:
             if not dict[item][0]:
-                print(dict[item][2])
+                if "HOTS" in dict[item][3]:
+                    if SHOW_HOTS_MISSING:
+                        print("HOTS: " + dict[item][2])
+                else:
+                    print(dict[item][2])
     else:
         print(filename + " contains all hotkeys.")
     for same_set in SAME_CHECKS:
