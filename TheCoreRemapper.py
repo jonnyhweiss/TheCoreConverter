@@ -8,7 +8,7 @@
 #   9/26/12 - Finished initial functionality
 #
 ################################################## 
-from ConfigParser import SafeConfigParser
+from configparser import SafeConfigParser
 
 GLOBAL = -1
 LMM = 0
@@ -179,13 +179,13 @@ def verify_file(filename):
         if not dict[item][0]:
             count += 1
     if count > 0:        
-        print filename + " is missing " + str(count) + " hotkeys: "
+        print(filename + " is missing " + str(count) + " hotkeys: ")
         #print "NOTE: Capitalization is not correct. Check settings.ini for correct capitalization."
         for item in dict:
             if not dict[item][0]:
-                print dict[item][2]
+                print(dict[item][2])
     else:
-        print filename + " contains all hotkeys."
+        print(filename + " contains all hotkeys.")
     for same_set in SAME_CHECKS:
         mismatched = False
         value = dict[same_set[0]][1]
@@ -193,10 +193,10 @@ def verify_file(filename):
             if not dict[item][1] == value:
                 mismatched = True
         if mismatched:
-            print "---- Mismatched values ----"
+            print("---- Mismatched values ----")
             for item in same_set:
-                print item + " = " + dict[item][1]
-    print ""
+                print(item + " = " + dict[item][1])
+    print("")
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
 for race in races:
     filename = prefix + " " + race + "LM " + suffix
