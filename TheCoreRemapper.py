@@ -36,8 +36,16 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
+SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV'],
+              ['Gateway/Probe','SpawningPool/Drone','Barracks/SCV'],
+              ['Assimilator/Probe','Extractor/Drone','Refinery/SCV'],
+              ['PhotonCannon/Probe','SpineCrawler/Drone','Bunker/SCV'],
+              ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV'],
+              ['Forge/Probe','EvolutionChamber/Drone','EngineeringBay/SCV']]
+
 # Read the settings
 settings_parser = SafeConfigParser()
+settings_parser.optionxform=str
 settings_parser.read('MapDefinitions.ini')
 
 race_dict = {"P": 0,
@@ -147,28 +155,38 @@ def verify_file(filename):
     all_items = settings_parser.items('MappingTypes')
     dict = {}
     for item in all_items:
-        dict[item[0]] = False
+        dict[item[0]] = [False, "", item[0]]
     for line in hotkeys_file:
         line = line.strip()
         if len(line) == 0 or line[0] == "[":
             continue
         pair = line.split("=")
         key = pair[0]
-        dict[key.lower()] = True
+        dict[key] = [True, pair[1], key]
+        
     count = 0
     for item in dict:
-        if not dict[item]:
+        if not dict[item][0]:
             count += 1
     if count > 0:        
         print filename + " is missing " + str(count) + " hotkeys: "
-        print "NOTE: Capitalization is not correct. Check settings.ini for correct capitalization."
+        #print "NOTE: Capitalization is not correct. Check settings.ini for correct capitalization."
         for item in dict:
-            if not dict[item]:
-                print item
-        print ""
+            if not dict[item][0]:
+                print dict[item][2]
     else:
         print filename + " contains all hotkeys."
-
+    for same_set in SAME_CHECKS:
+        mismatched = False
+        value = dict[same_set[0]][1]
+        for item in same_set:
+            if not dict[item][1] == value:
+                mismatched = True
+        if mismatched:
+            print "---- Mismatched values ----"
+            for item in same_set:
+                print item + " = " + dict[item][1]
+    print ""
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
 for race in races:
     filename = prefix + " " + race + "LM " + suffix
