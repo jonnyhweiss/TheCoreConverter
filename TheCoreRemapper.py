@@ -15,7 +15,7 @@ LMM = 0
 RMM = 1
 RM = 2
 
-SHOW_HOTS_MISSING = False
+SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
@@ -60,6 +60,10 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV'],
 settings_parser = SafeConfigParser()
 settings_parser.optionxform=str
 settings_parser.read('MapDefinitions.ini')
+
+I18N_parser = SafeConfigParser()
+I18N_parser.optionxform=str
+I18N_parser.read('KeyboardLayouts.ini')
 
 race_dict = {"P": 0,
              "T": 1,
@@ -173,6 +177,13 @@ def shift_hand_size(filename, shift_right, hand_size):
     fileio.close()
     return newfilename
 
+def translate_file(filename):
+    layouts = I18N_parser.sections()
+    for l in layouts:
+        altgr = int(I18N_parser.get(l, "AltGr"))
+        
+        
+    
 def verify_file(filename):
     hotkeys_file = open(filename, 'r')
     all_items = settings_parser.items('MappingTypes')
