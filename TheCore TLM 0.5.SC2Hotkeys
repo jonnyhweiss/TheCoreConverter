@@ -129,7 +129,7 @@ CameraView6=5
 CameraView7=C
 
 [Commands]
-HellionTank/Factory=H
+HellionTank/Factory=B
 BurrowChargeMP/Ultralisk=R
 BurrowProtector/Viper=R
 EvolveBurrowCharge/UltraliskCavern=R
@@ -159,7 +159,7 @@ TempestRangeUpgrade/FleetBeacon=
 Viper/Larva=Y
 ViperConsume/Viper=A
 WarHound/Factory=
-WidowMine/Factory=B
+WidowMine/Factory=H
 WidowMineBurrow/WidowMine=R
 WidowMineUnburrow/WidowMine=F
 SporeCrawler/Drone=A
