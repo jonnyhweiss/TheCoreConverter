@@ -116,7 +116,7 @@ CameraSave1=Alt+D
 CameraSave2=Alt+4
 CameraSave3=Alt+3
 CameraSave4=Alt+2
-CameraSave5=Alt+Q
+CameraSave5=Alt+F
 CameraSave6=Shift+Y
 CameraSave7=Shift+J
 CameraView0=Shift+S
@@ -124,7 +124,7 @@ CameraView1=Shift+D
 CameraView2=Shift+4
 CameraView3=Shift+3
 CameraView4=Shift+2
-CameraView5=Shift+Q
+CameraView5=Shift+F
 CameraView6=Y
 CameraView7=J
 
