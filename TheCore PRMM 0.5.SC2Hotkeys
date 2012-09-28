@@ -26,6 +26,7 @@ LeaderCPM=H
 ObserveAllPlayers=Apostrophe
 ObserveAutoCamera=U
 ObserveClearSelection=F8,Escape
+ObserveCommentator=
 ObservePlayer0=Control+P
 ObservePlayer1=Control+O
 ObservePlayer2=Control+I

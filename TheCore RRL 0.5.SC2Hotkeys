@@ -26,6 +26,7 @@ LeaderCPM=G
 ObserveAllPlayers=SemiColon
 ObserveAutoCamera=Y
 ObserveClearSelection=F7,Insert
+ObserveCommentator=
 ObservePlayer0=Control+O
 ObservePlayer1=Control+I
 ObservePlayer2=Control+U
