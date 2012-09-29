@@ -457,6 +457,6 @@ zergflyerattack1=R
 zerggroundarmor1/EvolutionChamber=R
 zerglingattackspeed/SpawningPool=R
 zerglingmovementspeed/SpawningPool=G
-zergmeleeweapons1/EvolutionChamber=F
-zergmissileweapons1/EvolutionChamber=G
+zergmeleeweapons1/EvolutionChamber=G
+zergmissileweapons1/EvolutionChamber=F
 
