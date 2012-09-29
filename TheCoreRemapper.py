@@ -79,7 +79,7 @@ layoutIndices = {"LMM": 0,
                  "RMM": 1,
                  "RM": 2}
 
-def parse_pair(key, values, map_name, index, is_rl_shift, altgr):
+def parse_pair(parser, key, values, map_name, index, is_rl_shift, altgr):
     parsed = ""
     first = True
     for value in values:
@@ -91,14 +91,14 @@ def parse_pair(key, values, map_name, index, is_rl_shift, altgr):
         last_bit = bits[len(bits)-1]
         try:
             if index < 0:
-                bits[len(bits)-1] = settings_parser.get(map_name, last_bit)
+                bits[len(bits)-1] = parser.get(map_name, last_bit)
             else:
-                bits[len(bits)-1] = settings_parser.get(map_name, last_bit).split(",")[index]
+                bits[len(bits)-1] = parser.get(map_name, last_bit).split(",")[index]
         except:
             last_bit = last_bit # Do nothing
         if is_rl_shift and "|" in bits[len(bits)-1]:
             try:
-                unused = settings_parser.get("MappingTypes", key).split(",")
+                unused = parser.get("MappingTypes", key).split(",")
                 bits[len(bits)-1] = bits[len(bits)-1].split("|")[0]
             except:
                 bits[len(bits)-1] = bits[len(bits)-1].split("|")[1]
@@ -125,20 +125,20 @@ def generate_layout(filename, race, layout, layoutIndex):
         
         if key in CAMERA_KEYS:
             if "R" in layout:
-                output += parse_pair(key, values, 'GlobalMaps', GLOBAL, False, 0)
+                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, False, 0)
             else:
                 output += pair[1]
         elif key in CONTROL_GROUP_KEYS:
-            output += parse_pair(key, values, race + 'CGMaps', layoutIndex, False, 0)
+            output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, False, 0)
         elif key in GENERAL_KEYS:
             if "R" in layout:
-                output += parse_pair(key, values, 'GlobalMaps', GLOBAL, False, 0)
+                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, False, 0)
             else:
                 output += pair[1]
         else:
             try:
                 maptypes = settings_parser.get("MappingTypes", key).split(",")
-                output += parse_pair(key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, False, 0)
+                output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, False, 0)
             except:
                 output += pair[1]
         output += "\n"
@@ -165,9 +165,9 @@ def shift_hand_size(filename, shift_right, hand_size):
         if key in HAND_SHIFT_EXCLUDE:
             output += pair[1]
         elif shift_right:
-            output += parse_pair(key, values, 'ShiftRightMaps', GLOBAL, True, 0)
+            output += parse_pair(settings_parser, key, values, 'ShiftRightMaps', GLOBAL, True, 0)
         else:
-            output += parse_pair(key, values, 'ShiftLeftMaps', GLOBAL, True, 0)        
+            output += parse_pair(settings_parser, key, values, 'ShiftLeftMaps', GLOBAL, True, 0)        
         output += "\n"
     hotkeys_file.close()
     newfilename = ""
@@ -197,7 +197,7 @@ def translate_file(filename):
             values = pair[1].split(",")
             output += key + "="
             
-            output += parse_pair(key, values, l, GLOBAL, True, altgr)        
+            output += parse_pair(I18N_parser, key, values, l, GLOBAL, True, altgr)        
             output += "\n"
 
         hotkeys_file.close()
