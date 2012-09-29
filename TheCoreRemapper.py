@@ -78,6 +78,9 @@ layouts = ["LMM", "RMM", "RM"]
 layoutIndices = {"LMM": 0,
                  "RMM": 1,
                  "RM": 2}
+righty_index = {0: False,
+                1: True,
+                2: True}
 
 def parse_pair(parser, key, values, map_name, index, is_rl_shift, altgr):
     parsed = ""
@@ -180,12 +183,15 @@ def shift_hand_size(filename, shift_right, hand_size):
     fileio.close()
     return newfilename
 
-def translate_file(filename):
+def translate_file(filename, is_righty):
     layouts = I18N_parser.sections()
     for l in layouts:
         hotkeys_file = open(filename, 'r')
         output = ""
-        altgr = int(I18N_parser.get(l, "AltGr"))
+        if is_righty:
+            altgr = int(I18N_parser.get(l, "AltGr"))
+        else:
+            altgr = 0
     
         for line in hotkeys_file:
             line = line.strip()
@@ -281,16 +287,16 @@ def verify_file(filename):
 for race in races:
     filename = prefix + " " + race + "LM " + suffix
     verify_file(filename)
-    translate_file(filename)
-    translate_file(shift_hand_size(filename, True, "L"))
-    translate_file(shift_hand_size(filename, False, "S"))
+    translate_file(filename, False)
+    translate_file(shift_hand_size(filename, True, "L"), False)
+    translate_file(shift_hand_size(filename, False, "S"), False)
     for layout in layouts:
         index = layoutIndices[layout]
         layout_filename = generate_layout(filename, race, layout, index)
-        translate_file(layout_filename)
-        if "R" in layout:
-            translate_file(shift_hand_size(layout_filename, True, "S"))
-            translate_file(shift_hand_size(layout_filename, False, "L"))
+        translate_file(layout_filename, righty_index[index])
+        if righty_index[index]:
+            translate_file(shift_hand_size(layout_filename, True, "S"), True)
+            translate_file(shift_hand_size(layout_filename, False, "L"), True)
         else:
-            translate_file(shift_hand_size(layout_filename, True, "L"))
-            translate_file(shift_hand_size(layout_filename, False, "S"))
+            translate_file(shift_hand_size(layout_filename, True, "L"), False)
+            translate_file(shift_hand_size(layout_filename, False, "S"), False)
