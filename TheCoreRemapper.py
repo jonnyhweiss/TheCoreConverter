@@ -22,6 +22,8 @@ SHOW_DUPLICATES = False
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
 
+ZERG_CONTROL_GROUP_SPECIAL = ['ControlGroupAssign7']
+
 CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4', 'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9', 
                       'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4', 'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
                       'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4', 'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9']
@@ -36,7 +38,8 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
                 'ToggleWorldPanel', 'CinematicSkip','AlertRecall','CameraFollow','GameTooltipsOn','IdleWorker','MinimapColors','MinimapPing',
                 'MinimapTerrain','PauseGame','QuickPing','QuickSave','ReplayPlayPause','ReplayRestart','ReplaySkipBack','ReplaySkipNext','ReplaySpeedDec',
                 'ReplaySpeedInc','ReplayStop','ReplayHide','SelectionCancelDrag','SubgroupNext','SubgroupPrev','TeamResources','TownCamera','WarpIn',
-                'Cancel','StatusAll','StatusOwner','StatusAlly','StatusEnemy','MenuHelp','NamePanel']
+                'Cancel','CancelCocoon','CancelMutateMorph','CancelUpgradeMorph',
+                'StatusAll','StatusOwner','StatusAlly','StatusEnemy','MenuHelp','NamePanel','ArmySelect','SelectBuilder']
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
@@ -131,6 +134,8 @@ def generate_layout(filename, race, layout, layoutIndex):
                 output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, False, 0)
             else:
                 output += pair[1]
+        elif race == "Z" and "MM" in layout and key in ZERG_CONTROL_GROUP_SPECIAL:
+            output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, False, 0)
         elif key in CONTROL_GROUP_KEYS:
             output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, False, 0)
         elif key in GENERAL_KEYS:
