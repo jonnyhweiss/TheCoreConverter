@@ -85,7 +85,7 @@ righty_index = {0: False,
                 1: True,
                 2: True}
 
-def parse_pair(parser, key, values, map_name, index, is_rl_shift, altgr):
+def parse_pair(parser, key, values, map_name, index, altgr):
     parsed = ""
     first = True
     for value in values:
@@ -102,15 +102,15 @@ def parse_pair(parser, key, values, map_name, index, is_rl_shift, altgr):
                 bits[len(bits)-1] = parser.get(map_name, last_bit).split(",")[index]
         except:
             last_bit = last_bit # Do nothing
-        if is_rl_shift and "|" in bits[len(bits)-1]:
-            try:
-                unused = parser.get("MappingTypes", key).split(",")
-                bits[len(bits)-1] = bits[len(bits)-1].split("|")[0]
-            except:
-                bits[len(bits)-1] = bits[len(bits)-1].split("|")[1]
-            if not bits[len(bits)-1] == "":
-                parsed += "+".join(bits)
-        elif not bits[len(bits)-1] == "":
+        #if is_rl_shift and "|" in bits[len(bits)-1]:
+        #    try:
+        #        unused = parser.get("MappingTypes", key).split(",")
+        #        bits[len(bits)-1] = bits[len(bits)-1].split("|")[0]
+        #    except:
+        #        bits[len(bits)-1] = bits[len(bits)-1].split("|")[1]
+        #    if not bits[len(bits)-1] == "":
+        #        parsed += "+".join(bits)
+        if not bits[len(bits)-1] == "":
             parsed += "+".join(bits)
             
         first = False
@@ -131,22 +131,22 @@ def generate_layout(filename, race, layout, layoutIndex):
         
         if key in CAMERA_KEYS:
             if "R" in layout:
-                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, False, 0)
+                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
             else:
                 output += pair[1]
         elif race == "Z" and "MM" in layout and key in ZERG_CONTROL_GROUP_SPECIAL:
-            output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, False, 0)
+            output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, 0)
         elif key in CONTROL_GROUP_KEYS:
-            output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, False, 0)
+            output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, 0)
         elif key in GENERAL_KEYS:
             if "R" in layout:
-                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, False, 0)
+                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
             else:
                 output += pair[1]
         else:
             try:
                 maptypes = settings_parser.get("MappingTypes", key).split(",")
-                output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, False, 0)
+                output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, 0)
             except:
                 output += pair[1]
         output += "\n"
@@ -157,9 +157,13 @@ def generate_layout(filename, race, layout, layoutIndex):
     fileio.close()
     return newfilename
 
-def shift_hand_size(filename, shift_right, hand_size):
+def shift_hand_size(filename, shift_right, hand_size, is_righty):
     hotkeys_file = open(filename, 'r')
     output = ""
+    if is_righty:
+        map_prefix = "R"
+    else:
+        map_prefix = "L"
     for line in hotkeys_file:
         line = line.strip()
         if len(line) == 0 or line[0] == "[":
@@ -173,9 +177,9 @@ def shift_hand_size(filename, shift_right, hand_size):
         if key in HAND_SHIFT_EXCLUDE:
             output += pair[1]
         elif shift_right:
-            output += parse_pair(settings_parser, key, values, 'ShiftRightMaps', GLOBAL, True, 0)
+            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
         else:
-            output += parse_pair(settings_parser, key, values, 'ShiftLeftMaps', GLOBAL, True, 0)        
+            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)        
         output += "\n"
     hotkeys_file.close()
     newfilename = ""
@@ -208,7 +212,7 @@ def translate_file(filename, is_righty):
             values = pair[1].split(",")
             output += key + "="
             
-            output += parse_pair(I18N_parser, key, values, l, GLOBAL, True, altgr)        
+            output += parse_pair(I18N_parser, key, values, l, GLOBAL, altgr)        
             output += "\n"
 
         hotkeys_file.close()
@@ -293,15 +297,15 @@ for race in races:
     filename = prefix + " " + race + "LM " + suffix
     verify_file(filename)
     translate_file(filename, False)
-    translate_file(shift_hand_size(filename, True, "L"), False)
-    translate_file(shift_hand_size(filename, False, "S"), False)
+    translate_file(shift_hand_size(filename, True, "L", False), False)
+    translate_file(shift_hand_size(filename, False, "S", False), False)
     for layout in layouts:
         index = layoutIndices[layout]
         layout_filename = generate_layout(filename, race, layout, index)
         translate_file(layout_filename, righty_index[index])
         if righty_index[index]:
-            translate_file(shift_hand_size(layout_filename, True, "S"), True)
-            translate_file(shift_hand_size(layout_filename, False, "L"), True)
+            translate_file(shift_hand_size(layout_filename, True, "S", True), True)
+            translate_file(shift_hand_size(layout_filename, False, "L", True), True)
         else:
-            translate_file(shift_hand_size(layout_filename, True, "L"), False)
-            translate_file(shift_hand_size(layout_filename, False, "S"), False)
+            translate_file(shift_hand_size(layout_filename, True, "L", False), False)
+            translate_file(shift_hand_size(layout_filename, False, "S", False), False)
