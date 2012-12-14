@@ -130,7 +130,11 @@ CameraView6=8
 CameraView7=W
 
 [Commands]
+<<<<<<< HEAD
 250mmStrikeCannons/Thor=C
+=======
+250mmStrikeCannons/Thor=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 AWrp=Minus
 AnionPulseCrystals/FleetBeacon=C
 ArchonHallucination/Sentry=BracketClose
@@ -145,7 +149,11 @@ BanelingNest/Drone=B
 Banshee/Starport=M
 Barracks/SCV=C
 Battlecruiser/Starport=B
+<<<<<<< HEAD
 BlindingCloud/Viper=P
+=======
+BlindingCloud/Viper=C
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Blink/Stalker=C
 BonesHeal/Stetmann=
 BroodLord/Corruptor=C
@@ -158,7 +166,11 @@ BunkerLoad=E
 BunkerUnloadAll=T
 BurrowChargeMP/Ultralisk=C
 BurrowDown=G
+<<<<<<< HEAD
 BurrowProtector/Viper=C
+=======
+BurrowProtector/Viper=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 BurrowUp=C
 CalldownMULE/OrbitalCommand=H
 Cancel=F8
@@ -250,12 +262,21 @@ Lair/Hatchery=I
 Land=T
 Larva=C
 Lift=T
+<<<<<<< HEAD
+=======
+LightofAiur/MothershipCore=G
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Lower/SupplyDepot=H
 LurkerDen/HydraliskDen=
 Marauder/Barracks=C
 Marine/Barracks=H
+<<<<<<< HEAD
 MassRecall/Mothership=T
 MassRecall/MothershipCore=T
+=======
+MassRecall/Mothership=U
+MassRecall/MothershipCore=U
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 MedicHeal/Medic=
 Medivac/Starport=H
 MedivacSpeedBoost/Medivac=G
@@ -264,13 +285,24 @@ MissileTurret/SCV=Minus
 MorphBackToGateway/WarpGate=E
 MorphMorphalisk/Queen=C
 MorphToHellion/Hellion=T
+<<<<<<< HEAD
 MorphToHellionTank/FactoryTechLab=C
+=======
+MorphToHellionTank/FactoryTechLab=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 MorphToHellionTank/Hellion=C
 MorphToMothership/MothershipCore=F
 MorphToOverseer/Overlord=C
 Mothership/Nexus=T
 MothershipCore/Nexus=G
+<<<<<<< HEAD
 MothershipCoreEnergize/MothershipCore=G
+=======
+MothershipCoreEnergize/MothershipCore=Y
+MothershipCoreWeapon/MothershipCore=T
+MothershipCoreMassRecall/MothershipCore=C
+MothershipMassRecall/Mothership=C
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Move=J
 MoveHoldPosition=M
 MovePatrol=B
@@ -293,7 +325,11 @@ OracleWeaponOff/Oracle=T
 OracleWeaponOn/Oracle=C
 OrbitalCommand/CommandCenter=H
 Overlord/Larva=M
+<<<<<<< HEAD
 PhaseShield/Oracle=G
+=======
+PhaseShield/Oracle=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 PhasingMode/WarpPrism=C
 Phoenix/Stargate=H
 PhoenixHallucination/Sentry=H
@@ -302,8 +338,13 @@ PlantC4Charge/Raynor=
 PointDefenseDrone/Raven=T
 Probe/Nexus=C
 ProbeHallucination/Sentry=I
+<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=M
 ProtossAirWeaponsLevel1/CyberneticsCore=C
+=======
+ProtossAirArmorLevel1/CyberneticsCore=C
+ProtossAirWeaponsLevel1/CyberneticsCore=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ProtossBuild/Probe=Minus
 ProtossBuildAdvanced/Probe=BracketClose
 ProtossGroundArmorLevel1/Forge=C
@@ -335,7 +376,11 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=C
 ResearchBattlecruiserSpecializations/FusionCore=H
 ResearchBurrow=D
 ResearchCharge/TwilightCouncil=C
+<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=P
+=======
+ResearchDrillClaws/FactoryTechLab=C
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ResearchDurableMaterials/StarportTechLab=T
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=H
@@ -360,9 +405,15 @@ ResearchShieldWall/BarracksTechLab=C
 ResearchSiegeTech/FactoryTechLab=H
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=H
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=M
 ResearchWarpGate/CyberneticsCore=H
 ResourceStun/Oracle=C
+=======
+ResearchStrikeCannons/FactoryTechLab=K
+ResearchWarpGate/CyberneticsCore=H
+ResourceStun/Oracle=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ReturnCargo=C
 Roach/Larva=T
 RoachWarren/Drone=C
@@ -415,15 +466,27 @@ TechLabStarport/Starport=G
 Tempest/Stargate=Minus
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=M
+<<<<<<< HEAD
+=======
+TemporalField/Oracle=G
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 TerranBuild/SCV=Minus
 TerranBuildAdvanced/SCV=BracketClose
 TerranInfantryArmorLevel1/EngineeringBay=C
 TerranInfantryWeaponsLevel1/EngineeringBay=H
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=M
 TerranShipWeaponsLevel1/Armory=C
 TerranVehicleAndShipPlatingLevel1/Armory=C
 TerranVehicleAndShipWeaponsLevel1/Armory=H
 TerranVehiclePlatingLevel1/Armory=T
+=======
+TerranShipPlatingLevel1/Armory=P
+TerranShipWeaponsLevel1/Armory=T
+TerranVehicleAndShipPlatingLevel1/Armory=C
+TerranVehicleAndShipWeaponsLevel1/Armory=I
+TerranVehiclePlatingLevel1/Armory=U
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 TerranVehicleWeaponsLevel1/Armory=H
 Thor/Factory=M
 TimeWarp/Nexus=T
@@ -447,14 +510,23 @@ VoidRayHallucination/Sentry=D
 VoidRaySwarmDamageBoost/VoidRay=C
 VoodooShield/Tosh=
 Vortex/Artanis=
+<<<<<<< HEAD
 Vortex/Mothership=C
 VortexKO/Mothership=U
+=======
+Vortex/Mothership=P
+VortexKO/Mothership=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 WarHound/Factory=
 WarpPrism/RoboticsFacility=M
 WarpPrismHallucination/Sentry=M
 WeaponsFree/Ghost=F
 WidowMine/Factory=D
+<<<<<<< HEAD
 WidowMineAttack/WidowMine=G
+=======
+WidowMineAttack/WidowMine=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 WidowMineBurrow/WidowMine=C
 WidowMineUnburrow/WidowMine=T
 WraithCloakOff/Wraith=
@@ -469,8 +541,13 @@ ZergBuildAdvanced/Drone=BracketClose
 Zergling/Larva=H
 hydraliskspeed/HydraliskDen=H
 overlordspeed=G
+<<<<<<< HEAD
 zergflyerarmor1=M
 zergflyerattack1=C
+=======
+zergflyerarmor1=C
+zergflyerattack1=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 zerggroundarmor1/EvolutionChamber=C
 zerglingattackspeed/SpawningPool=C
 zerglingmovementspeed/SpawningPool=H

@@ -134,6 +134,10 @@ CameraView7=H
 AWrp=Apostrophe
 AnionPulseCrystals/FleetBeacon=Period
 ArchonHallucination/Sentry=Apostrophe
+<<<<<<< HEAD
+=======
+ArmorpiercingMode/Thor=Period
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Armory/SCV=U
 AssaultMode=Period
 Assimilator/Probe=I
@@ -222,7 +226,11 @@ GuardianShield/Sentry=P
 Hallucination/Sentry=Apostrophe
 Halt=D
 Hatchery/Drone=Period
+<<<<<<< HEAD
 Heal/Medivac=K
+=======
+Heal/Medivac=D
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Hellion/Factory=Period
 HellionTank/Factory=X
 HerculesUnloadAll/Hercules=
@@ -258,6 +266,10 @@ MassRecall/Mothership=Period
 MassRecall/MothershipCore=P
 MedicHeal/Medic=
 Medivac/Starport=I
+<<<<<<< HEAD
+=======
+MedivacSpeedBoost/Medivac=K
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 MindBlast/Tosh=
 MissileTurret/SCV=Apostrophe
 MorphBackToGateway/WarpGate=N
@@ -337,6 +349,10 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=Period
 ResearchBattlecruiserSpecializations/FusionCore=I
 ResearchBurrow=5
 ResearchCharge/TwilightCouncil=Period
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=Period
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ResearchDurableMaterials/StarportTechLab=P
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=I
@@ -423,8 +439,14 @@ TerranInfantryArmorLevel1/EngineeringBay=I
 TerranInfantryWeaponsLevel1/EngineeringBay=Period
 TerranShipPlatingLevel1/Armory=P
 TerranShipWeaponsLevel1/Armory=I
+<<<<<<< HEAD
 TerranVehiclePlatingLevel1/Armory=U
 TerranVehicleWeaponsLevel1/Armory=Period
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=P
+TerranVehicleWeaponsLevel1/Armory=Period
+TerranVehiclePlatingLevel1/Armory=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Thor/Factory=5
 TimeWarp/Nexus=Period
 TossGrenade/Raynor=
@@ -444,6 +466,10 @@ Viper/Larva=X
 ViperConsume/Viper=Apostrophe
 VoidRay/Stargate=Period
 VoidRayHallucination/Sentry=K
+<<<<<<< HEAD
+=======
+VoidRaySwarmDamageBoost/VoidRay=Period
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=P

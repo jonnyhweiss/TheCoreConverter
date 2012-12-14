@@ -273,6 +273,12 @@ MorphToOverseer/Overlord=G
 Mothership/Nexus=B
 MothershipCore/Nexus=B
 MothershipCoreEnergize/MothershipCore=V
+<<<<<<< HEAD
+=======
+MothershipCoreMassRecall/MothershipCore=T
+MothershipCoreWeapon/MothershipCore=G
+MothershipMassRecall/Mothership=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Move=Period
 MoveHoldPosition=B
 MovePatrol=N
@@ -337,6 +343,10 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=T
 ResearchBattlecruiserSpecializations/FusionCore=H
 ResearchBurrow=N
 ResearchCharge/TwilightCouncil=T
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ResearchDurableMaterials/StarportTechLab=G
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=H

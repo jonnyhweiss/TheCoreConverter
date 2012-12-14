@@ -134,6 +134,10 @@ CameraView7=J
 AWrp=1
 AnionPulseCrystals/FleetBeacon=E
 ArchonHallucination/Sentry=1
+<<<<<<< HEAD
+=======
+ArmorpiercingMode/Thor=E
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Armory/SCV=F
 AssaultMode=E
 Assimilator/Probe=G
@@ -222,7 +226,11 @@ GuardianShield/Sentry=R
 Hallucination/Sentry=1
 Halt=H
 Hatchery/Drone=E
+<<<<<<< HEAD
 Heal/Medivac=V
+=======
+Heal/Medivac=H
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Hellion/Factory=E
 HellionTank/Factory=B
 HerculesUnloadAll/Hercules=
@@ -258,6 +266,10 @@ MassRecall/Mothership=E
 MassRecall/MothershipCore=R
 MedicHeal/Medic=
 Medivac/Starport=G
+<<<<<<< HEAD
+=======
+MedivacSpeedBoost/Medivac=V
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 MindBlast/Tosh=
 MissileTurret/SCV=V
 MorphBackToGateway/WarpGate=L
@@ -337,6 +349,10 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=E
 ResearchBattlecruiserSpecializations/FusionCore=G
 ResearchBurrow=5
 ResearchCharge/TwilightCouncil=E
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=E
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ResearchDurableMaterials/StarportTechLab=R
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=G
@@ -423,8 +439,14 @@ TerranInfantryArmorLevel1/EngineeringBay=G
 TerranInfantryWeaponsLevel1/EngineeringBay=E
 TerranShipPlatingLevel1/Armory=R
 TerranShipWeaponsLevel1/Armory=G
+<<<<<<< HEAD
 TerranVehiclePlatingLevel1/Armory=F
 TerranVehicleWeaponsLevel1/Armory=E
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=R
+TerranVehicleWeaponsLevel1/Armory=E
+TerranVehiclePlatingLevel1/Armory=R
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Thor/Factory=5
 TimeWarp/Nexus=E
 TossGrenade/Raynor=
@@ -444,6 +466,10 @@ Viper/Larva=C
 ViperConsume/Viper=V
 VoidRay/Stargate=E
 VoidRayHallucination/Sentry=V
+<<<<<<< HEAD
+=======
+VoidRaySwarmDamageBoost/VoidRay=E
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=R

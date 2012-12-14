@@ -250,6 +250,10 @@ Lair/Hatchery=T
 Land=I
 Larva=Y
 Lift=I
+<<<<<<< HEAD
+=======
+LightofAiur/MothershipCore=F
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Lower/SupplyDepot=D
 LurkerDen/HydraliskDen=
 Marauder/Barracks=Y
@@ -271,6 +275,12 @@ MorphToOverseer/Overlord=Y
 Mothership/Nexus=I
 MothershipCore/Nexus=F
 MothershipCoreEnergize/MothershipCore=F
+<<<<<<< HEAD
+=======
+MothershipCoreWeapon/MothershipCore=I
+MothershipCoreMassRecall/MothershipCore=Y
+MothershipMassRecall/Mothership=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 Move=V
 MoveHoldPosition=X
 MovePatrol=B
@@ -302,8 +312,13 @@ PlantC4Charge/Raynor=
 PointDefenseDrone/Raven=I
 Probe/Nexus=Y
 ProbeHallucination/Sentry=T
+<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=X
 ProtossAirWeaponsLevel1/CyberneticsCore=Y
+=======
+ProtossAirArmorLevel1/CyberneticsCore=Y
+ProtossAirWeaponsLevel1/CyberneticsCore=I
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 ProtossBuild/Probe=O
 ProtossBuildAdvanced/Probe=2
 ProtossGroundArmorLevel1/Forge=Y
@@ -415,12 +430,21 @@ TechLabStarport/Starport=F
 Tempest/Stargate=O
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=X
+<<<<<<< HEAD
+=======
+TemporalField/Oracle=F
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 TerranBuild/SCV=O
 TerranBuildAdvanced/SCV=2
 TerranInfantryArmorLevel1/EngineeringBay=Y
 TerranInfantryWeaponsLevel1/EngineeringBay=D
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=X
 TerranShipWeaponsLevel1/Armory=Y
+=======
+TerranShipPlatingLevel1/Armory=Y
+TerranShipWeaponsLevel1/Armory=I
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 TerranVehicleAndShipPlatingLevel1/Armory=Y
 TerranVehicleAndShipWeaponsLevel1/Armory=D
 TerranVehiclePlatingLevel1/Armory=I
@@ -469,8 +493,13 @@ ZergBuildAdvanced/Drone=2
 Zergling/Larva=D
 hydraliskspeed/HydraliskDen=D
 overlordspeed=F
+<<<<<<< HEAD
 zergflyerarmor1=X
 zergflyerattack1=Y
+=======
+zergflyerarmor1=Y
+zergflyerattack1=I
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
 zerggroundarmor1/EvolutionChamber=Y
 zerglingattackspeed/SpawningPool=Y
 zerglingmovementspeed/SpawningPool=D
