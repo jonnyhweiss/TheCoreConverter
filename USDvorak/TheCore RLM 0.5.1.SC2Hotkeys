@@ -272,24 +272,9 @@ MorphToOverseer/Overlord=P
 Mothership/Nexus=U
 MothershipCore/Nexus=5
 MothershipCoreEnergize/MothershipCore=5
-<<<<<<< HEAD
 MothershipCoreWeapon/MothershipCore=U
 MothershipCoreMassRecall/MothershipCore=P
 MothershipMassRecall/Mothership=P
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-MothershipCoreWeapon/MothershipCore=U
-MothershipCoreMassRecall/MothershipCore=P
-MothershipMassRecall/Mothership=P
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-MothershipCoreWeapon/MothershipCore=U
-MothershipCoreMassRecall/MothershipCore=P
-MothershipMassRecall/Mothership=P
->>>>>>> master
->>>>>>> 7f960b3
 Move=W
 MoveHoldPosition=K
 MovePatrol=X
@@ -441,19 +426,7 @@ TerranInfantryArmorLevel1/EngineeringBay=P
 TerranInfantryWeaponsLevel1/EngineeringBay=I
 TerranShipPlatingLevel1/Armory=U
 TerranShipWeaponsLevel1/Armory=P
-<<<<<<< HEAD
 TerranVehicleAndShipPlatingLevel1/Armory=U
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-TerranVehicleAndShipPlatingLevel1/Armory=P
-=======
-TerranVehicleAndShipPlatingLevel1/Armory=U
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-TerranVehicleAndShipPlatingLevel1/Armory=U
->>>>>>> master
->>>>>>> 7f960b3
 TerranVehicleAndShipWeaponsLevel1/Armory=I
 TerranVehiclePlatingLevel1/Armory=K
 TerranVehicleWeaponsLevel1/Armory=I

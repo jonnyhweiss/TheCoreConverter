@@ -131,19 +131,7 @@ CameraView6=7
 CameraView7=Y
 
 [Commands]
-<<<<<<< HEAD
 250mmStrikeCannons/Thor=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-250mmStrikeCannons/Thor=U
-=======
-250mmStrikeCannons/Thor=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-250mmStrikeCannons/Thor=E
->>>>>>> master
->>>>>>> 7f960b3
 AWrp=M
 AnionPulseCrystals/FleetBeacon=U
 ArchonHallucination/Sentry=BracketOpen
@@ -158,19 +146,7 @@ BanelingNest/Drone=Comma
 Banshee/Starport=N
 Barracks/SCV=U
 Battlecruiser/Starport=B
-<<<<<<< HEAD
 BlindingCloud/Viper=J
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-BlindingCloud/Viper=D
-=======
-BlindingCloud/Viper=J
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-BlindingCloud/Viper=J
->>>>>>> master
->>>>>>> 7f960b3
 Blink/Stalker=U
 BonesHeal/Stetmann=
 BroodLord/Corruptor=U
@@ -183,19 +159,7 @@ BunkerLoad=S
 BunkerUnloadAll=U
 BurrowChargeMP/Ultralisk=U
 BurrowDown=Comma
-<<<<<<< HEAD
 BurrowProtector/Viper=D
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-BurrowProtector/Viper=J
-=======
-BurrowProtector/Viper=D
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-BurrowProtector/Viper=D
->>>>>>> master
->>>>>>> 7f960b3
 BurrowUp=U
 CalldownMULE/OrbitalCommand=H
 Cancel=F7
@@ -292,23 +256,8 @@ Lower/SupplyDepot=H
 LurkerDen/HydraliskDen=
 Marauder/Barracks=U
 Marine/Barracks=H
-<<<<<<< HEAD
 MassRecall/Mothership=D
 MassRecall/MothershipCore=D
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-MassRecall/Mothership=J
-MassRecall/MothershipCore=J
-=======
-MassRecall/Mothership=D
-MassRecall/MothershipCore=D
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-MassRecall/Mothership=D
-MassRecall/MothershipCore=D
->>>>>>> master
->>>>>>> 7f960b3
 MedicHeal/Medic=
 Medivac/Starport=H
 MedivacSpeedBoost/Medivac=J
@@ -317,44 +266,16 @@ MissileTurret/SCV=N
 MorphBackToGateway/WarpGate=S
 MorphMorphalisk/Queen=U
 MorphToHellion/Hellion=J
-<<<<<<< HEAD
 MorphToHellionTank/FactoryTechLab=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-MorphToHellionTank/FactoryTechLab=U
-=======
-MorphToHellionTank/FactoryTechLab=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-MorphToHellionTank/FactoryTechLab=E
->>>>>>> master
->>>>>>> 7f960b3
 MorphToHellionTank/Hellion=U
 MorphToMothership/MothershipCore=T
 MorphToOverseer/Overlord=J
 Mothership/Nexus=N
 MothershipCore/Nexus=N
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-MothershipCoreEnergize/MothershipCore=Comma
-=======
-=======
->>>>>>> master
->>>>>>> 7f960b3
 MothershipCoreEnergize/MothershipCore=X
 MothershipCoreMassRecall/MothershipCore=U
 MothershipCoreWeapon/MothershipCore=J
 MothershipMassRecall/Mothership=U
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
->>>>>>> master
->>>>>>> 7f960b3
 Move=X
 MoveHoldPosition=N
 MovePatrol=B
@@ -377,19 +298,7 @@ OracleWeaponOff/Oracle=J
 OracleWeaponOn/Oracle=U
 OrbitalCommand/CommandCenter=H
 Overlord/Larva=N
-<<<<<<< HEAD
 PhaseShield/Oracle=D
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-PhaseShield/Oracle=J
-=======
-PhaseShield/Oracle=D
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-PhaseShield/Oracle=D
->>>>>>> master
->>>>>>> 7f960b3
 PhasingMode/WarpPrism=J
 Phoenix/Stargate=H
 PhoenixHallucination/Sentry=H
@@ -431,18 +340,7 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=U
 ResearchBattlecruiserSpecializations/FusionCore=H
 ResearchBurrow=B
 ResearchCharge/TwilightCouncil=U
-<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=U
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-ResearchDrillClaws/FactoryTechLab=U
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-ResearchDrillClaws/FactoryTechLab=U
->>>>>>> master
->>>>>>> 7f960b3
 ResearchDurableMaterials/StarportTechLab=J
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=H
@@ -467,27 +365,9 @@ ResearchShieldWall/BarracksTechLab=U
 ResearchSiegeTech/FactoryTechLab=H
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=H
-<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=C
 ResearchWarpGate/CyberneticsCore=H
 ResourceStun/Oracle=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-ResearchStrikeCannons/FactoryTechLab=N
-ResearchWarpGate/CyberneticsCore=H
-ResourceStun/Oracle=U
-=======
-ResearchStrikeCannons/FactoryTechLab=C
-ResearchWarpGate/CyberneticsCore=H
-ResourceStun/Oracle=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-ResearchStrikeCannons/FactoryTechLab=C
-ResearchWarpGate/CyberneticsCore=H
-ResourceStun/Oracle=E
->>>>>>> master
->>>>>>> 7f960b3
 ReturnCargo=U
 Roach/Larva=J
 RoachWarren/Drone=G
@@ -546,31 +426,11 @@ TerranBuild/SCV=M
 TerranBuildAdvanced/SCV=BracketOpen
 TerranInfantryArmorLevel1/EngineeringBay=U
 TerranInfantryWeaponsLevel1/EngineeringBay=H
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-TerranShipPlatingLevel1/Armory=N
-TerranShipWeaponsLevel1/Armory=J
-TerranVehicleAndShipPlatingLevel1/Armory=U
-TerranVehicleAndShipWeaponsLevel1/Armory=H
-TerranVehiclePlatingLevel1/Armory=U
-=======
-=======
->>>>>>> master
->>>>>>> 7f960b3
 TerranShipPlatingLevel1/Armory=C
 TerranShipWeaponsLevel1/Armory=J
 TerranVehicleAndShipPlatingLevel1/Armory=U
 TerranVehicleAndShipWeaponsLevel1/Armory=F
 TerranVehiclePlatingLevel1/Armory=E
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
->>>>>>> master
->>>>>>> 7f960b3
 TerranVehicleWeaponsLevel1/Armory=H
 Thor/Factory=N
 TimeWarp/Nexus=J
@@ -594,41 +454,14 @@ VoidRayHallucination/Sentry=G
 VoidRaySwarmDamageBoost/VoidRay=U
 VoodooShield/Tosh=
 Vortex/Artanis=
-<<<<<<< HEAD
 Vortex/Mothership=E
 VortexKO/Mothership=J
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Vortex/Mothership=U
-VortexKO/Mothership=D
-=======
-Vortex/Mothership=E
-VortexKO/Mothership=J
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-Vortex/Mothership=E
-VortexKO/Mothership=J
->>>>>>> master
->>>>>>> 7f960b3
 WarHound/Factory=
 WarpPrism/RoboticsFacility=N
 WarpPrismHallucination/Sentry=N
 WeaponsFree/Ghost=T
 WidowMine/Factory=G
-<<<<<<< HEAD
 WidowMineAttack/WidowMine=X
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-WidowMineAttack/WidowMine=Comma
-=======
-WidowMineAttack/WidowMine=X
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-WidowMineAttack/WidowMine=X
->>>>>>> master
->>>>>>> 7f960b3
 WidowMineBurrow/WidowMine=U
 WidowMineUnburrow/WidowMine=J
 WraithCloakOff/Wraith=

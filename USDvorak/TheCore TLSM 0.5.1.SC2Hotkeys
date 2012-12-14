@@ -250,18 +250,7 @@ Lair/Hatchery=D
 Land=E
 Larva=Period
 Lift=E
-<<<<<<< HEAD
 LightofAiur/MothershipCore=P
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-LightofAiur/MothershipCore=P
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-LightofAiur/MothershipCore=P
->>>>>>> master
->>>>>>> 7f960b3
 Lower/SupplyDepot=U
 LurkerDen/HydraliskDen=
 Marauder/Barracks=Period
@@ -283,24 +272,9 @@ MorphToOverseer/Overlord=Period
 Mothership/Nexus=E
 MothershipCore/Nexus=P
 MothershipCoreEnergize/MothershipCore=P
-<<<<<<< HEAD
 MothershipCoreWeapon/MothershipCore=E
 MothershipCoreMassRecall/MothershipCore=Period
 MothershipMassRecall/Mothership=Period
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-MothershipCoreWeapon/MothershipCore=E
-MothershipCoreMassRecall/MothershipCore=Period
-MothershipMassRecall/Mothership=Period
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-MothershipCoreWeapon/MothershipCore=E
-MothershipCoreMassRecall/MothershipCore=Period
-MothershipMassRecall/Mothership=Period
->>>>>>> master
->>>>>>> 7f960b3
 Move=M
 MoveHoldPosition=J
 MovePatrol=K
@@ -332,23 +306,8 @@ PlantC4Charge/Raynor=
 PointDefenseDrone/Raven=E
 Probe/Nexus=Period
 ProbeHallucination/Sentry=D
-<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=Period
 ProtossAirWeaponsLevel1/CyberneticsCore=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-ProtossAirArmorLevel1/CyberneticsCore=J
-ProtossAirWeaponsLevel1/CyberneticsCore=Period
-=======
-ProtossAirArmorLevel1/CyberneticsCore=Period
-ProtossAirWeaponsLevel1/CyberneticsCore=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-ProtossAirArmorLevel1/CyberneticsCore=Period
-ProtossAirWeaponsLevel1/CyberneticsCore=E
->>>>>>> master
->>>>>>> 7f960b3
 ProtossBuild/Probe=1
 ProtossBuildAdvanced/Probe=Tab
 ProtossGroundArmorLevel1/Forge=Period
@@ -405,19 +364,7 @@ ResearchShieldWall/BarracksTechLab=Period
 ResearchSiegeTech/FactoryTechLab=U
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=U
-<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=J
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-ResearchStrikeCannons/FactoryTechLab=1
-=======
-ResearchStrikeCannons/FactoryTechLab=J
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-ResearchStrikeCannons/FactoryTechLab=J
->>>>>>> master
->>>>>>> 7f960b3
 ResearchWarpGate/CyberneticsCore=U
 ResourceStun/Oracle=Period
 ReturnCargo=Period
@@ -472,39 +419,13 @@ TechLabStarport/Starport=Tab
 Tempest/Stargate=Tab
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=J
-<<<<<<< HEAD
 TemporalField/Oracle=P
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-TemporalField/Oracle=P
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-TemporalField/Oracle=P
->>>>>>> master
->>>>>>> 7f960b3
 TerranBuild/SCV=1
 TerranBuildAdvanced/SCV=Tab
 TerranInfantryArmorLevel1/EngineeringBay=Period
 TerranInfantryWeaponsLevel1/EngineeringBay=U
-<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=Period
 TerranShipWeaponsLevel1/Armory=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-TerranShipPlatingLevel1/Armory=J
-TerranShipWeaponsLevel1/Armory=Period
-=======
-TerranShipPlatingLevel1/Armory=Period
-TerranShipWeaponsLevel1/Armory=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-TerranShipPlatingLevel1/Armory=Period
-TerranShipWeaponsLevel1/Armory=E
->>>>>>> master
->>>>>>> 7f960b3
 TerranVehicleAndShipPlatingLevel1/Armory=Period
 TerranVehicleAndShipWeaponsLevel1/Armory=U
 TerranVehiclePlatingLevel1/Armory=E
@@ -553,23 +474,8 @@ ZergBuildAdvanced/Drone=Tab
 Zergling/Larva=U
 hydraliskspeed/HydraliskDen=U
 overlordspeed=P
-<<<<<<< HEAD
 zergflyerarmor1=Period
 zergflyerattack1=E
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-zergflyerarmor1=J
-zergflyerattack1=Period
-=======
-zergflyerarmor1=Period
-zergflyerattack1=E
->>>>>>> Map Definitions and Base file updates for Balance Update 9
-=======
-zergflyerarmor1=Period
-zergflyerattack1=E
->>>>>>> master
->>>>>>> 7f960b3
 zerggroundarmor1/EvolutionChamber=Period
 zerglingattackspeed/SpawningPool=Period
 zerglingmovementspeed/SpawningPool=U

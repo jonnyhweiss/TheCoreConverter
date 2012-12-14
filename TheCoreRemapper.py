@@ -39,7 +39,7 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
                 'MinimapTerrain','PauseGame','QuickPing','QuickSave','ReplayPlayPause','ReplayRestart','ReplaySkipBack','ReplaySkipNext','ReplaySpeedDec',
                 'ReplaySpeedInc','ReplayStop','ReplayHide','SelectionCancelDrag','SubgroupNext','SubgroupPrev','TeamResources','TownCamera','WarpIn',
                 'Cancel','CancelCocoon','CancelMutateMorph','CancelUpgradeMorph',
-                'StatusAll','StatusOwner','StatusAlly','StatusEnemy','MenuHelp','NamePanel','ArmySelect','SelectBuilder']
+                'StatusAll','StatusOwner','StatusAlly','MenuHelp','NamePanel','ArmySelect','SelectBuilder']
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
