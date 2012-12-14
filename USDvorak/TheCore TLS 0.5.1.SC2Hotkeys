@@ -251,9 +251,13 @@ Land=E
 Larva=Period
 Lift=E
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 LightofAiur/MothershipCore=P
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+LightofAiur/MothershipCore=P
+>>>>>>> master
 Lower/SupplyDepot=U
 LurkerDen/HydraliskDen=
 Marauder/Barracks=Period
@@ -276,11 +280,17 @@ Mothership/Nexus=E
 MothershipCore/Nexus=P
 MothershipCoreEnergize/MothershipCore=P
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MothershipCoreWeapon/MothershipCore=E
 MothershipCoreMassRecall/MothershipCore=Period
 MothershipMassRecall/Mothership=Period
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreWeapon/MothershipCore=E
+MothershipCoreMassRecall/MothershipCore=Period
+MothershipMassRecall/Mothership=Period
+>>>>>>> master
 Move=M
 MoveHoldPosition=J
 MovePatrol=K
@@ -313,12 +323,17 @@ PointDefenseDrone/Raven=E
 Probe/Nexus=Period
 ProbeHallucination/Sentry=D
 <<<<<<< HEAD
+<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=J
 ProtossAirWeaponsLevel1/CyberneticsCore=Period
 =======
 ProtossAirArmorLevel1/CyberneticsCore=Period
 ProtossAirWeaponsLevel1/CyberneticsCore=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ProtossAirArmorLevel1/CyberneticsCore=Period
+ProtossAirWeaponsLevel1/CyberneticsCore=E
+>>>>>>> master
 ProtossBuild/Probe=CapsLock
 ProtossBuildAdvanced/Probe=Grave
 ProtossGroundArmorLevel1/Forge=Period
@@ -431,13 +446,18 @@ Tempest/Stargate=CapsLock
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=J
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 TemporalField/Oracle=P
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TemporalField/Oracle=P
+>>>>>>> master
 TerranBuild/SCV=CapsLock
 TerranBuildAdvanced/SCV=Grave
 TerranInfantryArmorLevel1/EngineeringBay=Period
 TerranInfantryWeaponsLevel1/EngineeringBay=U
+<<<<<<< HEAD
 <<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=J
 TerranShipWeaponsLevel1/Armory=Period
@@ -445,6 +465,10 @@ TerranShipWeaponsLevel1/Armory=Period
 TerranShipPlatingLevel1/Armory=Period
 TerranShipWeaponsLevel1/Armory=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=Period
+TerranShipWeaponsLevel1/Armory=E
+>>>>>>> master
 TerranVehicleAndShipPlatingLevel1/Armory=Period
 TerranVehicleAndShipWeaponsLevel1/Armory=U
 TerranVehiclePlatingLevel1/Armory=E
@@ -494,12 +518,17 @@ Zergling/Larva=U
 hydraliskspeed/HydraliskDen=U
 overlordspeed=P
 <<<<<<< HEAD
+<<<<<<< HEAD
 zergflyerarmor1=J
 zergflyerattack1=Period
 =======
 zergflyerarmor1=Period
 zergflyerattack1=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+zergflyerarmor1=Period
+zergflyerattack1=E
+>>>>>>> master
 zerggroundarmor1/EvolutionChamber=Period
 zerglingattackspeed/SpawningPool=Period
 zerglingmovementspeed/SpawningPool=U

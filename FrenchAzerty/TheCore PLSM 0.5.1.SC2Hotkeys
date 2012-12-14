@@ -274,11 +274,17 @@ Mothership/Nexus=C
 MothershipCore/Nexus=C
 MothershipCoreEnergize/MothershipCore=X
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MothershipCoreMassRecall/MothershipCore=E
 MothershipCoreWeapon/MothershipCore=D
 MothershipMassRecall/Mothership=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreMassRecall/MothershipCore=E
+MothershipCoreWeapon/MothershipCore=D
+MothershipMassRecall/Mothership=E
+>>>>>>> master
 Move=Comma
 MoveHoldPosition=C
 MovePatrol=V
@@ -344,9 +350,13 @@ ResearchBattlecruiserSpecializations/FusionCore=F
 ResearchBurrow=V
 ResearchCharge/TwilightCouncil=E
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ResearchDrillClaws/FactoryTechLab=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=E
+>>>>>>> master
 ResearchDurableMaterials/StarportTechLab=D
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=F
@@ -372,10 +382,14 @@ ResearchSiegeTech/FactoryTechLab=F
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=1
 =======
 ResearchStrikeCannons/FactoryTechLab=C
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=C
+>>>>>>> master
 ResearchWarpGate/CyberneticsCore=F
 ResourceStun/Oracle=E
 ReturnCargo=E
@@ -437,10 +451,14 @@ TerranBuildAdvanced/SCV=Tab
 TerranInfantryArmorLevel1/EngineeringBay=E
 TerranInfantryWeaponsLevel1/EngineeringBay=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=1
 =======
 TerranShipPlatingLevel1/Armory=C
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=C
+>>>>>>> master
 TerranShipWeaponsLevel1/Armory=D
 TerranVehicleAndShipPlatingLevel1/Armory=E
 TerranVehicleAndShipWeaponsLevel1/Armory=F

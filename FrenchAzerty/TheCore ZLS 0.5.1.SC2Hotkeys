@@ -135,9 +135,13 @@ AWrp=Apostrophe
 AnionPulseCrystals/FleetBeacon=Z
 ArchonHallucination/Sentry=Apostrophe
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ArmorpiercingMode/Thor=Z
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ArmorpiercingMode/Thor=Z
+>>>>>>> master
 Armory/SCV=D
 AssaultMode=Z
 Assimilator/Probe=F
@@ -227,10 +231,14 @@ Hallucination/Sentry=Apostrophe
 Halt=G
 Hatchery/Drone=Z
 <<<<<<< HEAD
+<<<<<<< HEAD
 Heal/Medivac=C
 =======
 Heal/Medivac=G
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+Heal/Medivac=G
+>>>>>>> master
 Hellion/Factory=Z
 HellionTank/Factory=V
 HerculesUnloadAll/Hercules=
@@ -267,9 +275,13 @@ MassRecall/MothershipCore=E
 MedicHeal/Medic=
 Medivac/Starport=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MedivacSpeedBoost/Medivac=C
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MedivacSpeedBoost/Medivac=C
+>>>>>>> master
 MindBlast/Tosh=
 MissileTurret/SCV=C
 MorphBackToGateway/WarpGate=K
@@ -350,9 +362,13 @@ ResearchBattlecruiserSpecializations/FusionCore=F
 ResearchBurrow=4
 ResearchCharge/TwilightCouncil=Z
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ResearchDrillClaws/FactoryTechLab=Z
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=Z
+>>>>>>> master
 ResearchDurableMaterials/StarportTechLab=E
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=F
@@ -440,6 +456,7 @@ TerranInfantryWeaponsLevel1/EngineeringBay=Z
 TerranShipPlatingLevel1/Armory=E
 TerranShipWeaponsLevel1/Armory=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 TerranVehiclePlatingLevel1/Armory=D
 TerranVehicleWeaponsLevel1/Armory=Z
 =======
@@ -447,6 +464,11 @@ TerranVehicleAndShipPlatingLevel1/Armory=E
 TerranVehicleWeaponsLevel1/Armory=Z
 TerranVehiclePlatingLevel1/Armory=E
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=E
+TerranVehicleWeaponsLevel1/Armory=Z
+TerranVehiclePlatingLevel1/Armory=E
+>>>>>>> master
 Thor/Factory=4
 TimeWarp/Nexus=Z
 TossGrenade/Raynor=
@@ -467,9 +489,13 @@ ViperConsume/Viper=C
 VoidRay/Stargate=Z
 VoidRayHallucination/Sentry=C
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 VoidRaySwarmDamageBoost/VoidRay=Z
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+VoidRaySwarmDamageBoost/VoidRay=Z
+>>>>>>> master
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=E

@@ -131,17 +131,23 @@ CameraView7=U
 
 [Commands]
 <<<<<<< HEAD
+<<<<<<< HEAD
 250mmStrikeCannons/Thor=C
 AWrp=BracketOpen
 AnionPulseCrystals/FleetBeacon=C
 ArchonHallucination/Sentry=BracketOpen
 =======
+=======
+>>>>>>> master
 250mmStrikeCannons/Thor=Comma
 AWrp=BracketOpen
 AnionPulseCrystals/FleetBeacon=C
 ArchonHallucination/Sentry=BracketOpen
 ArmorpiercingMode/Thor=C
+<<<<<<< HEAD
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+>>>>>>> master
 Armory/SCV=H
 AssaultMode=C
 Assimilator/Probe=D
@@ -153,10 +159,14 @@ Banshee/Starport=7
 Barracks/SCV=I
 Battlecruiser/Starport=X
 <<<<<<< HEAD
+<<<<<<< HEAD
 BlindingCloud/Viper=Comma
 =======
 BlindingCloud/Viper=C
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+BlindingCloud/Viper=C
+>>>>>>> master
 Blink/Stalker=G
 BonesHeal/Stetmann=
 BroodLord/Corruptor=C
@@ -170,10 +180,14 @@ BunkerUnloadAll=G
 BurrowChargeMP/Ultralisk=C
 BurrowDown=I
 <<<<<<< HEAD
+<<<<<<< HEAD
 BurrowProtector/Viper=C
 =======
 BurrowProtector/Viper=Comma
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+BurrowProtector/Viper=Comma
+>>>>>>> master
 BurrowUp=C
 CalldownMULE/OrbitalCommand=D
 Cancel=F7
@@ -239,10 +253,14 @@ Hallucination/Sentry=BracketOpen
 Halt=I
 Hatchery/Drone=C
 <<<<<<< HEAD
+<<<<<<< HEAD
 Heal/Medivac=B
 =======
 Heal/Medivac=I
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+Heal/Medivac=I
+>>>>>>> master
 Hellion/Factory=C
 HellionTank/Factory=K
 HerculesUnloadAll/Hercules=
@@ -275,43 +293,59 @@ LurkerDen/HydraliskDen=
 Marauder/Barracks=C
 Marine/Barracks=D
 <<<<<<< HEAD
+<<<<<<< HEAD
 MassRecall/Mothership=C
 MassRecall/MothershipCore=G
 MedicHeal/Medic=
 Medivac/Starport=D
 =======
+=======
+>>>>>>> master
 MassRecall/Mothership=Comma
 MassRecall/MothershipCore=Period
 MedicHeal/Medic=
 Medivac/Starport=D
 MedivacSpeedBoost/Medivac=B
+<<<<<<< HEAD
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+>>>>>>> master
 MindBlast/Tosh=
 MissileTurret/SCV=B
 MorphBackToGateway/WarpGate=O
 MorphMorphalisk/Queen=C
 MorphToHellion/Hellion=G
 <<<<<<< HEAD
+<<<<<<< HEAD
 MorphToHellionTank/FactoryTechLab=C
 =======
 MorphToHellionTank/FactoryTechLab=Comma
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MorphToHellionTank/FactoryTechLab=Comma
+>>>>>>> master
 MorphToHellionTank/Hellion=C
 MorphToMothership/MothershipCore=I
 MorphToOverseer/Overlord=C
 Mothership/Nexus=G
 MothershipCore/Nexus=B
 <<<<<<< HEAD
+<<<<<<< HEAD
 MothershipCoreEnergize/MothershipCore=B
 MothershipCoreMassRecall/MothershipCore=Comma
 MothershipCoreWeapon/MothershipCore=Period
 MothershipMassRecall/Mothership=Comma
 =======
+=======
+>>>>>>> master
 MothershipCoreEnergize/MothershipCore=J
 MothershipCoreMassRecall/MothershipCore=C
 MothershipCoreWeapon/MothershipCore=G
 MothershipMassRecall/Mothership=C
+<<<<<<< HEAD
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+>>>>>>> master
 Move=Q
 MoveHoldPosition=7
 MovePatrol=F
@@ -335,10 +369,14 @@ OracleWeaponOn/Oracle=C
 OrbitalCommand/CommandCenter=D
 Overlord/Larva=H
 <<<<<<< HEAD
+<<<<<<< HEAD
 PhaseShield/Oracle=B
 =======
 PhaseShield/Oracle=J
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+PhaseShield/Oracle=J
+>>>>>>> master
 PhasingMode/WarpPrism=C
 Phoenix/Stargate=D
 PhoenixHallucination/Sentry=D
@@ -381,9 +419,13 @@ ResearchBattlecruiserSpecializations/FusionCore=D
 ResearchBurrow=7
 ResearchCharge/TwilightCouncil=C
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ResearchDrillClaws/FactoryTechLab=C
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=C
+>>>>>>> master
 ResearchDurableMaterials/StarportTechLab=G
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=D
@@ -409,6 +451,7 @@ ResearchSiegeTech/FactoryTechLab=D
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=D
 <<<<<<< HEAD
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=H
 ResearchWarpGate/CyberneticsCore=C
 ResourceStun/Oracle=C
@@ -417,6 +460,11 @@ ResearchStrikeCannons/FactoryTechLab=E
 ResearchWarpGate/CyberneticsCore=C
 ResourceStun/Oracle=Comma
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=E
+ResearchWarpGate/CyberneticsCore=C
+ResourceStun/Oracle=Comma
+>>>>>>> master
 ReturnCargo=G
 Roach/Larva=G
 RoachWarren/Drone=I
@@ -475,17 +523,23 @@ TerranBuildAdvanced/SCV=BracketOpen
 TerranInfantryArmorLevel1/EngineeringBay=D
 TerranInfantryWeaponsLevel1/EngineeringBay=C
 <<<<<<< HEAD
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=G
 TerranShipWeaponsLevel1/Armory=D
 TerranVehiclePlatingLevel1/Armory=H
 TerranVehicleWeaponsLevel1/Armory=C
 =======
+=======
+>>>>>>> master
 TerranShipPlatingLevel1/Armory=Period
 TerranShipWeaponsLevel1/Armory=D
 TerranVehicleAndShipPlatingLevel1/Armory=G
 TerranVehicleWeaponsLevel1/Armory=C
 TerranVehiclePlatingLevel1/Armory=Period
+<<<<<<< HEAD
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+>>>>>>> master
 Thor/Factory=7
 TimeWarp/Nexus=C
 TossGrenade/Raynor=
@@ -506,27 +560,37 @@ ViperConsume/Viper=B
 VoidRay/Stargate=C
 VoidRayHallucination/Sentry=B
 <<<<<<< HEAD
+<<<<<<< HEAD
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=G
 VortexKO/Mothership=Period
 =======
+=======
+>>>>>>> master
 VoidRaySwarmDamageBoost/VoidRay=C
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=Period
 VortexKO/Mothership=G
+<<<<<<< HEAD
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+>>>>>>> master
 WarHound/Factory=
 WarpPrism/RoboticsFacility=H
 WarpPrismHallucination/Sentry=H
 WeaponsFree/Ghost=M
 WidowMine/Factory=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 WidowMineAttack/WidowMine=B
 =======
 WidowMineAttack/WidowMine=J
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+WidowMineAttack/WidowMine=J
+>>>>>>> master
 WidowMineBurrow/WidowMine=C
 WidowMineUnburrow/WidowMine=G
 WraithCloakOff/Wraith=

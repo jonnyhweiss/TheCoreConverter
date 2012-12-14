@@ -273,11 +273,17 @@ Mothership/Nexus=F
 MothershipCore/Nexus=5
 MothershipCoreEnergize/MothershipCore=5
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MothershipCoreWeapon/MothershipCore=F
 MothershipCoreMassRecall/MothershipCore=R
 MothershipMassRecall/Mothership=R
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreWeapon/MothershipCore=F
+MothershipCoreMassRecall/MothershipCore=R
+MothershipMassRecall/Mothership=R
+>>>>>>> master
 Move=Comma
 MoveHoldPosition=V
 MovePatrol=B
@@ -430,10 +436,14 @@ TerranInfantryWeaponsLevel1/EngineeringBay=G
 TerranShipPlatingLevel1/Armory=F
 TerranShipWeaponsLevel1/Armory=R
 <<<<<<< HEAD
+<<<<<<< HEAD
 TerranVehicleAndShipPlatingLevel1/Armory=R
 =======
 TerranVehicleAndShipPlatingLevel1/Armory=F
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=F
+>>>>>>> master
 TerranVehicleAndShipWeaponsLevel1/Armory=G
 TerranVehiclePlatingLevel1/Armory=V
 TerranVehicleWeaponsLevel1/Armory=G

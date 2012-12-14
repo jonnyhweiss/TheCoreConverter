@@ -251,9 +251,13 @@ Land=I
 Larva=Y
 Lift=I
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 LightofAiur/MothershipCore=F
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+LightofAiur/MothershipCore=F
+>>>>>>> master
 Lower/SupplyDepot=D
 LurkerDen/HydraliskDen=
 Marauder/Barracks=Y
@@ -276,11 +280,17 @@ Mothership/Nexus=I
 MothershipCore/Nexus=F
 MothershipCoreEnergize/MothershipCore=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MothershipCoreWeapon/MothershipCore=I
 MothershipCoreMassRecall/MothershipCore=Y
 MothershipMassRecall/Mothership=Y
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreWeapon/MothershipCore=I
+MothershipCoreMassRecall/MothershipCore=Y
+MothershipMassRecall/Mothership=Y
+>>>>>>> master
 Move=V
 MoveHoldPosition=X
 MovePatrol=B
@@ -313,12 +323,17 @@ PointDefenseDrone/Raven=I
 Probe/Nexus=Y
 ProbeHallucination/Sentry=T
 <<<<<<< HEAD
+<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=X
 ProtossAirWeaponsLevel1/CyberneticsCore=Y
 =======
 ProtossAirArmorLevel1/CyberneticsCore=Y
 ProtossAirWeaponsLevel1/CyberneticsCore=I
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ProtossAirArmorLevel1/CyberneticsCore=Y
+ProtossAirWeaponsLevel1/CyberneticsCore=I
+>>>>>>> master
 ProtossBuild/Probe=O
 ProtossBuildAdvanced/Probe=2
 ProtossGroundArmorLevel1/Forge=Y
@@ -431,13 +446,18 @@ Tempest/Stargate=O
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=X
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 TemporalField/Oracle=F
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TemporalField/Oracle=F
+>>>>>>> master
 TerranBuild/SCV=O
 TerranBuildAdvanced/SCV=2
 TerranInfantryArmorLevel1/EngineeringBay=Y
 TerranInfantryWeaponsLevel1/EngineeringBay=D
+<<<<<<< HEAD
 <<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=X
 TerranShipWeaponsLevel1/Armory=Y
@@ -445,6 +465,10 @@ TerranShipWeaponsLevel1/Armory=Y
 TerranShipPlatingLevel1/Armory=Y
 TerranShipWeaponsLevel1/Armory=I
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=Y
+TerranShipWeaponsLevel1/Armory=I
+>>>>>>> master
 TerranVehicleAndShipPlatingLevel1/Armory=Y
 TerranVehicleAndShipWeaponsLevel1/Armory=D
 TerranVehiclePlatingLevel1/Armory=I
@@ -494,12 +518,17 @@ Zergling/Larva=D
 hydraliskspeed/HydraliskDen=D
 overlordspeed=F
 <<<<<<< HEAD
+<<<<<<< HEAD
 zergflyerarmor1=X
 zergflyerattack1=Y
 =======
 zergflyerarmor1=Y
 zergflyerattack1=I
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+zergflyerarmor1=Y
+zergflyerattack1=I
+>>>>>>> master
 zerggroundarmor1/EvolutionChamber=Y
 zerglingattackspeed/SpawningPool=Y
 zerglingmovementspeed/SpawningPool=D

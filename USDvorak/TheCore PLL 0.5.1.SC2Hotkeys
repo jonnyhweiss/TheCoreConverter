@@ -274,11 +274,17 @@ Mothership/Nexus=X
 MothershipCore/Nexus=X
 MothershipCoreEnergize/MothershipCore=K
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 MothershipCoreMassRecall/MothershipCore=Y
 MothershipCoreWeapon/MothershipCore=I
 MothershipMassRecall/Mothership=Y
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreMassRecall/MothershipCore=Y
+MothershipCoreWeapon/MothershipCore=I
+MothershipMassRecall/Mothership=Y
+>>>>>>> master
 Move=V
 MoveHoldPosition=X
 MovePatrol=B
@@ -344,9 +350,13 @@ ResearchBattlecruiserSpecializations/FusionCore=D
 ResearchBurrow=B
 ResearchCharge/TwilightCouncil=Y
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ResearchDrillClaws/FactoryTechLab=Y
 >>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=Y
+>>>>>>> master
 ResearchDurableMaterials/StarportTechLab=I
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=D
