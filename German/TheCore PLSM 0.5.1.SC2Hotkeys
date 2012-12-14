@@ -273,9 +273,24 @@ MorphToOverseer/Overlord=D
 Mothership/Nexus=C
 MothershipCore/Nexus=C
 MothershipCoreEnergize/MothershipCore=X
+<<<<<<< HEAD
 MothershipCoreMassRecall/MothershipCore=E
 MothershipCoreWeapon/MothershipCore=D
 MothershipMassRecall/Mothership=E
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MothershipCoreMassRecall/MothershipCore=E
+MothershipCoreWeapon/MothershipCore=D
+MothershipMassRecall/Mothership=E
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreMassRecall/MothershipCore=E
+MothershipCoreWeapon/MothershipCore=D
+MothershipMassRecall/Mothership=E
+>>>>>>> master
+>>>>>>> 7f960b3
 Move=M
 MoveHoldPosition=C
 MovePatrol=V
@@ -340,7 +355,18 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=E
 ResearchBattlecruiserSpecializations/FusionCore=F
 ResearchBurrow=V
 ResearchCharge/TwilightCouncil=E
+<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=E
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=E
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=E
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchDurableMaterials/StarportTechLab=D
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=F
@@ -365,7 +391,19 @@ ResearchShieldWall/BarracksTechLab=E
 ResearchSiegeTech/FactoryTechLab=F
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=F
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=C
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ResearchStrikeCannons/FactoryTechLab=1
+=======
+ResearchStrikeCannons/FactoryTechLab=C
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=C
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchWarpGate/CyberneticsCore=F
 ResourceStun/Oracle=E
 ReturnCargo=E
@@ -426,7 +464,19 @@ TerranBuild/SCV=1
 TerranBuildAdvanced/SCV=Tab
 TerranInfantryArmorLevel1/EngineeringBay=E
 TerranInfantryWeaponsLevel1/EngineeringBay=F
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=C
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranShipPlatingLevel1/Armory=1
+=======
+TerranShipPlatingLevel1/Armory=C
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=C
+>>>>>>> master
+>>>>>>> 7f960b3
 TerranShipWeaponsLevel1/Armory=D
 TerranVehicleAndShipPlatingLevel1/Armory=E
 TerranVehicleAndShipWeaponsLevel1/Armory=F

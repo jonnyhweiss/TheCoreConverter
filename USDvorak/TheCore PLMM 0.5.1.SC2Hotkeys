@@ -273,9 +273,24 @@ MorphToOverseer/Overlord=U
 Mothership/Nexus=K
 MothershipCore/Nexus=K
 MothershipCoreEnergize/MothershipCore=J
+<<<<<<< HEAD
 MothershipCoreMassRecall/MothershipCore=P
 MothershipCoreWeapon/MothershipCore=U
 MothershipMassRecall/Mothership=P
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MothershipCoreMassRecall/MothershipCore=P
+MothershipCoreWeapon/MothershipCore=U
+MothershipMassRecall/Mothership=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreMassRecall/MothershipCore=P
+MothershipCoreWeapon/MothershipCore=U
+MothershipMassRecall/Mothership=P
+>>>>>>> master
+>>>>>>> 7f960b3
 Move=W
 MoveHoldPosition=K
 MovePatrol=X
@@ -340,7 +355,18 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=P
 ResearchBattlecruiserSpecializations/FusionCore=I
 ResearchBurrow=X
 ResearchCharge/TwilightCouncil=P
+<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=P
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=P
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=P
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchDurableMaterials/StarportTechLab=U
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=I
@@ -365,7 +391,19 @@ ResearchShieldWall/BarracksTechLab=P
 ResearchSiegeTech/FactoryTechLab=I
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=I
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=K
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ResearchStrikeCannons/FactoryTechLab=2
+=======
+ResearchStrikeCannons/FactoryTechLab=K
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=K
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchWarpGate/CyberneticsCore=I
 ResourceStun/Oracle=P
 ReturnCargo=P
@@ -426,7 +464,19 @@ TerranBuild/SCV=2
 TerranBuildAdvanced/SCV=Apostrophe
 TerranInfantryArmorLevel1/EngineeringBay=P
 TerranInfantryWeaponsLevel1/EngineeringBay=I
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=K
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranShipPlatingLevel1/Armory=2
+=======
+TerranShipPlatingLevel1/Armory=K
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=K
+>>>>>>> master
+>>>>>>> 7f960b3
 TerranShipWeaponsLevel1/Armory=U
 TerranVehicleAndShipPlatingLevel1/Armory=P
 TerranVehicleAndShipWeaponsLevel1/Armory=I

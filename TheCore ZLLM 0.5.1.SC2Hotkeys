@@ -134,7 +134,18 @@ CameraView7=K
 AWrp=W
 AnionPulseCrystals/FleetBeacon=R
 ArchonHallucination/Sentry=W
+<<<<<<< HEAD
 ArmorpiercingMode/Thor=R
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ArmorpiercingMode/Thor=R
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ArmorpiercingMode/Thor=R
+>>>>>>> master
+>>>>>>> 7f960b3
 Armory/SCV=G
 AssaultMode=R
 Assimilator/Probe=H
@@ -223,7 +234,19 @@ GuardianShield/Sentry=T
 Hallucination/Sentry=W
 Halt=J
 Hatchery/Drone=R
+<<<<<<< HEAD
 Heal/Medivac=J
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Heal/Medivac=B
+=======
+Heal/Medivac=J
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+Heal/Medivac=J
+>>>>>>> master
+>>>>>>> 7f960b3
 Hellion/Factory=R
 HellionTank/Factory=N
 HerculesUnloadAll/Hercules=
@@ -259,7 +282,18 @@ MassRecall/Mothership=R
 MassRecall/MothershipCore=T
 MedicHeal/Medic=
 Medivac/Starport=H
+<<<<<<< HEAD
 MedivacSpeedBoost/Medivac=B
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MedivacSpeedBoost/Medivac=B
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MedivacSpeedBoost/Medivac=B
+>>>>>>> master
+>>>>>>> 7f960b3
 MindBlast/Tosh=
 MissileTurret/SCV=W
 MorphBackToGateway/WarpGate=SemiColon
@@ -339,7 +373,18 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=R
 ResearchBattlecruiserSpecializations/FusionCore=H
 ResearchBurrow=6
 ResearchCharge/TwilightCouncil=R
+<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=R
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=R
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=R
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchDurableMaterials/StarportTechLab=T
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=H
@@ -426,9 +471,26 @@ TerranInfantryArmorLevel1/EngineeringBay=H
 TerranInfantryWeaponsLevel1/EngineeringBay=R
 TerranShipPlatingLevel1/Armory=T
 TerranShipWeaponsLevel1/Armory=H
+<<<<<<< HEAD
 TerranVehicleAndShipPlatingLevel1/Armory=T
 TerranVehicleWeaponsLevel1/Armory=R
 TerranVehiclePlatingLevel1/Armory=T
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranVehiclePlatingLevel1/Armory=G
+TerranVehicleWeaponsLevel1/Armory=R
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=T
+TerranVehicleWeaponsLevel1/Armory=R
+TerranVehiclePlatingLevel1/Armory=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=T
+TerranVehicleWeaponsLevel1/Armory=R
+TerranVehiclePlatingLevel1/Armory=T
+>>>>>>> master
+>>>>>>> 7f960b3
 Thor/Factory=6
 TimeWarp/Nexus=R
 TossGrenade/Raynor=
@@ -448,7 +510,18 @@ Viper/Larva=N
 ViperConsume/Viper=W
 VoidRay/Stargate=R
 VoidRayHallucination/Sentry=B
+<<<<<<< HEAD
 VoidRaySwarmDamageBoost/VoidRay=R
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+VoidRaySwarmDamageBoost/VoidRay=R
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+VoidRaySwarmDamageBoost/VoidRay=R
+>>>>>>> master
+>>>>>>> 7f960b3
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=T

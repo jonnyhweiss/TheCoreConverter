@@ -272,9 +272,24 @@ MorphToOverseer/Overlord=Y
 Mothership/Nexus=I
 MothershipCore/Nexus=6
 MothershipCoreEnergize/MothershipCore=6
+<<<<<<< HEAD
 MothershipCoreWeapon/MothershipCore=I
 MothershipCoreMassRecall/MothershipCore=Y
 MothershipMassRecall/Mothership=Y
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MothershipCoreWeapon/MothershipCore=I
+MothershipCoreMassRecall/MothershipCore=Y
+MothershipMassRecall/Mothership=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreWeapon/MothershipCore=I
+MothershipCoreMassRecall/MothershipCore=Y
+MothershipMassRecall/Mothership=Y
+>>>>>>> master
+>>>>>>> 7f960b3
 Move=V
 MoveHoldPosition=X
 MovePatrol=B
@@ -364,7 +379,19 @@ ResearchShieldWall/BarracksTechLab=Y
 ResearchSiegeTech/FactoryTechLab=D
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=D
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=X
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ResearchStrikeCannons/FactoryTechLab=3
+=======
+ResearchStrikeCannons/FactoryTechLab=X
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=X
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchWarpGate/CyberneticsCore=D
 ResourceStun/Oracle=Y
 ReturnCargo=Y
@@ -426,9 +453,27 @@ TerranInfantryArmorLevel1/EngineeringBay=Y
 TerranInfantryWeaponsLevel1/EngineeringBay=D
 TerranShipPlatingLevel1/Armory=I
 TerranShipWeaponsLevel1/Armory=Y
+<<<<<<< HEAD
 TerranVehicleAndShipPlatingLevel1/Armory=I
 TerranVehicleAndShipWeaponsLevel1/Armory=D
 TerranVehiclePlatingLevel1/Armory=X
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranVehicleAndShipPlatingLevel1/Armory=Y
+TerranVehicleAndShipWeaponsLevel1/Armory=D
+TerranVehiclePlatingLevel1/Armory=3
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=I
+TerranVehicleAndShipWeaponsLevel1/Armory=D
+TerranVehiclePlatingLevel1/Armory=X
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=I
+TerranVehicleAndShipWeaponsLevel1/Armory=D
+TerranVehiclePlatingLevel1/Armory=X
+>>>>>>> master
+>>>>>>> 7f960b3
 TerranVehicleWeaponsLevel1/Armory=D
 Thor/Factory=X
 TimeWarp/Nexus=I

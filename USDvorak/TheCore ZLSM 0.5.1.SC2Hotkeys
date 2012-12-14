@@ -134,7 +134,18 @@ CameraView7=D
 AWrp=Tab
 AnionPulseCrystals/FleetBeacon=Comma
 ArchonHallucination/Sentry=Tab
+<<<<<<< HEAD
 ArmorpiercingMode/Thor=Comma
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ArmorpiercingMode/Thor=Comma
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ArmorpiercingMode/Thor=Comma
+>>>>>>> master
+>>>>>>> 7f960b3
 Armory/SCV=E
 AssaultMode=Comma
 Assimilator/Probe=U
@@ -223,7 +234,19 @@ GuardianShield/Sentry=Period
 Hallucination/Sentry=Tab
 Halt=I
 Hatchery/Drone=Comma
+<<<<<<< HEAD
 Heal/Medivac=I
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Heal/Medivac=J
+=======
+Heal/Medivac=I
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+Heal/Medivac=I
+>>>>>>> master
+>>>>>>> 7f960b3
 Hellion/Factory=Comma
 HellionTank/Factory=K
 HerculesUnloadAll/Hercules=
@@ -259,7 +282,18 @@ MassRecall/Mothership=Comma
 MassRecall/MothershipCore=Period
 MedicHeal/Medic=
 Medivac/Starport=U
+<<<<<<< HEAD
 MedivacSpeedBoost/Medivac=J
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MedivacSpeedBoost/Medivac=J
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MedivacSpeedBoost/Medivac=J
+>>>>>>> master
+>>>>>>> 7f960b3
 MindBlast/Tosh=
 MissileTurret/SCV=Tab
 MorphBackToGateway/WarpGate=T
@@ -339,7 +373,18 @@ ResearchBattlecruiserEnergyUpgrade/FusionCore=Comma
 ResearchBattlecruiserSpecializations/FusionCore=U
 ResearchBurrow=4
 ResearchCharge/TwilightCouncil=Comma
+<<<<<<< HEAD
 ResearchDrillClaws/FactoryTechLab=Comma
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ResearchDrillClaws/FactoryTechLab=Comma
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchDrillClaws/FactoryTechLab=Comma
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchDurableMaterials/StarportTechLab=Period
 ResearchDurableMaterials/StarportTechReactor=
 ResearchExtendedThermalLance/RoboticsBay=U
@@ -426,9 +471,26 @@ TerranInfantryArmorLevel1/EngineeringBay=U
 TerranInfantryWeaponsLevel1/EngineeringBay=Comma
 TerranShipPlatingLevel1/Armory=Period
 TerranShipWeaponsLevel1/Armory=U
+<<<<<<< HEAD
 TerranVehicleAndShipPlatingLevel1/Armory=Period
 TerranVehicleWeaponsLevel1/Armory=Comma
 TerranVehiclePlatingLevel1/Armory=Period
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranVehiclePlatingLevel1/Armory=E
+TerranVehicleWeaponsLevel1/Armory=Comma
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=Period
+TerranVehicleWeaponsLevel1/Armory=Comma
+TerranVehiclePlatingLevel1/Armory=Period
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranVehicleAndShipPlatingLevel1/Armory=Period
+TerranVehicleWeaponsLevel1/Armory=Comma
+TerranVehiclePlatingLevel1/Armory=Period
+>>>>>>> master
+>>>>>>> 7f960b3
 Thor/Factory=4
 TimeWarp/Nexus=Comma
 TossGrenade/Raynor=
@@ -448,7 +510,18 @@ Viper/Larva=K
 ViperConsume/Viper=Tab
 VoidRay/Stargate=Comma
 VoidRayHallucination/Sentry=J
+<<<<<<< HEAD
 VoidRaySwarmDamageBoost/VoidRay=Comma
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+VoidRaySwarmDamageBoost/VoidRay=Comma
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+VoidRaySwarmDamageBoost/VoidRay=Comma
+>>>>>>> master
+>>>>>>> 7f960b3
 VoodooShield/Tosh=
 Vortex/Artanis=
 Vortex/Mothership=Period

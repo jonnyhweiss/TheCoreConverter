@@ -250,7 +250,18 @@ Lair/Hatchery=K
 Land=G
 Larva=T
 Lift=G
+<<<<<<< HEAD
 LightofAiur/MothershipCore=Y
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+LightofAiur/MothershipCore=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+LightofAiur/MothershipCore=Y
+>>>>>>> master
+>>>>>>> 7f960b3
 Lower/SupplyDepot=H
 LurkerDen/HydraliskDen=
 Marauder/Barracks=T
@@ -272,9 +283,24 @@ MorphToOverseer/Overlord=T
 Mothership/Nexus=G
 MothershipCore/Nexus=Y
 MothershipCoreEnergize/MothershipCore=Y
+<<<<<<< HEAD
 MothershipCoreWeapon/MothershipCore=G
 MothershipCoreMassRecall/MothershipCore=T
 MothershipMassRecall/Mothership=T
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+MothershipCoreWeapon/MothershipCore=G
+MothershipCoreMassRecall/MothershipCore=T
+MothershipMassRecall/Mothership=T
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+MothershipCoreWeapon/MothershipCore=G
+MothershipCoreMassRecall/MothershipCore=T
+MothershipMassRecall/Mothership=T
+>>>>>>> master
+>>>>>>> 7f960b3
 Move=Period
 MoveHoldPosition=B
 MovePatrol=N
@@ -306,8 +332,23 @@ PlantC4Charge/Raynor=
 PointDefenseDrone/Raven=G
 Probe/Nexus=T
 ProbeHallucination/Sentry=K
+<<<<<<< HEAD
 ProtossAirArmorLevel1/CyberneticsCore=T
 ProtossAirWeaponsLevel1/CyberneticsCore=G
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ProtossAirArmorLevel1/CyberneticsCore=B
+ProtossAirWeaponsLevel1/CyberneticsCore=T
+=======
+ProtossAirArmorLevel1/CyberneticsCore=T
+ProtossAirWeaponsLevel1/CyberneticsCore=G
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ProtossAirArmorLevel1/CyberneticsCore=T
+ProtossAirWeaponsLevel1/CyberneticsCore=G
+>>>>>>> master
+>>>>>>> 7f960b3
 ProtossBuild/Probe=3
 ProtossBuildAdvanced/Probe=W
 ProtossGroundArmorLevel1/Forge=T
@@ -364,7 +405,19 @@ ResearchShieldWall/BarracksTechLab=T
 ResearchSiegeTech/FactoryTechLab=H
 ResearchSiegeTech/FactoryTechReactor=
 ResearchStalkerTeleport/TwilightCouncil=H
+<<<<<<< HEAD
 ResearchStrikeCannons/FactoryTechLab=B
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ResearchStrikeCannons/FactoryTechLab=3
+=======
+ResearchStrikeCannons/FactoryTechLab=B
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+ResearchStrikeCannons/FactoryTechLab=B
+>>>>>>> master
+>>>>>>> 7f960b3
 ResearchWarpGate/CyberneticsCore=H
 ResourceStun/Oracle=T
 ReturnCargo=T
@@ -419,13 +472,39 @@ TechLabStarport/Starport=W
 Tempest/Stargate=W
 TempestRangeUpgrade/FleetBeacon=
 TemplarArchive/Probe=B
+<<<<<<< HEAD
 TemporalField/Oracle=Y
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+TemporalField/Oracle=Y
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TemporalField/Oracle=Y
+>>>>>>> master
+>>>>>>> 7f960b3
 TerranBuild/SCV=3
 TerranBuildAdvanced/SCV=W
 TerranInfantryArmorLevel1/EngineeringBay=T
 TerranInfantryWeaponsLevel1/EngineeringBay=H
+<<<<<<< HEAD
 TerranShipPlatingLevel1/Armory=T
 TerranShipWeaponsLevel1/Armory=G
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TerranShipPlatingLevel1/Armory=B
+TerranShipWeaponsLevel1/Armory=T
+=======
+TerranShipPlatingLevel1/Armory=T
+TerranShipWeaponsLevel1/Armory=G
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+TerranShipPlatingLevel1/Armory=T
+TerranShipWeaponsLevel1/Armory=G
+>>>>>>> master
+>>>>>>> 7f960b3
 TerranVehicleAndShipPlatingLevel1/Armory=T
 TerranVehicleAndShipWeaponsLevel1/Armory=H
 TerranVehiclePlatingLevel1/Armory=G
@@ -474,8 +553,23 @@ ZergBuildAdvanced/Drone=W
 Zergling/Larva=H
 hydraliskspeed/HydraliskDen=H
 overlordspeed=Y
+<<<<<<< HEAD
 zergflyerarmor1=T
 zergflyerattack1=G
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+zergflyerarmor1=B
+zergflyerattack1=T
+=======
+zergflyerarmor1=T
+zergflyerattack1=G
+>>>>>>> Map Definitions and Base file updates for Balance Update 9
+=======
+zergflyerarmor1=T
+zergflyerattack1=G
+>>>>>>> master
+>>>>>>> 7f960b3
 zerggroundarmor1/EvolutionChamber=T
 zerglingattackspeed/SpawningPool=T
 zerglingmovementspeed/SpawningPool=H
