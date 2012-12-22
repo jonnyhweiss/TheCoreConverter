@@ -43,19 +43,42 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','ChatRecipient','DialogDismis
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
-SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV'],
-               ['Assimilator/Probe','Extractor/Drone','Refinery/SCV'],
+SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
+               ['Assimilator/Probe','Extractor/Drone','Refinery/SCV','AutomatedRefinery/SCV'],
                ['Gateway/Probe','Barracks/SCV'],
-               ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV'],
+               ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV','CommandCenterOrbRelay/SCV'],
                ['Forge/Probe','EvolutionChamber/Drone','EngineeringBay/SCV'],
                ['RoboticsFacility/Probe','Factory/SCV'],
                ['Stargate/Probe','Spire/Drone','Starport/SCV'],
                ['TwilightCouncil/Probe','Armory/SCV'],
                ['FleetBeacon/Probe','FusionCore/SCV'],
-               ['ProtossGroundWeaponsLevel1/Forge','TerranInfantryWeaponsLevel1/EngineeringBay'],
-               ['ProtossGroundArmorLevel1/Forge','TerranInfantryArmorLevel1/EngineeringBay','zerggroundarmor1/EvolutionChamber'],
-               ['ProtossAirWeaponsLevel1/CyberneticsCore','TerranShipWeaponsLevel1/Armory','zergflyerattack1'],
-               ['ProtossAirArmorLevel1/CyberneticsCore','TerranShipPlatingLevel1/Armory','zergflyerarmor1']]
+               ['ProtossGroundWeaponsLevel1/Forge','TerranInfantryWeaponsLevel1/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel1/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel2/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel3/EngineeringBay'],
+               ['ProtossGroundArmorLevel1/Forge','TerranInfantryArmorLevel1/EngineeringBay','zerggroundarmor1/EvolutionChamber','TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay','TerranInfantryArmorVanadiumPlatingLevel2/EngineeringBay','TerranInfantryArmorVanadiumPlatingLevel3/EngineeringBay'],
+               ['ProtossAirWeaponsLevel1/CyberneticsCore','TerranShipWeaponsLevel1/Armory','zergflyerattack1','TerranShipWeaponsUltraCapacitorsLevel1/Armory','TerranShipWeaponsUltraCapacitorsLevel2/Armory','TerranShipWeaponsUltraCapacitorsLevel3/Armory'],
+               ['ProtossAirArmorLevel1/CyberneticsCore','TerranShipPlatingLevel1/Armory','zergflyerarmor1','TerranShipPlatingVanadiumPlatingLevel1/Armory','TerranShipPlatingVanadiumPlatingLevel2/Armory','TerranShipPlatingVanadiumPlatingLevel3/Armory'],
+			   ['Stim','StimFirebat/Firebat','StimFirebat/DevilDog'],
+			   ['Heal/Medivac','BonesHeal/Stetmann','NanoRepair/ScienceVessel','MedicHeal/Medic','MercMedicHeal/MercMedic'],
+			   ['CloakOnBanshee','RogueGhostCloak/Spectre','WraithCloakOn/Wraith'],
+			   ['CloakOff','WraithCloakOff/Wraith'],
+			   ['WeaponsFree/Ghost','GhostHoldFire/Ghost','SpectreWeaponsFree/Spectre','SpectreHoldFire/Spectre'],
+			   ['NukeArm/GhostAcademy','SpectreNukeArm/GhostAcademy'],
+			   ['NukeCalldown/Ghost','SpectreNukeCalldown/Spectre','HeroNukeCalldown/Nova','HeroNukeCalldown/Tosh','OdinNukeCalldown/Odin'],
+			   ['BunkerUnloadAll','HerculesUnloadAll/Hercules'],
+			   ['Reactor/Barracks','Reactor/BarracksFlying','Reactor/Factory','Reactor/FactoryFlying','Reactor/Starport','Reactor/StarportFlying'],
+			   ['TechLabBarracks/Barracks','TechLabBarracks/BarracksFlying','TechLabFactory/Factory','TechLabStarport/Starport'],
+			   ['Ghost/Barracks','Spectre/Barracks'],
+			   ['Raven/Starport','BuildScienceVessel/Starport'],
+			   ['EMP/Ghost','UltrasonicPulse/Spectre'],
+			   ['Snipe/Ghost','NovaSnipe/Nova','Obliterate/Spectre'],
+               ['Lair/Hatchery','Hive/Lair','LurkerDen/HydraliskDen'],
+               ['MassRecall/Mothership','MassRecall/Artanis'],
+			   ['Vortex/Mothership','Vortex/Artanis'],
+			   ['Mothership/Nexus','MothershipCore/Nexus']]
+
+CONFLICT_CHECKS = [['TerranInfantryArmorLevel1/EngineeringBay','TerranInfantryWeaponsLevel1/EngineeringBay'],
+                   ['TerranShipPlatingLevel1/Armory','TerranShipWeaponsLevel1/Armory','TerranVehiclePlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],
+				   ['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],
+				   ['MassRecall/Mothership','Vortex/Mothership']]
 
 # Read the settings
 settings_parser = SafeConfigParser()
@@ -288,8 +311,24 @@ def verify_file(filename):
             print("---- Mismatched values ----")
             for item in same_set:
                 print(item + " = " + dict[item][1])
+
+    for conflict_set in CONFLICT_CHECKS:
+        hotkeys = []
+        count_hotkeys = {}
+        for item in conflict_set:
+            hotkeys.append(dict[item][1])
+        for key in hotkeys:
+            if not key in count_hotkeys:
+                count_hotkeys[key] = 1
+            else:
+                count_hotkeys[key] = count_hotkeys[key] + 1
+        for count in count_hotkeys:
+            if count_hotkeys[count] > 1:
+                print("---- Conflict of hotkeys ----")
+                print(conflict_set)
     print("")
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
+
 for race in races:
     filename = prefix + " " + race + "LM " + suffix
     verify_file(filename)
@@ -306,3 +345,11 @@ for race in races:
         else:
             translate_file(shift_hand_size(layout_filename, True, "L", False), False)
             translate_file(shift_hand_size(layout_filename, False, "S", False), False)
+
+#Quick test to see if 4 seed files are error free
+#	Todo:	expand this to every single file in every directory
+#			expand both SAME_CHECKS and CONFLICT_CHECKS
+#for race in races:
+#    filename = prefix + " " + race + "LM " + suffix
+#    verify_file(filename)
+
