@@ -1,0 +1,15 @@
+====== Changes for Heart of the Swarm ======
+- Nexus commands switched to not use same as Attack Move
+
+====== Changes for Campaign ======
+- Unload all changed b/c orbitals share BunkerUnloadAll
+   * Generate creep moved to accomodate.
+   * Transport Mode for Warp Prism moved to accomodate.
+   
+- Weapons Free changed b/c spectre weapons free has to be different than hold fire
+   * Changed weapons free for ghost to match with spectre.
+   
+- Planetary Fortress changed because command centers have scanner sweep
+
+====== Things to Discuss ======
+- Do we need more Terran Production keys if we're accounting for the campaign?
