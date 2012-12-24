@@ -13,3 +13,4 @@
 
 ====== Things to Discuss ======
 - Do we need more Terran Production keys if we're accounting for the campaign?
+- Is it worth changing UnloadAll for campaign support?
