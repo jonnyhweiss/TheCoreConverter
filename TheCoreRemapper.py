@@ -62,7 +62,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['CloakOnBanshee','RogueGhostCloak/Spectre','WraithCloakOn/Wraith'],
                ['CloakOff','WraithCloakOff/Wraith'],
                ['WeaponsFree/Ghost','SpectreWeaponsFree/Spectre'],
-			   ['GhostHoldFire/Ghost','SpectreHoldFire/Spectre'],
+               ['GhostHoldFire/Ghost','SpectreHoldFire/Spectre'],
                ['NukeArm/GhostAcademy','SpectreNukeArm/GhostAcademy'],
                ['NukeCalldown/Ghost','SpectreNukeCalldown/Spectre','HeroNukeCalldown/Nova','HeroNukeCalldown/Tosh','OdinNukeCalldown/Odin'],
                ['BunkerUnloadAll','HerculesUnloadAll/Hercules'],
@@ -77,11 +77,25 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Vortex/Mothership','Vortex/Artanis'],
                ['Mothership/Nexus','MothershipCore/Nexus']]
 
-CONFLICT_CHECKS = [['TerranInfantryArmorLevel1/EngineeringBay','TerranInfantryWeaponsLevel1/EngineeringBay'],
-                   ['TerranShipPlatingLevel1/Armory','TerranShipWeaponsLevel1/Armory','TerranVehiclePlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],
+CONFLICT_CHECKS = [['SelectBuilder','Halt','Cancel','TerranInfantryArmorLevel1/EngineeringBay','TerranInfantryWeaponsLevel1/EngineeringBay','ResearchHiSecAutoTracking/EngineeringBay','ResearchNeosteelFrame/EngineeringBay','UpgradeBuildingArmorLevel1/EngineeringBay'],
+                   ['SelectBuilder','Halt','Cancel','TerranShipPlatingLevel1/Armory','TerranShipWeaponsLevel1/Armory','TerranVehiclePlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],
                    ['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
-                   ['MassRecall/Mothership','Vortex/Mothership']]
+                   ['MassRecall/Mothership','Vortex/Mothership'],
+                   ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],
+                   ['Cancel','Lift','Rally','SCV','CalldownMULE/OrbitalCommand','SupplyDrop/OrbitalCommand','Scan/OrbitalCommand'],
+                   ['Cancel','Rally','CommandCenterLoad','CommandCenterUnloadAll','Attack','StopPlanetaryFortress/PlanetaryFortress','SCV'],
+                   ['SelectBuilder','Cancel','Salvage/Bunker','SetBunkerRallyPoint/Bunker','BunkerLoad','BunkerUnloadAll','Stim','Stop','Attack'],
+                   ['SelectBuilder','Cancel','Lift','Rally','Marine/Barracks','Marauder/Barracks','Reaper/Barracks','Ghost/Barracks','Medic/Barracks','Firebat/Barracks','TechLabBarracks/Barracks','Reactor/Barracks'],
+                   ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','WidowMine/Factory','SiegeTank/Factory','Thor/Factory','TechLabFactory/Factory','Reactor/Factory'],
+                   ['SelectBuilder','Cancel','Lift','Rally','VikingFighter/Starport','Medivac/Starport','Raven/Starport','Banshee/Starport','Battlecruiser/Starport','Wraith/Starport','BuildHercules/Starport','TechLabStarport/Starport','Reactor/Starport'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Land','TechLabBarracks/BarracksFlying','Reactor/BarracksFlying'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Land','TechLabFactory/Factory','Reactor/Factory'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Land','TechLabStarport/Starport','Reactor/Starport'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MindBlast/Tosh','VoodooShield/Tosh','Consumption/Tosh','HeroNukeCalldown/Tosh'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Cancel','NovaSnipe/Nova','Domination/Nova','ReleaseMinion/Nova','HeroNukeCalldown/Nova'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Cancel','OdinBarrage/Odin','OdinNukeCalldown/Odin'],
+                   ['hydraliskspeed/HydraliskDen','MuscularAugments/HydraliskDen','LurkerDen/HydraliskDen']]
 
 # Read the settings
 settings_parser = SafeConfigParser()
