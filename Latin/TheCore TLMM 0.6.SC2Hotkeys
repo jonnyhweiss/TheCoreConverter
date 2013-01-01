@@ -5,6 +5,7 @@ AllowSetConflicts=1
 Music=F10
 Sound=F8
 PTT=Control+Equals
+ChatAllies=Control+Shift+Enter
 ChatCancel=F4,Escape
 ChatDefault=Enter
 DialogDismiss=F4,Escape

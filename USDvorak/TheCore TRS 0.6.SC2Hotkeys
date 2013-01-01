@@ -5,6 +5,7 @@ AllowSetConflicts=1
 Music=F3
 Sound=F5
 PTT=Control+Apostrophe
+ChatAllies=Control+Shift+Left
 ChatCancel=F9,F1
 ChatDefault=Left
 DialogDismiss=F9,F1
