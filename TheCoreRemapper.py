@@ -18,6 +18,7 @@ RM = 2
 
 SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
+VERIFY_ALL = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
@@ -55,8 +56,10 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['FleetBeacon/Probe','FusionCore/SCV'],
                ['ProtossGroundWeaponsLevel1/Forge','TerranInfantryWeaponsLevel1/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel1/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel2/EngineeringBay','TerranInfantryWeaponsUltraCapacitorsLevel3/EngineeringBay'],
                ['ProtossGroundArmorLevel1/Forge','TerranInfantryArmorLevel1/EngineeringBay','zerggroundarmor1/EvolutionChamber','TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay','TerranInfantryArmorVanadiumPlatingLevel2/EngineeringBay','TerranInfantryArmorVanadiumPlatingLevel3/EngineeringBay'],
-               ['ProtossAirWeaponsLevel1/CyberneticsCore','TerranShipWeaponsLevel1/Armory','zergflyerattack1','TerranShipWeaponsUltraCapacitorsLevel1/Armory','TerranShipWeaponsUltraCapacitorsLevel2/Armory','TerranShipWeaponsUltraCapacitorsLevel3/Armory'],
-               ['ProtossAirArmorLevel1/CyberneticsCore','TerranShipPlatingLevel1/Armory','zergflyerarmor1','TerranShipPlatingVanadiumPlatingLevel1/Armory','TerranShipPlatingVanadiumPlatingLevel2/Armory','TerranShipPlatingVanadiumPlatingLevel3/Armory'],
+               ['ProtossAirWeaponsLevel1/CyberneticsCore','TerranShipWeaponsLevel1/Armory','zergflyerattack1'],
+               ['TerranShipWeaponsLevel1/Armory','TerranShipWeaponsUltraCapacitorsLevel1/Armory','TerranShipWeaponsUltraCapacitorsLevel2/Armory','TerranShipWeaponsUltraCapacitorsLevel3/Armory'],
+               ['ProtossAirArmorLevel1/CyberneticsCore','TerranShipPlatingLevel1/Armory','zergflyerarmor1'],
+               ['TerranShipPlatingLevel1/Armory','TerranShipPlatingVanadiumPlatingLevel1/Armory','TerranShipPlatingVanadiumPlatingLevel2/Armory','TerranShipPlatingVanadiumPlatingLevel3/Armory'],
                ['Stim','StimFirebat/Firebat','StimFirebat/DevilDog'],
                ['Heal/Medivac','BonesHeal/Stetmann','NanoRepair/ScienceVessel','MedicHeal/Medic','MercMedicHeal/MercMedic'],
                ['CloakOnBanshee','RogueGhostCloak/Spectre','WraithCloakOn/Wraith'],
@@ -295,7 +298,11 @@ def verify_file(filename):
         for count in count_hotkeys:
             if count_hotkeys[count] > 1:
                 print("---- Conflict of hotkeys ----")
-                print(conflict_set)
+                for item in conflict_set:
+                    key = dict[item][1]
+                    if count_hotkeys[key] > 1:
+                        print(item + " = " + key)
+                #print(conflict_set)
     print("")
 
 def parse_pair(parser, key, values, map_name, index, altgr):
@@ -368,7 +375,8 @@ def generate_layout(filename, race, layout, layoutIndex):
     fileio = open(newfilename, 'w')
     fileio.write(output)
     fileio.close()
-    verify_file(newfilename)
+    if VERIFY_ALL:
+        verify_file(newfilename)
     return newfilename
 
 def shift_hand_size(filename, shift_right, hand_size, is_righty):
@@ -404,7 +412,8 @@ def shift_hand_size(filename, shift_right, hand_size, is_righty):
     fileio = open(newfilename, 'w')
     fileio.write(output)
     fileio.close()
-    verify_file(newfilename)
+    if VERIFY_ALL:
+        verify_file(newfilename)
     return newfilename
 
 def translate_file(filename, is_righty):
