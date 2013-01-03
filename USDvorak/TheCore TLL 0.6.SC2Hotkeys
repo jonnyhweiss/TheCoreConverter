@@ -62,7 +62,6 @@ ArmySelect=Control+Shift+Alt+F3
 CameraCenter=Alt
 CameraFollow=Control+Shift+Alt+F2
 CameraMoveLeft=Left
-CameraPush=BackMouseButton
 ControlGroupAppend0=Control+J
 ControlGroupAppend1=Control+3
 ControlGroupAppend2=Control+4
