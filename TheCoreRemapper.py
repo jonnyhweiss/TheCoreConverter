@@ -92,7 +92,13 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchHighCapacityBarrels/FactoryTechReactor'],
                ['ResearchMultiLockTargetingSystem/FactoryTechLab','ResearchMultiLockTargetingSystem/FactoryTechReactor'],
                ['ResearchRegenerativeBioSteel/FactoryTechLab','ResearchRegenerativeBioSteel/FactoryTechReactor'],
-               ['ResearchSiegeTech/FactoryTechLab','ResearchSiegeTech/FactoryTechReactor','ResearchShapedBlast/FactoryTechLab','ResearchShapedBlast/FactoryTechReactor']]
+               ['ResearchSiegeTech/FactoryTechLab','ResearchSiegeTech/FactoryTechReactor','ResearchShapedBlast/FactoryTechLab','ResearchShapedBlast/FactoryTechReactor'],
+               ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchMedivacEnergyUpgrade/StarportTechReactor'],
+               ['ResearchBansheeCloak/StarportTechLab','ResearchBansheeCloak/StarportTechReactor'],
+               ['ResearchDurableMaterials/StarportTechLab','ResearchDurableMaterials/StarportTechReactor'],
+               ['ResearchSeekerMissile/StarportTechLab','ResearchSeekerMissile/StarportTechReactor'],
+               ['ResearchRavenEnergyUpgrade/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechReactor'],
+               ['WraithCloak/StarportTechLab','WraithCloak/StarportTechReactor']]
 
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
@@ -173,8 +179,7 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['Stimpack/BarracksTechLab','ResearchJackhammerConcussionGrenade/BarracksTechLab','ResearchG4Charge/BarracksTechLab','ResearchStabilizerMedPacks/BarracksTechLab','ResearchIncineratorNozzles/BarracksTechLab'],
                    ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchSiegeTech/FactoryTechLab','ResearchStrikeCannons/FactoryTechLab'],
                    ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchShapedBlast/FactoryTechLab','ResearchCerberusMines/FactoryTechLab','ResearchMultiLockTargetingSystem/FactoryTechLab','ResearchRegenerativeBioSteel/FactoryTechLab'],
-                   ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchBansheeCloak/StarportTechLab','ResearchDurableMaterials/StarportTechLab','ResearchSeekerMissile/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechLab'],
-                   ['ResearchMedivacEnergyUpgrade/StarportTechReactor','ResearchBansheeCloak/StarportTechReactor','ResearchDurableMaterials/StarportTechReactor','ResearchSeekerMissile/StarportTechReactor','ResearchRavenEnergyUpgrade/StarportTechReactor','WraithCloak/StarportTechReactor'],
+                   ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchBansheeCloak/StarportTechLab','ResearchDurableMaterials/StarportTechLab','ResearchSeekerMissile/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechLab','WraithCloak/StarportTechLab'],
                    ['Corruptor/Larva','Drone/Larva','Hydralisk/Larva','Infestor/Larva','Mutalisk/Larva','Overlord/Larva','Roach/Larva','SwarmHostMP/Larva','Ultralisk/Larva','Viper/Larva','Zergling/Larva'],#__Zerg Units__ #Larva
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','DisableBuildingAttack/Baneling','EnableBuildingAttack/Baneling','Explode/Baneling'],#Baneling
                    ['Attack','Explode/BanelingBurrowed','BurrowUp'],
