@@ -183,14 +183,12 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SpineCrawlerRoot/SpineCrawlerUprooted'],
                    ['zergflyerattack1','zergflyerarmor1','GreaterSpire/Spire'],#Spire
                    ['Stop','Attack','SporeCrawlerUproot/SporeCrawler'],#Spore Crawler
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SporeCrawlerRoot/SporeCrawlerUprooted']]
-
-#Check these ones please
-#['Move','Stop','MoveHoldPosition','MovePatrol','Attack','WidowMineAttack/WidowMine','WidowMineBurrow/WidowMine','WidowMineUnburrow/WidowMine'],#Window Mine
-#['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
-#['Attack','SwarmHostBurrowUp'],
-#['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowProtector/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
-#['EvolveBurrowCharge/UltraliskCavern','EvolveChitinousPlating/UltraliskCavern'],#UltraliskCavern
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SporeCrawlerRoot/SporeCrawlerUprooted'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','WidowMineAttack/WidowMine','WidowMineBurrow/WidowMine','WidowMineUnburrow/WidowMine'],#Widow Mine
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
+                   ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Burrowed Swarm Host
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowProtector/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
+                   ['EvolveChitinousPlating/UltraliskCavern']]#UltraliskCavern
 
 # Read the settings
 settings_parser = SafeConfigParser()
