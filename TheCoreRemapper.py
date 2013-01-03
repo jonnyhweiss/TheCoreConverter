@@ -18,7 +18,7 @@ RM = 2
 
 SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
-VERIFY_ALL = True
+VERIFY_ALL = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
@@ -99,7 +99,18 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['ResearchDurableMaterials/StarportTechLab','ResearchDurableMaterials/StarportTechReactor'],
                ['ResearchSeekerMissile/StarportTechLab','ResearchSeekerMissile/StarportTechReactor'],
                ['ResearchRavenEnergyUpgrade/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechReactor'],
-               ['WraithCloak/StarportTechLab','WraithCloak/StarportTechReactor']]
+               ['WraithCloak/StarportTechLab','WraithCloak/StarportTechReactor'],
+               ['Baneling/Zergling','Baneling/Zergling2'],
+               ['DisableBuildingAttack/Baneling','DisableBuildingAttack/baneling','DisableBuildingAttack/baneling2'],
+               ['EnableBuildingAttack/Baneling','EnableBuildingAttack/baneling','EnableBuildingAttack/baneling2'],
+               ['Explode/Baneling','Explode/baneling','Explode/baneling2'],
+               ['ForceField/Sentry','ForceField2/Sentry2'],
+               ['FungalGrowth/Infestor','FungalGrowth/Infestor2'],
+               ['GuardianShield/Sentry','GuardianShield/Sentry2'],
+               ['Hallucination/Sentry','Hallucination/Sentry2'],
+               ['Heal/Medivac','Heal/Medivac2'],
+               ['InfestedTerrans/Infestor','InfestedTerrans/Infestor2'],
+               ['NeuralParasite/Infestor','NeuralParasite/Infestor2']]
 
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
