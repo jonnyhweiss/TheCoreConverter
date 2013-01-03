@@ -18,7 +18,7 @@ RM = 2
 
 SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
-VERIFY_ALL = False
+VERIFY_ALL = True
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
@@ -92,6 +92,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchHighCapacityBarrels/FactoryTechReactor'],
                ['ResearchMultiLockTargetingSystem/FactoryTechLab','ResearchMultiLockTargetingSystem/FactoryTechReactor'],
                ['ResearchRegenerativeBioSteel/FactoryTechLab','ResearchRegenerativeBioSteel/FactoryTechReactor'],
+               ['ResearchStrikeCannons/FactoryTechLab','ResearchStrikeCannons/FactoryTechReactor'],
                ['ResearchSiegeTech/FactoryTechLab','ResearchSiegeTech/FactoryTechReactor','ResearchShapedBlast/FactoryTechLab','ResearchShapedBlast/FactoryTechReactor'],
                ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchMedivacEnergyUpgrade/StarportTechReactor'],
                ['ResearchBansheeCloak/StarportTechLab','ResearchBansheeCloak/StarportTechReactor'],
