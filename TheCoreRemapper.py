@@ -129,8 +129,9 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['HydraliskDen/Drone','InfestationPit/Drone','NydusNetwork/Drone','Spire/Drone','UltraliskCavern/Drone'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Interceptor/Carrier'],#__Protoss Units__ #Carrier
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','PsiStorm/HighTemplar','Feedback/HighTemplar','AWrp'],#HighTemplar
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership'],#Mothership
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','ResourceStun/Oracle','OracleRevelation/Oracle','PhaseShield/Oracle'],#Oracle
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership','TemporalField/Mothership'],#Mothership
+				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#Mothership
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','OracleRevelation/Oracle','OracleWeaponOff/Oracle','OracleWeaponOn/Oracle','LightofAiur/Oracle'],#Oracle
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','GravitonBeam/Phoenix'],#Phoenix
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','ForceField/Sentry','GuardianShield/Sentry','Hallucination/Sentry'],#Sentry
                    ['ArchonHallucination/Sentry','ColossusHallucination/Sentry','HighTemplarHallucination/Sentry','ImmortalHallucination/Sentry','OracleHallucination/Sentry','PhoenixHallucination/Sentry','ProbeHallucination/Sentry','StalkerHallucination/Sentry','VoidRayHallucination/Sentry','WarpPrismHallucination/Sentry','ZealotHallucination/Sentry'],
