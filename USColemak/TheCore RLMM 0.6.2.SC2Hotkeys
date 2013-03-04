@@ -626,6 +626,6 @@ zergflyerattack1=D
 zerggroundarmor1/EvolutionChamber=P
 zerglingattackspeed/SpawningPool=P
 zerglingmovementspeed/SpawningPool=D
-zergmeleeweapons1/EvolutionChamber=D
-zergmissileweapons1/EvolutionChamber=T
+zergmeleeweapons1/EvolutionChamber=T
+zergmissileweapons1/EvolutionChamber=D
 
