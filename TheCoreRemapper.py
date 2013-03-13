@@ -18,7 +18,7 @@ RM = 2
 
 SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
-VERIFY_ALL = False
+VERIFY_ALL = True
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
@@ -116,8 +116,23 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['MindBolt/K5Kerrigan','MindBolt/KerriganGhostLab','PrimalSlash/K5Kerrigan'],
                ['PrimalHeal/K5Kerrigan','SpawnBanelings/K5Kerrigan','WildMutation/K5Kerrigan'],
                ['PsiStrike/K5Kerrigan','PsionicLift/K5Kerrigan','PsionicLift/KerriganGhostLab'],
-               ['YamatoGun','SJHyperionYamato/SJHyperion']]
-
+               ['YamatoGun','SJHyperionYamato/SJHyperion'],
+               ['Hydralisk/Larva','MorphToHydraliskImpaler/Larva','MorphToHydraliskLurker/Larva'],
+               ['Infestor/Larva','MorphtoDefiler/Larva'],
+               ['Mutalisk/Larva','MorphToMutaliskBroodlord/Larva','MorphToMutaliskViper/Larva'],
+               ['Roach/Larva','MorphToVile/Larva','MorphToCorpser/Larva'],
+               ['SwarmHostMP/Larva','MorphToSwarmHostSplitA/Larva','MorphToSwarmHostSplitB/Larva'],
+               ['Ultralisk/Larva','MorphToHotSNoxious/Larva','MorphToHotSTorrasque/Larva'],
+               ['Viper/Larva','Aberration/Larva'],
+               ['Zergling/Larva','MorphToSwarmling/Larva','MorphToRaptor/Larva'],
+               ['LocustLaunch/SwarmHostBurrowed','LocustFlyingLaunch/SwarmHostSplitABurrowed','LocustFlyingLaunch/SwarmHostSplitARooted','LocustLaunch/SwarmHostRooted','LocustLaunchCreeper/SwarmHostSplitBBurrowed','LocustLaunchCreeper/SwarmHostSplitBRooted'],
+               ['BurrowDown','BurrowUp','BurrowHydraliskImpalerDown','BurrowHydraliskImpalerUp','BurrowHydraliskLurkerDown','BurrowHydraliskLurkerUp','ImpalerBurrowDown','ImpalerBurrowUp','LurkerBurrowDown','LurkerBurrowUp'],
+               ['SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostDeepBurrow/SwarmHostSplitBBurrowed','SwarmHostDeepBurrow/SwarmHostSplitBRooted'],
+               ['SwarmHostRoot/SwarmHost','SwarmHostRoot/SwarmHostSplitA','SwarmHostRoot/SwarmHostSplitB','SwarmHostUproot/SwarmHostRooted','SwarmHostUproot/SwarmHostSplitARooted','SwarmHostUproot/SwarmHostSplitBRooted','SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'],
+               ['HydraliskFrenzy/Hydralisk','HydraliskFrenzy/HydraliskImpaler','HydraliskFrenzy/HydraliskLurker'],
+               ['Impaler/HydraliskImpaler','Lurker/HydraliskLurker'],
+               ['BroodLord/Corruptor','BroodLord/MutaliskBroodlord','Viper/MutaliskViper']]
+               
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
                    ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],#CC
