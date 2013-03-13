@@ -46,7 +46,7 @@ GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','DialogDismiss','MenuAchievem
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
 SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
-               ['Assimilator/Probe','Extractor/Drone','Refinery/SCV','AutomatedRefinery/SCV'],
+               ['Assimilator/Probe','Extractor/Drone','Refinery/SCV','AutomatedRefinery/SCV','AutomatedExtractor/Drone'],
                ['Gateway/Probe','Barracks/SCV'],
                ['Nexus/Probe','Hatchery/Drone','CommandCenter/SCV','CommandCenterOrbRelay/SCV'],
                ['Forge/Probe','EvolutionChamber/Drone','EngineeringBay/SCV'],
@@ -110,7 +110,13 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Hallucination/Sentry','Hallucination/Sentry2'],
                ['Heal/Medivac','Heal/Medivac2'],
                ['InfestedTerrans/Infestor','InfestedTerrans/Infestor2'],
-               ['NeuralParasite/Infestor','NeuralParasite/Infestor2']]
+               ['NeuralParasite/Infestor','NeuralParasite/Infestor2'],
+               ['Baneling/Zergling','Baneling/Zergling2','Baneling/HotSRaptor','Baneling/HotSSwarmling'],
+               ['Apocalypse/K5Kerrigan','K5DropPods/K5Kerrigan','K5Leviathan/K5Kerrigan'],
+               ['MindBolt/K5Kerrigan','MindBolt/KerriganGhostLab','PrimalSlash/K5Kerrigan'],
+               ['PrimalHeal/K5Kerrigan','SpawnBanelings/K5Kerrigan','WildMutation/K5Kerrigan'],
+               ['PsiStrike/K5Kerrigan','PsionicLift/K5Kerrigan','PsionicLift/KerriganGhostLab'],
+               ['YamatoGun','SJHyperionYamato/SJHyperion']]
 
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
