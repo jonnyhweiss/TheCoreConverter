@@ -100,10 +100,10 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['ResearchSeekerMissile/StarportTechLab','ResearchSeekerMissile/StarportTechReactor'],
                ['ResearchRavenEnergyUpgrade/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechReactor'],
                ['WraithCloak/StarportTechLab','WraithCloak/StarportTechReactor'],
-               ['Baneling/Zergling','Baneling/Zergling2'],
-               ['DisableBuildingAttack/Baneling','DisableBuildingAttack/baneling','DisableBuildingAttack/baneling2'],
-               ['EnableBuildingAttack/Baneling','EnableBuildingAttack/baneling','EnableBuildingAttack/baneling2'],
-               ['Explode/Baneling','Explode/baneling','Explode/baneling2'],
+               ['Baneling/Zergling','Baneling/Zergling2','Baneling/HotSRaptor','Baneling/HotSSwarmling'],
+               ['DisableBuildingAttack/Baneling','DisableBuildingAttack/baneling','DisableBuildingAttack/baneling2','DisableBuildingAttack/HotSHunter','DisableBuildingAttack/HotSSplitterlingBig'],
+               ['EnableBuildingAttack/Baneling','EnableBuildingAttack/baneling','EnableBuildingAttack/baneling2','EnableBuildingAttack/HotSHunter','EnableBuildingAttack/HotSSplitterlingBig'],
+               ['Explode/Baneling','Explode/BanelingBurrowed','Explode/baneling','Explode/baneling2','Explode/HotSSplitterlingBig','Explode/HotSSplitterlingBigBurrowed','Explode/HotSHunter','Explode/HotSHunterBurrowed'],
                ['ForceField/Sentry','ForceField2/Sentry2'],
                ['FungalGrowth/Infestor','FungalGrowth/Infestor2'],
                ['GuardianShield/Sentry','GuardianShield/Sentry2'],
@@ -131,8 +131,11 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['SwarmHostRoot/SwarmHost','SwarmHostRoot/SwarmHostSplitA','SwarmHostRoot/SwarmHostSplitB','SwarmHostUproot/SwarmHostRooted','SwarmHostUproot/SwarmHostSplitARooted','SwarmHostUproot/SwarmHostSplitBRooted','SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'],
                ['HydraliskFrenzy/Hydralisk','HydraliskFrenzy/HydraliskImpaler','HydraliskFrenzy/HydraliskLurker'],
                ['Impaler/HydraliskImpaler','Lurker/HydraliskLurker'],
-               ['BroodLord/Corruptor','BroodLord/MutaliskBroodlord','Viper/MutaliskViper']]
-               
+               ['BroodLord/Corruptor','BroodLord/MutaliskBroodlord','Viper/MutaliskViper'],
+               ['BlindingCloud/Viper','DisablingCloud/Viper'],
+               ['ViperConsume/Viper','ViperConsumption/Viper'],
+               ['BurrowChargeCampaign/HotSTorrasque','BurrowChargeCampaignNoxious/HotSNoxious']]
+
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
                    ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],#CC
