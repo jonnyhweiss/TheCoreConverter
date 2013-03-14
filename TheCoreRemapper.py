@@ -134,8 +134,16 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['BroodLord/Corruptor','BroodLord/MutaliskBroodlord','Viper/MutaliskViper'],
                ['BlindingCloud/Viper','DisablingCloud/Viper'],
                ['ViperConsume/Viper','ViperConsumption/Viper'],
-               ['BurrowChargeCampaign/HotSTorrasque','BurrowChargeCampaignNoxious/HotSNoxious']]
-
+               ['BurrowChargeMP/Ultralisk','BurrowChargeCampaign/Ultralisk','BurrowChargeCampaign/HotSTorrasque','BurrowChargeCampaignNoxious/HotSNoxious'],
+               ['Transfusion/Queen','Transfusion/Queen2','QueenBurstHeal/Queen'],
+               ['GrowHugeQueen/LargeSwarmQueen','GrowLargeQueen/SwarmQueen','GrowSwarmQueen/LarvalQueen'],
+               ['SwarmQueenHydralisk/HugeSwarmQueen','SwarmQueenHydralisk/SwarmQueenEgg','SwarmQueenHydraliskImpaler/HugeSwarmQueen','SwarmQueenHydraliskImpaler/LargeSwarmQueen','SwarmQueenHydraliskImpaler/SwarmQueen','SwarmQueenHydraliskLurker/HugeSwarmQueen','SwarmQueenHydraliskLurker/LargeSwarmQueen','SwarmQueenHydraliskLurker/SwarmQueen'],
+               ['ParasiticInvasion/LarvalQueen','SwarmQueenParasiticInvasion/HugeSwarmQueen','SwarmQueenParasiticInvasion/LargeSwarmQueen','SwarmQueenParasiticInvasion/SwarmQueen'],
+               ['SwarmQueenCorpser/LargeSwarmQueen','SwarmQueenCorpser/HugeSwarmQueen','SwarmQueenCorpser/SwarmQueen','SwarmQueenRoach/HugeSwarmQueen','SwarmQueenRoach/LargeSwarmQueen','SwarmQueenRoach/SwarmQueenEgg','SwarmQueenVile/HugeSwarmQueen','SwarmQueenVile/LargeSwarmQueen','SwarmQueenVile/SwarmQueen'],
+               ['SwarmQueenRaptor/HugeSwarmQueen','SwarmQueenRaptor/LargeSwarmQueen','SwarmQueenRaptor/SwarmQueen','SwarmQueenSwarmling/HugeSwarmQueen','SwarmQueenSwarmling/LargeSwarmQueen','SwarmQueenSwarmling/SwarmQueen','SwarmQueenZergling/HugeSwarmQueen','SwarmQueenZergling/LargeSwarmQueen','SwarmQueenZergling/SwarmQueen','SwarmQueenZergling/SwarmQueenEgg'],
+               ['GreaterSpire/Spire','GreaterSpireBroodlord/Spire'],
+               ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair']]
+               
 CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
                    ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
                    ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],#CC
