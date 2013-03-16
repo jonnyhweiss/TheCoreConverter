@@ -4,10 +4,13 @@ AllowSetConflicts=1
 [Hotkeys]
 Music=F1
 Sound=F3
-PTT=Control+BackSlash
-ChatAllies=Control+Shift+Enter
+PTT=Control+Tab
+ChatAll=Shift+Enter
+ChatAllies=Control+Enter
 ChatCancel=F7,Insert
 ChatDefault=Enter
+ChatIndividual=Ctrl+Shift+Enter
+ChatRecipient=Tab
 DialogDismiss=F7,Insert
 MenuAchievements=F11
 MenuGame=F6
