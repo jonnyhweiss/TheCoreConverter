@@ -4,7 +4,7 @@ AllowSetConflicts=1
 [Hotkeys]
 Music=F10
 Sound=F8
-PTT=Control+BracketClose
+PTT=Control+Equals
 ChatCancel=F4,Escape
 ChatDefault=Enter
 ChatIndividual=Control+Shift+Enter
@@ -94,7 +94,7 @@ MinimapPing=F2
 MinimapTerrain=Alt+9
 PauseGame=Pause,X
 QuickPing=Control+Shift+Alt+F8
-QuickSave=Control+Slash
+QuickSave=Control+Minus
 ReplayPlayPause=F
 ReplayRestart=Control+5
 ReplaySkipBack=V
