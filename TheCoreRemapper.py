@@ -269,7 +269,7 @@ race_dict = {"P": 0,
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
 races = ["R","T","Z","P"]
-layouts = ["LMM", "RMM", "RM"]
+layouts = ["RM"]
 layoutIndices = {"LMM": 0,
                  "RMM": 1,
                  "RM": 2}
