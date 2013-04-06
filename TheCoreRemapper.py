@@ -289,7 +289,7 @@ race_dict = {"P": 0,
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
-races = ["R","T","Z","P"]
+races = ["P", "T", "R", "Z"]
 layouts = ["RM"]
 layoutIndices = {"LMM": 0,
                  "RMM": 1,
@@ -530,22 +530,67 @@ def translate_file(filename, is_righty):
         fileio.close()
     
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
-for race in races:
-    filename = prefix + " " + race + "LM " + suffix
-    verify_file(filename)
-    translate_file(filename, False)
-    translate_file(shift_hand_size(filename, True, "L", False), False)
-    translate_file(shift_hand_size(filename, False, "S", False), False)
-    for layout in layouts:
-        index = layoutIndices[layout]
-        layout_filename = generate_layout(filename, race, layout, index)
-        translate_file(layout_filename, righty_index[index])
-        if righty_index[index]:
-            translate_file(shift_hand_size(layout_filename, True, "S", True), True)
-            translate_file(shift_hand_size(layout_filename, False, "L", True), True)
-        else:
-            translate_file(shift_hand_size(layout_filename, True, "L", False), False)
-            translate_file(shift_hand_size(layout_filename, False, "S", False), False)
+
+# NEW - Generate the file from TheCoreSeed.ini
+def generate_seed_files():
+    theseed_parser = SafeConfigParser()
+    theseed_parser.optionxform=str
+    theseed_parser.read('TheCoreSeed.ini')
+    
+    theseed = open("TheCoreSeed.ini", 'r')
+    outputs = ["","","",""]
+    for line in theseed:
+        line = line.strip()
+        if len(line) == 0 or line[0] == "[":
+            for i in range(4):
+                outputs[i] += line + "\n"
+            continue    
+
+        pair = line.split("=")
+        key = pair[0]
+        values = pair[1].split("|")
+        numvals = len(values)
+        if numvals == 1:
+            # it is a copy of another value
+            if theseed_parser.has_option("Hotkeys", values[0]):
+                values = theseed_parser.get("Hotkeys", values[0]).split("|")
+            elif theseed_parser.has_option("Commands", values[0]):
+                values = theseed_parser.get("Commands", values[0]).split("|")
+            else:
+                values = [values[0],values[0],values[0],values[0]]
+            numvals = len(values)
+        if numvals == 2:
+            values = [values[0],values[0],values[0],values[0]] # all layouts are the same
+        for i in range(4):
+            outputs[i] += key + "=" + values[i] + "\n"
+    i = 0
+    for r in races:
+        filename = prefix + " " + r + "LM " + suffix
+        fileio = open(filename, 'w')
+        fileio.write(outputs[i])
+        fileio.close()
+        i += 1
+
+def generate_other_files():
+    for race in races:    
+        filename = prefix + " " + race + "LM " + suffix
+        verify_file(filename)
+        translate_file(filename, False)
+        translate_file(shift_hand_size(filename, True, "L", False), False)
+        translate_file(shift_hand_size(filename, False, "S", False), False)
+        for layout in layouts:
+            index = layoutIndices[layout]
+            layout_filename = generate_layout(filename, race, layout, index)
+            translate_file(layout_filename, righty_index[index])
+            if righty_index[index]:
+                translate_file(shift_hand_size(layout_filename, True, "S", True), True)
+                translate_file(shift_hand_size(layout_filename, False, "L", True), True)
+            else:
+                translate_file(shift_hand_size(layout_filename, True, "L", False), False)
+                translate_file(shift_hand_size(layout_filename, False, "S", False), False)
+                
+generate_seed_files()
+
 
 #Quick test to see if 4 seed files are error free
 #	Todo:	expand this to every single file in every directory
