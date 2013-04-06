@@ -77,7 +77,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['EMP/Ghost','UltrasonicPulse/Spectre'],
                ['Snipe/Ghost','NovaSnipe/Nova','Obliterate/Spectre'],
                ['Lair/Hatchery','Hive/Lair','LurkerDen/HydraliskDen','ImpalerDen/HydraliskDen'],
-               ['MassRecall/Mothership','MassRecall/Artanis'],
+               ['MassRecall/Mothership','MassRecall/Artanis','MothershipMassRecall/Mothership','MothershipCoreMassRecall/MothershipCore'],
                ['Vortex/Mothership','Vortex/Artanis'],
                ['Mothership/Nexus','MothershipCore/Nexus'],
                ['AutoTurret/Raven','BuildAutoTurret/Raven'],
@@ -110,13 +110,14 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Hallucination/Sentry','Hallucination/Sentry2'],
                ['Heal/Medivac','Heal/Medivac2'],
                ['InfestedTerrans/Infestor','InfestedTerrans/Infestor2'],
-               ['NeuralParasite/Infestor','NeuralParasite/Infestor2'],
+               ['NeuralParasite/Infestor','NeuralParasite/Infestor2','NPSwarm/Infestor'],
                ['Baneling/Zergling','Baneling/Zergling2','Baneling/HotSRaptor','Baneling/HotSSwarmling'],
                ['Apocalypse/K5Kerrigan','K5DropPods/K5Kerrigan','K5Leviathan/K5Kerrigan'],
                ['MindBolt/K5Kerrigan','MindBolt/KerriganGhostLab','PrimalSlash/K5Kerrigan'],
                ['PrimalHeal/K5Kerrigan','SpawnBanelings/K5Kerrigan','WildMutation/K5Kerrigan'],
                ['PsiStrike/K5Kerrigan','PsionicLift/K5Kerrigan','PsionicLift/KerriganGhostLab'],
                ['YamatoGun','SJHyperionYamato/SJHyperion'],
+               ['SJHyperionFighters/SJHyperion','SJFighter1PH/SJHyperion'],
                ['Hydralisk/Larva','MorphToHydraliskImpaler/Larva','MorphToHydraliskLurker/Larva'],
                ['Infestor/Larva','MorphtoDefiler/Larva'],
                ['Mutalisk/Larva','MorphToMutaliskBroodlord/Larva','MorphToMutaliskViper/Larva'],
@@ -144,8 +145,8 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['GreaterSpire/Spire','GreaterSpireBroodlord/Spire'],
                ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair']]
                
-CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__Town Halls__ #Nexus
-                   ['Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
+CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],#__Town Halls__ #Nexus WoL
+                   ['Cancel','Stop','Attack','Rally','Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#Nexus HotS
                    ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],#CC
                    ['Cancel','Lift','Rally','SCV','CalldownMULE/OrbitalCommand','SupplyDrop/OrbitalCommand','Scan/OrbitalCommand'],#OC
                    ['Cancel','Rally','CommandCenterLoad','CommandCenterUnloadAll','Attack','StopPlanetaryFortress/PlanetaryFortress','SCV'],#PF
@@ -161,13 +162,15 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['HydraliskDen/Drone','InfestationPit/Drone','NydusNetwork/Drone','Spire/Drone','UltraliskCavern/Drone'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Interceptor/Carrier'],#__Protoss Units__ #Carrier
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','PsiStorm/HighTemplar','Feedback/HighTemplar','AWrp'],#HighTemplar
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership','TemporalField/Mothership'],#Mothership
-				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#Mothership
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership'],#Mothership WoL
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipMassRecall/Mothership','TemporalField/Mothership'],#Mothership HotS
+				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipCoreWeapon/MothershipCore','MothershipCoreMassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#MothershipCore
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','OracleRevelation/Oracle','OracleWeaponOff/Oracle','OracleWeaponOn/Oracle','LightofAiur/Oracle'],#Oracle
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','GravitonBeam/Phoenix'],#Phoenix
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','ForceField/Sentry','GuardianShield/Sentry','Hallucination/Sentry'],#Sentry
                    ['ArchonHallucination/Sentry','ColossusHallucination/Sentry','HighTemplarHallucination/Sentry','ImmortalHallucination/Sentry','OracleHallucination/Sentry','PhoenixHallucination/Sentry','ProbeHallucination/Sentry','StalkerHallucination/Sentry','VoidRayHallucination/Sentry','WarpPrismHallucination/Sentry','ZealotHallucination/Sentry'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Blink/Stalker'],#Stalker
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','VoidRaySwarmDamageBoost/VoidRay'],#VoidRay
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','PhasingMode/WarpPrism','TransportMode/WarpPrism'],#WarpPrism
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Charge/Zealot'],#Zealot
                    ['ProtossAirWeaponsLevel1/CyberneticsCore','ProtossAirArmorLevel1/CyberneticsCore','ResearchWarpGate/CyberneticsCore','ResearchHallucination/CyberneticsCore'],#__Protoss Buildings__ #CyberneticsCore
@@ -188,17 +191,20 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','HerculesLoad/Hercules','HerculesUnloadAll/Hercules'],#Hercules
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Stim'],#Marine
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MedicHeal/Medic'],#Medic
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Heal/Medivac','BunkerLoad','BunkerUnloadAll'],#Medivac
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Heal/Medivac','MedivacSpeedBoost/Medivac','BunkerLoad','BunkerUnloadAll'],#Medivac
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','AutoTurret/Raven','PointDefenseDrone/Raven','HunterSeekerMissile/Raven'],#Raven
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','D8Charge/Reaper'],#Reaper
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','NanoRepair/ScienceVessel','Irradiate/ScienceVessel'],#Science Vessel
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SiegeMode','Unsiege'],#Siege Tank
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','RogueGhostCloak/Spectre','CloakOff','Obliterate/Spectre','UltrasonicPulse/Spectre','SpectreNukeCalldown/Spectre','SpectreWeaponsFree/Spectre','SpectreHoldFire/Spectre'],#Spectre
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','250mmStrikeCannons/Thor'],#Thor
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','ExplosiveMode','ArmorpiercingMode'],#Thor HotS
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','AssaultMode','FighterMode'],#Viking
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SpiderMine/Vulture','SpiderMineReplenish/Vulture'],#Vulture
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','WidowMineBurrow/WidowMine','WidowMineUnburrow/WidowMine'],#Widow Mine                   
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','WraithCloakOn/Wraith','WraithCloakOff/Wraith'],#Wraith
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Cancel','NovaSnipe/Nova','Domination/Nova','ReleaseMinion/Nova','HeroNukeCalldown/Nova'],#__Heroes__ #Nova
+                   ['SJHyperionBlink/SJHyperion','SJHyperionFighters/SJHyperion','SJHyperionFightersRecall/SJHyperion','SJHyperionLightningStorm/SJHyperion','SJHyperionYamato/SJHyperion'],#Hyperion HotS
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Cancel','OdinBarrage/Odin','OdinNukeCalldown/Odin'],#Odin
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','ExperimentalPlasmaGun/Raynor','PlantC4Charge/Raynor','TheMorosDevice/Raynor','TossGrenade/Raynor'],#Raynor
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','RaynorSnipe/RaynorCommando'],
@@ -206,35 +212,54 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','DutchPlaceTurret/Swann'],#Swann
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MindBlast/Tosh','VoodooShield/Tosh','Consumption/Tosh','HeroNukeCalldown/Tosh'],#Tosh
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','TossGrenadeTychus/TychusCommando'],#Tychus
-                   ['SelectBuilder','Halt','Cancel','TerranShipPlatingLevel1/Armory','TerranShipWeaponsLevel1/Armory','TerranVehiclePlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],#__Terran Buildings__ #Armory
-                   ['SelectBuilder','Cancel','Lift','Rally','Marine/Barracks','Marauder/Barracks','Reaper/Barracks','Ghost/Barracks','Medic/Barracks','Firebat/Barracks','TechLabBarracks/Barracks','Reactor/Barracks','TechReactorAI/Barracks'],#Barracks
+                   ['SelectBuilder','Halt','Cancel','TerranShipPlatingLevel1/Armory','TerranShipWeaponsLevel1/Armory','TerranVehiclePlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],#__Terran Buildings__ #Armory WoL
+                   ['SelectBuilder','Halt','Cancel','TerranShipWeaponsLevel1/Armory','TerranVehicleAndShipPlatingLevel1/Armory','TerranVehicleWeaponsLevel1/Armory'],#Armory HotS
+                   ['SelectBuilder','Cancel','Lift','Rally','Marine/Barracks','Marauder/Barracks','Reaper/Barracks','Ghost/Barracks','Medic/Barracks','Firebat/Barracks','TechLabBarracks/Barracks','Reactor/Barracks','TechReactorAI/Barracks'],#Barracks WoL
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Land','TechLabBarracks/BarracksFlying','Reactor/BarracksFlying'],
+                   ['SelectBuilder','Cancel','Lift','Rally','Marine/Barracks','Marauder/Barracks','Reaper/Barracks','Ghost/Barracks','Medic/Barracks','Firebat/Barracks','Spectre/Barracks','MengskUnits/Barracks','TechLabBarracks/Barracks','Reactor/Barracks','TechReactorAI/Barracks'],#Barracks HotS Campaign
+                   ['SelectBuilder','Cancel','Lift','Rally','Marine/Barracks','Marauder/Barracks','Reaper/Barracks','Medic/Barracks','Firebat/Barracks','HireKelmorianMiners/Barracks','HireHammerSecurities/Barracks','HireDevilDogs/Barracks','MercReaper/Barracks','MercMedic/Barracks'],#Barracks HotS Campaign 2
                    ['SelectBuilder','Cancel','Salvage/Bunker','SetBunkerRallyPoint/Bunker','BunkerLoad','BunkerUnloadAll','Stim','Stop','Attack'],#Bunker
                    ['SelectBuilder','Halt','Cancel','TerranInfantryArmorLevel1/EngineeringBay','TerranInfantryWeaponsLevel1/EngineeringBay','ResearchHiSecAutoTracking/EngineeringBay','ResearchNeosteelFrame/EngineeringBay','UpgradeBuildingArmorLevel1/EngineeringBay'],#Engineering Bay
                    ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','WidowMine/Factory','SiegeTank/Factory','HellionTank/Factory','Thor/Factory','TechLabFactory/Factory','Reactor/Factory'],#Factory
-                   ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','SiegeTank/Factory','Thor/Factory','Vulture/Factory','Goliath/Factory','Diamondback/Factory','Predator/Factory','TechLabFactory/Factory','Reactor/Factory','TechReactorAI/Factory'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Land','BuildTechLabFactory/FactoryFlying','Reactor/FactoryFlying'],
+                   ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','SiegeTank/Factory','Thor/Factory','Vulture/Factory','Goliath/Factory','Diamondback/Factory','Predator/Factory','TechLabFactory/Factory','Reactor/Factory','TechReactorAI/Factory'],#Factory WoL Campaign
+                   ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','SiegeTank/Factory','WarHound/Factory','CampaignVehicles/Factory','TechLabFactory/Factory','Reactor/Factory','TechReactorAI/Factory'],#Factory HotS Campaign
+                   ['SelectBuilder','Cancel','Lift','Rally','Vulture/Factory','Predator/Factory','Diamondback/Factory','Goliath/Factory','MicroBot/Factory','Thor/Factory','Hellion/Factory'],#Factory HotS Campaign 2
+                   ['SelectBuilder','Cancel','Lift','Rally','Hellion/Factory','Goliath/Factory','SiegeTank/Factory','Diamondback/Factory','Thor/Factory','MercHellion/Factory','HireSpartanCompany/Factory','HireSiegeBreakers/Factory'],#Factory HotS Campaign 3
                    ['ResearchBattlecruiserEnergyUpgrade/FusionCore','ResearchBattlecruiserSpecializations/FusionCore'],#Fusion Core
                    ['NukeArm/GhostAcademy','ResearchGhostEnergyUpgrade/GhostAcademy','ResearchPersonalCloaking/GhostAcademy'],#Ghost Academy
+                   ['SelectBuilder','Halt','Cancel','Rally','HireKelmorianMiners/MercCompound','HireDevilDogs/MercCompound','HireHammerSecurities/MercCompound','HireSpartanCompany/MercCompound','HireSiegeBreakers/MercCompound','HireHelsAngels/MercCompound','HireDuskWing/MercCompound','HireDukesRevenge/MercCompound','ReaperSpeed/MercCompound','MercHellion/MercCompound','MercMedic/MercCompound','MercReaper/MercCompound'],#Merc Compound
 #                   ['ResearchHellion/ScienceFacility','ResearchSiegeTank/ScienceFacility','ResearchReaper/ScienceFacility','ResearchMedic/ScienceFacility','ResearchFirebat/ScienceFacility','ResearchGoliath/ScienceFacility','ResearchBunkerUpgrade/ScienceFacility','ResearchPerditionTurret/ScienceFacility','ResearchFireSuppression/ScienceFacility','ResearchTechReactor/ScienceFacility'],#Science Facility
-                   ['SelectBuilder','Cancel','Lift','Rally','VikingFighter/Starport','Medivac/Starport','Raven/Starport','Banshee/Starport','Battlecruiser/Starport','Wraith/Starport','BuildHercules/Starport','TechLabStarport/Starport','Reactor/Starport','TechReactorAI/Starport'],#Starport
+                   ['SelectBuilder','Cancel','Lift','Rally','VikingFighter/Starport','Medivac/Starport','Raven/Starport','Banshee/Starport','Battlecruiser/Starport','Wraith/Starport','BuildHercules/Starport','TechLabStarport/Starport','Reactor/Starport','TechReactorAI/Starport'],#Starport WoL Campaign
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Land','BuildTechLabStarport/StarportFlying','Reactor/StarportFlying'],
+                   ['SelectBuilder','Cancel','Lift','Rally','VikingFighter/Starport','Medivac/Starport','Raven/Starport','Banshee/Starport','Battlecruiser/Starport','CampaignVehicles/Starport','TechLabStarport/Starport','Reactor/Starport','TechReactorAI/Starport'],#Starport HotS Campaign
+                   ['SelectBuilder','Cancel','Lift','Rally','Wraith/Starport','BuildHercules/Starport','BuildScienceVessel/Starport','Battlecruiser/Starport'],#Starport HotS Campaign 2
+                   ['SelectBuilder','Cancel','Lift','Rally','VikingFighter/Starport','Banshee/Starport','Wraith/Starport','Battlecruiser/Starport','HireDuskWing/Starport','HireHelsAngels/Starport','HireDukesRevenge/Starport'],#Starport HotS Campaign 3
                    ['SelectBuilder','Halt','Cancel','Lower/SupplyDepot'],#Supply Depot
-                   ['ResearchShieldWall/BarracksTechLab','Stimpack/BarracksTechLab','ResearchPunisherGrenades/BarracksTechLab','ReaperSpeed/BarracksTechLab'],#Tech Labs/Reactors
-                   ['Stimpack/BarracksTechLab','ResearchJackhammerConcussionGrenade/BarracksTechLab','ResearchG4Charge/BarracksTechLab','ResearchStabilizerMedPacks/BarracksTechLab','ResearchIncineratorNozzles/BarracksTechLab'],
-                   ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchSiegeTech/FactoryTechLab','ResearchStrikeCannons/FactoryTechLab'],
-                   ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchShapedBlast/FactoryTechLab','ResearchCerberusMines/FactoryTechLab','ResearchMultiLockTargetingSystem/FactoryTechLab','ResearchRegenerativeBioSteel/FactoryTechLab'],
-                   ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchBansheeCloak/StarportTechLab','ResearchDurableMaterials/StarportTechLab','ResearchSeekerMissile/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechLab','WraithCloak/StarportTechLab'],
+                   ['ResearchShieldWall/BarracksTechLab','Stimpack/BarracksTechLab','ResearchPunisherGrenades/BarracksTechLab','ReaperSpeed/BarracksTechLab'],#TechLab Barracks WoL
+                   ['Stimpack/BarracksTechLab','ResearchJackhammerConcussionGrenade/BarracksTechLab','ResearchG4Charge/BarracksTechLab','ResearchStabilizerMedPacks/BarracksTechLab','ResearchIncineratorNozzles/BarracksTechLab'],#TechLab Barracks Left2Die
+                   ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchSiegeTech/FactoryTechLab','ResearchStrikeCannons/FactoryTechLab'],#TechLab Factory WoL
+                   ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchDrillClaws/FactoryTechLab','ResearchTransformationServos/FactoryTechLab'],#TechLab Factory HotS
+                   ['ResearchHighCapacityBarrels/FactoryTechLab','ResearchShapedBlast/FactoryTechLab','ResearchCerberusMines/FactoryTechLab','ResearchMultiLockTargetingSystem/FactoryTechLab','ResearchRegenerativeBioSteel/FactoryTechLab'],#TechLab Factory Left2Die
+                   ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchBansheeCloak/StarportTechLab','ResearchDurableMaterials/StarportTechLab','ResearchSeekerMissile/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechLab','WraithCloak/StarportTechLab'],#TechLab Starport WoL
+                   ['ResearchMedivacEnergyUpgrade/StarportTechLab','ResearchBansheeCloak/StarportTechLab','ResearchDurableMaterials/StarportTechLab','ResearchRavenEnergyUpgrade/StarportTechLab','WraithCloak/StarportTechLab'],#TechLab Starport HotS
                    ['Corruptor/Larva','Drone/Larva','Hydralisk/Larva','Infestor/Larva','Mutalisk/Larva','Overlord/Larva','Roach/Larva','SwarmHostMP/Larva','Ultralisk/Larva','Viper/Larva','Zergling/Larva'],#__Zerg Units__ #Larva
+                   ['Aberration/Larva','Drone/Larva','Hydralisk/Larva','Infestor/Larva','Mutalisk/Larva','Overlord/Larva','Roach/Larva','MorphToSwarmHostSplitA/Larva','Ultralisk/Larva','Zergling/Larva'],#Larva HotS Campaign
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','DisableBuildingAttack/Baneling','EnableBuildingAttack/Baneling','Explode/Baneling'],#Baneling
                    ['Attack','Explode/BanelingBurrowed','BurrowUp'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BroodLord/Corruptor','CorruptionAbility/Corruptor'],#Corruptor
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','NeuralParasite/Infestor','FungalGrowth/Infestor','InfestedTerrans/Infestor'],#Infestor
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','NPSwarm/Infestor','FungalGrowth/Infestor','InfestorConsumption/Infestor'],#Infestor HotS Campaign
                    ['Attack','InfestedTerrans/InfestorBurrowed','BurrowUp'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','GenerateCreep/Overlord','StopGenerateCreep/Overlord','MorphToOverseer/Overlord'],#Overlord
                    ['Move','Stop','MoveHoldPosition','MovePatrol','SpawnChangeling/Overseer','Contaminate/Overseer'],#Overseer
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','MorphMorphalisk/Queen','BuildCreepTumor/Queen','Transfusion/Queen'],#Queen
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
+                   ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Swarm Host Bur
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BlindingCloud/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','Baneling/Zergling'],#Zergling
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','K5Leviathan/K5Kerrigan','MindBolt/K5Kerrigan','PsionicLift/K5Kerrigan','WildMutation/K5Kerrigan'],#__Zerg Heroes
+                   ['K5Leviathan/K5KerriganBurrowed','MindBolt/K5KerriganBurrowed','PsionicLift/K5KerriganBurrowed','WildMutation/K5KerriganBurrowed','BurrowUp'],
                    ['zerggroundarmor1/EvolutionChamber','zergmeleeweapons1/EvolutionChamber','zergmissileweapons1/EvolutionChamber'],#__Zerg Buildings__ #Evolution Chamber
                    ['LurkerDen/HydraliskDen','MuscularAugments/HydraliskDen','hydraliskspeed/HydraliskDen'],#Hydralisk Den
                    ['ResearchLocustLifetimeIncrease/InfestationPit','EvolveInfestorEnergyUpgrade/InfestationPit','ResearchNeuralParasite/InfestationPit'],#Infestation Pit
@@ -246,11 +271,7 @@ CONFLICT_CHECKS = [['Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#__To
                    ['zergflyerattack1','zergflyerarmor1','GreaterSpire/Spire'],#Spire
                    ['Stop','Attack','SporeCrawlerUproot/SporeCrawler'],#Spore Crawler
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SporeCrawlerRoot/SporeCrawlerUprooted'],
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','WidowMineAttack/WidowMine','WidowMineBurrow/WidowMine','WidowMineUnburrow/WidowMine'],#Widow Mine
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
-                   ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Burrowed Swarm Host
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowProtector/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
-                   ['EvolveChitinousPlating/UltraliskCavern']]#UltraliskCavern
+                   ['Cancel','EvolveChitinousPlating/UltraliskCavern']]#UltraliskCavern
 
 # Read the settings
 settings_parser = SafeConfigParser()
