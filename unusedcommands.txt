@@ -846,3 +846,828 @@ DehakaMirrorImage/Dehaka = A,A,A,A
 GiantYetiLeap/GiantYeti = A,A,A,A
 Consume/Lyote = A,A,A,A
 Consume/GiantYeti = A,A,A,A
+
+# Random Shit
+
+########## GLOBAL MAPPINGS ###########
+# Left-handed Key = Right-handed Key #
+######################################
+[GlobalMaps]
+W = P
+E = O
+G = J
+R = I
+S = SemiColon
+D = L
+4 = 9
+3 = 0
+F = K
+2 = Minus
+Q = BracketOpen
+V = M
+A = Apostrophe
+5 = 8
+H = H
+T = U
+B = N
+C = Comma
+6 = 7
+1 = Equals
+Tab = BracketClose
+Y = Y
+X = Period
+J = G
+Z = Slash
+F4 = F8
+F3 = F7
+F2 = F6
+F1 = F5
+F5 = F9
+F6 = F10
+F7 = F11
+F8 = F4
+F9 = F3
+F10 = F2
+F11 = F12
+F12 = F1
+Enter = Enter
+Comma = C
+Apostrophe = A
+Period = X
+9 = 4
+BackSlash = CapsLock
+BracketOpen = Q
+BracketClose = Tab
+P = W
+O = E
+I = R
+SemiColon = S
+L = D
+0 = 3
+K = F
+Minus = 2
+M = V
+8 = 5
+N = B
+7 = 6
+Equals = 1
+U = T
+
+# All other mappings are of the form LM = LMM,RMM,RM keys
+
+##############################
+#   Control Group Mappings   #
+##############################
+[RCGMaps]
+W = ForwardMouseButton,ForwardMouseButton,P
+E = BackMouseButton,BackMouseButton,O
+S = W,P,SemiColon
+D = E,O,L
+4 = S,SemiColon,9
+3 = D,L,0
+2 = 4,9,Minus
+Q = 3,0,BracketOpen
+Tab = A,Apostrophe,BracketClose
+X = 1,Equals,Period
+1 = 1,Equals,Equals
+
+[ZCGMaps]
+W = W,P,P
+S = S,SemiColon,SemiColon
+D = D,L,L
+G = G,J,J
+4 = 4,9,9 
+3 = 3,0,0
+2 = 2,Minus,Minus
+Q = A,Apostrophe,BracketOpen
+A = ForwardMouseButton,ForwardMouseButton,Apostrophe
+Tab = BackMouseButton,BackMouseButton,BracketClose
+1 = 1,Equals,Equals
+
+[ZSCGMaps]
+Q = Q,BracketOpen,BracketOpen
+
+[TCGMaps]
+W = ForwardMouseButton,ForwardMouseButton,P
+E = BackMouseButton,BackMouseButton,O
+S = W,P,SemiColon
+D = E,O,L
+4 = S,SemiColon,9
+3 = D,L,0
+2 = 4,9,Minus
+Q = 3,0,BracketOpen
+Tab = A,Apostrophe,BracketClose
+X = 1,Equals,Period
+1 = 1,Equals,Equals
+
+[PCGMaps]
+W = ForwardMouseButton,ForwardMouseButton,P
+E = BackMouseButton,BackMouseButton,O
+S = W,P,SemiColon
+D = E,O,L
+4 = S,SemiColon,9
+3 = D,L,0
+2 = 4,9,Minus
+Q = 3,0,BracketOpen
+Tab = A,Apostrophe,BracketClose
+X = 1,Equals,Period
+1 = 1,Equals,Equals
+
+###### ADDITIONAL MAPS ########
+# BB = Build Basic            #
+# I = Integrated              #
+# A = Ability                 #
+# MF = MF Unit Ability Map    #
+# TP = Terran Unit Production #
+###############################
+
+###################
+#   Random Maps   #
+###################
+[RAMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[RIMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[RBBMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[RMFMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[RTPMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+###################
+#    Zerg Maps    #
+###################
+[ZAMaps]
+G = G,J,J
+E = E,O,O
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[ZIMaps]
+G = G,J,J
+E = E,O,O
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[ZMFMaps]
+G = G,J,J
+E = E,O,O
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[ZTPMaps]
+G = G,J,J
+E = E,O,O
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+###################
+#   Terran Maps   #
+###################
+[TAMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[TIMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+[TBBMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[TMFMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[TTPMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+###################
+#  Protoss Maps   #
+###################
+[PAMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[PIMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[PBBMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[PMFMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+[PTPMaps]
+G = G,J,J
+R = R,I,I
+F = F,K,K
+Z = Z,Slash,Slash
+V = V,M,M
+5 = 5,8,8
+H = H,H,H
+T = T,U,U
+C = C,Comma,Comma
+B = B,N,N
+6 = 6,7,7
+Y = Y,Y,Y
+J = J,G,G
+N = N,B,B
+A = A,Apostrophe,Apostrophe
+L = L,D,D
+Comma = Comma,C,C
+I = I,R,R
+O = O,E,E
+P = P,W,W
+
+########## HAND SIZE MAPPINGS ###########
+# Two to shift left, two to shift right #
+#########################################
+[LShiftRightMaps]
+Escape = F1
+F1 = F2
+F2 = F3
+F3 = F4
+F4 = F5
+F5 = F6
+F6 = F7
+F7 = F8
+F8 = F9
+F9 = F10
+F10 = F11
+F11 = F12
+F12 = Escape
+Grave = 1
+1 = 2
+2 = 3
+3 = 4
+4 = 5
+5 = 6
+6 = 7
+7 = 8
+8 = 9
+9 = 0
+0 = Minus
+Minus = Equals
+Equals = Backspace
+Tab = Q
+Q = W
+W = E
+E = R
+R = T
+T = Y
+Y = U
+U = I
+I = O
+O = P
+P = BracketOpen
+BracketOpen = BracketClose
+BracketClose = BackSlash
+BackSlash = Tab
+CapsLock = A
+A = S
+S = D
+D = F
+F = G
+G = H
+H = J
+J = K
+K = L
+L = SemiColon
+SemiColon = Apostrophe
+Z = Z
+X = C
+C = V
+V = B
+B = N
+N = M
+M = Comma
+Comma = Period
+Period = Slash
+
+[RShiftRightMaps]
+Escape = F1
+F1 = F2
+F2 = F3
+F3 = F4
+F4 = F5
+F5 = F6
+F6 = F7
+F7 = F8
+F8 = F9
+F9 = F10
+F10 = F11
+F11 = F12
+F12 = Escape
+Grave = 1
+1 = 2
+2 = 3
+3 = 4
+4 = 5
+5 = 6
+6 = 7
+7 = 8
+8 = 9
+9 = 0
+0 = Minus
+Minus = Equals
+Equals = Backspace
+Tab = Q
+Q = W
+W = E
+E = R
+R = T
+T = Y
+Y = U
+U = I
+I = O
+O = P
+P = BracketOpen
+BracketOpen = BracketClose
+BracketClose = BackSlash
+BackSlash = Tab
+CapsLock = A
+A = S
+S = D
+D = F
+F = G
+G = H
+H = J
+J = K
+K = L
+L = SemiColon
+SemiColon = Apostrophe
+Apostrophe = Enter
+Z = Z
+X = C
+C = V
+V = B
+B = N
+N = M
+M = Comma
+Comma = Period
+Period =
+Slash = Slash
+Enter = Tab
+# Left = Control+Alt+F4
+
+[LShiftLeftMaps]
+F12 = F11
+F11 = F10
+F10 = F9
+F9 = F8
+F8 = F7
+F7 = F6
+F6 = F5
+F5 = F4
+F4 = F3
+F3 = F2
+F2 = F1
+F1 = Escape
+Escape = Insert
+BackSpace = Equals
+Equals = Minus
+Minus = 0
+0 = 9
+9 = 8
+8 = 7
+7 = 6
+6 = 5
+5 = 4
+4 = 3
+3 = 2
+2 = 1
+1 = Grave
+BackSlash = BracketClose
+BracketClose = BracketOpen
+BracketOpen = P
+P = O
+O = I
+I = U
+U = Y
+Y = T
+T = R
+R = E
+E = W
+W = Q
+Q = Tab
+Tab = BackSlash
+Apostrophe = SemiColon
+SemiColon = L
+L = K
+K = J
+J = H
+H = G
+G = F
+F = D
+D = S
+S = A
+A = CapsLock
+Slash = Slash
+Period = Comma
+Comma = M
+M = N
+N = B
+B = V
+V = C
+C = X
+X =
+CapsLock = 
+Grave =
+
+[RShiftLeftMaps]
+F12 = F11
+F11 = F10
+F10 = F9
+F9 = F8
+F8 = F7
+F7 = F6
+F6 = F5
+F5 = F4
+F4 = F3
+F3 = F2
+F2 = F1
+F1 = Escape
+Escape = Insert
+BackSpace = Equals
+Equals = Minus
+Minus = 0
+0 = 9
+9 = 8
+8 = 7
+7 = 6
+6 = 5
+5 = 4
+4 = 3
+3 = 2
+2 = 1
+1 = Grave
+BackSlash = BracketClose
+BracketClose = BracketOpen
+BracketOpen = P
+P = O
+O = I
+I = U
+U = Y
+Y = T
+T = R
+R = E
+E = W
+W = Q
+Q = Tab
+#Tab = BackSlash
+Apostrophe = SemiColon
+SemiColon = L
+L = K
+K = J
+J = H
+H = G
+G = F
+F = D
+D = S
+S = A
+A = CapsLock
+Slash = Slash
+Period = Comma
+Comma = M
+M = N
+N = B
+B = V
+V = C
+C = X
+X = Z
+
