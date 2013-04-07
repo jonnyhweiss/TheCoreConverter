@@ -72,7 +72,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['BunkerUnloadAll','HerculesUnloadAll/Hercules'],
                ['Reactor/Barracks','Reactor/BarracksFlying','Reactor/Factory','Reactor/FactoryFlying','Reactor/Starport','Reactor/StarportFlying'],
                ['TechLabBarracks/Barracks','TechLabBarracks/BarracksFlying','TechReactor/Barracks','TechReactor/BarracksFlying','TechLabFactory/Factory','BuildTechLabFactory/FactoryFlying','TechReactor/Factory','TechReactor/FactoryFlying','TechLabStarport/Starport','BuildTechLabStarport/StarportFlying','TechReactor/Starport','TechReactor/StarportFlying'],
-               ['Ghost/Barracks','Spectre/Barracks'],
+#               ['Ghost/Barracks','Spectre/Barracks'], thanks to HotS campaign these can no longer be on the same key
                ['Raven/Starport','BuildScienceVessel/Starport'],
                ['EMP/Ghost','UltrasonicPulse/Spectre'],
                ['Snipe/Ghost','NovaSnipe/Nova','Obliterate/Spectre'],
@@ -127,9 +127,11 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Viper/Larva','Aberration/Larva'],
                ['Zergling/Larva','MorphToSwarmling/Larva','MorphToRaptor/Larva'],
                ['LocustLaunch/SwarmHostBurrowed','LocustFlyingLaunch/SwarmHostSplitABurrowed','LocustFlyingLaunch/SwarmHostSplitARooted','LocustLaunch/SwarmHostRooted','LocustLaunchCreeper/SwarmHostSplitBBurrowed','LocustLaunchCreeper/SwarmHostSplitBRooted'],
-               ['BurrowDown','BurrowUp','BurrowHydraliskImpalerDown','BurrowHydraliskImpalerUp','BurrowHydraliskLurkerDown','BurrowHydraliskLurkerUp','ImpalerBurrowDown','ImpalerBurrowUp','LurkerBurrowDown','LurkerBurrowUp'],
+               ['BurrowDown','BurrowHydraliskImpalerDown','BurrowHydraliskLurkerDown','ImpalerBurrowDown','LurkerBurrowDown'],
+               ['BurrowUp','BurrowHydraliskImpalerUp','BurrowHydraliskLurkerUp','ImpalerBurrowUp','LurkerBurrowUp','SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'],
                ['SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostDeepBurrow/SwarmHostSplitBBurrowed','SwarmHostDeepBurrow/SwarmHostSplitBRooted'],
-               ['SwarmHostRoot/SwarmHost','SwarmHostRoot/SwarmHostSplitA','SwarmHostRoot/SwarmHostSplitB','SwarmHostUproot/SwarmHostRooted','SwarmHostUproot/SwarmHostSplitARooted','SwarmHostUproot/SwarmHostSplitBRooted','SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'],
+               ['SwarmHostRoot/SwarmHost','SwarmHostRoot/SwarmHostSplitA','SwarmHostRoot/SwarmHostSplitB'],
+               ['SwarmHostUproot/SwarmHostRooted','SwarmHostUproot/SwarmHostSplitARooted','SwarmHostUproot/SwarmHostSplitBRooted'],
                ['HydraliskFrenzy/Hydralisk','HydraliskFrenzy/HydraliskImpaler','HydraliskFrenzy/HydraliskLurker'],
                ['Impaler/HydraliskImpaler','Lurker/HydraliskLurker'],
                ['BroodLord/Corruptor','BroodLord/MutaliskBroodlord','Viper/MutaliskViper'],
@@ -143,7 +145,8 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['SwarmQueenCorpser/LargeSwarmQueen','SwarmQueenCorpser/HugeSwarmQueen','SwarmQueenCorpser/SwarmQueen','SwarmQueenRoach/HugeSwarmQueen','SwarmQueenRoach/LargeSwarmQueen','SwarmQueenRoach/SwarmQueenEgg','SwarmQueenVile/HugeSwarmQueen','SwarmQueenVile/LargeSwarmQueen','SwarmQueenVile/SwarmQueen'],
                ['SwarmQueenRaptor/HugeSwarmQueen','SwarmQueenRaptor/LargeSwarmQueen','SwarmQueenRaptor/SwarmQueen','SwarmQueenSwarmling/HugeSwarmQueen','SwarmQueenSwarmling/LargeSwarmQueen','SwarmQueenSwarmling/SwarmQueen','SwarmQueenZergling/HugeSwarmQueen','SwarmQueenZergling/LargeSwarmQueen','SwarmQueenZergling/SwarmQueen','SwarmQueenZergling/SwarmQueenEgg'],
                ['GreaterSpire/Spire','GreaterSpireBroodlord/Spire'],
-               ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair']]
+               ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair'],
+               ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
                
 CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],#__Town Halls__ #Nexus WoL
                    ['Cancel','Stop','Attack','Rally','Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#Nexus HotS
@@ -164,7 +167,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','PsiStorm/HighTemplar','Feedback/HighTemplar','AWrp'],#HighTemplar
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership'],#Mothership WoL
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipMassRecall/Mothership','TemporalField/Mothership'],#Mothership HotS
-				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipCoreWeapon/MothershipCore','MothershipCoreMassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#MothershipCore
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipCoreWeapon/MothershipCore','MothershipCoreMassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#MothershipCore
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','OracleRevelation/Oracle','OracleWeaponOff/Oracle','OracleWeaponOn/Oracle','LightofAiur/Oracle'],#Oracle
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','GravitonBeam/Phoenix'],#Phoenix
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','ForceField/Sentry','GuardianShield/Sentry','Hallucination/Sentry'],#Sentry
@@ -186,7 +189,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','CloakOnBanshee','CloakOff'],#__Terran units__ #Banshee
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','YamatoGun','MissilePods/Battlecruiser','DefensiveMatrix/Battlecruiser'],#Battlecruiser
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','StimFirebat/Firebat','IncineratorNozzles/Firebat'],#Firebat
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','CloakOnBanshee','CloakOff','EMP/Ghost','Snipe/Ghost','NukeCalldown/Ghost','GhostHoldFire/Ghost','WeaponsFree/Ghost'],#Ghost
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','CloakOnBanshee','CloakOff','EMP/Ghost','Snipe/Ghost','NukeCalldown/Ghost','GhostHoldFire/Ghost'],#Ghost
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MorphToHellionTank/Hellion','MorphToHellion/Hellion'],#Hellion
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','HerculesLoad/Hercules','HerculesUnloadAll/Hercules'],#Hercules
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Stim'],#Marine
@@ -196,7 +199,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','D8Charge/Reaper'],#Reaper
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','NanoRepair/ScienceVessel','Irradiate/ScienceVessel'],#Science Vessel
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SiegeMode','Unsiege'],#Siege Tank
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','RogueGhostCloak/Spectre','CloakOff','Obliterate/Spectre','UltrasonicPulse/Spectre','SpectreNukeCalldown/Spectre','SpectreWeaponsFree/Spectre','SpectreHoldFire/Spectre'],#Spectre
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','RogueGhostCloak/Spectre','CloakOff','Obliterate/Spectre','UltrasonicPulse/Spectre','SpectreNukeCalldown/Spectre','SpectreHoldFire/Spectre'],#Spectre
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','250mmStrikeCannons/Thor'],#Thor
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','ExplosiveMode','ArmorpiercingMode'],#Thor HotS
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','AssaultMode','FighterMode'],#Viking
@@ -251,7 +254,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','NeuralParasite/Infestor','FungalGrowth/Infestor','InfestedTerrans/Infestor'],#Infestor
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','NPSwarm/Infestor','FungalGrowth/Infestor','InfestorConsumption/Infestor'],#Infestor HotS Campaign
                    ['Attack','InfestedTerrans/InfestorBurrowed','BurrowUp'],
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','GenerateCreep/Overlord','StopGenerateCreep/Overlord','MorphToOverseer/Overlord'],#Overlord
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','GenerateCreep/Overlord','MorphToOverseer/Overlord'],#Overlord
                    ['Move','Stop','MoveHoldPosition','MovePatrol','SpawnChangeling/Overseer','Contaminate/Overseer'],#Overseer
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','MorphMorphalisk/Queen','BuildCreepTumor/Queen','Transfusion/Queen'],#Queen
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
@@ -289,7 +292,8 @@ race_dict = {"P": 0,
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
-races = ["P", "T", "R", "Z"]
+#races = ["P", "T", "R", "Z"]
+races = ["P"]
 layouts = ["RM"]
 layoutIndices = {"LMM": 0,
                  "RMM": 1,
