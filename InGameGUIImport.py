@@ -23,17 +23,20 @@ suffix = settings_parser.get("Filenames", "Suffix")
 races = ["P","T","Z","R"]
 
 class Hotkey:
-    def __init__(self, name, P, T, Z, R, default):
+    def __init__(self, name, P="", T="", Z="", R="", default="", copyOf=None):
         self.name = name
         self.P = P
         self.T = T
         self.Z = Z
         self.R = R
         self.default = default
+        self.copyOf = copyOf
         
     def __str__(self):
+        if not self.copyOf is None:
+            return self.name + "=" + self.copyOf
         if (self.P == self.T and self.P == self.Z and self.P == self.R):
-            return self.name + "=" + self.P + "|"        
+            return self.name + "=" + self.P + "|" + self.default     
         return self.name + "=" + self.P + "|" + self.T + "|" + self.R + "|" + self.Z + "|" + self.default
  
 def SaveSeedFile(hotkeys, commands):
@@ -48,21 +51,27 @@ def SaveSeedFile(hotkeys, commands):
         seed_file.write(str(command) + "\n")
     seed_file.close()
     
-def get_hotkey(pair):
+def get_hotkey(pair, type):
     values = pair[1].split("|")
     length = len(values)
-    P = values[0]
-    T = Z = R = default = ""
+    P = T = Z = R = default = ""
+    if length == 1: # this is a copy
+        hotkey = Hotkey(name=pair[0], copyOf=values[0])
+        return hotkey
     if length == 2:
+        P = values[0]
         T = values[0]
-        Z = values[0]
         R = values[0]
-    if length > 2:
-        Z = values[2]
-    if length > 3:
-        R = values[3]
-    if length > 4:
+        Z = values[0]
+        default = values[1]
+    elif length == 5:
+        P = values[0]
+        T = values[1]
+        R = values[2]
+        Z = values[3]
         default = values[4]
+    else:
+        raise Exception("Problem with " + pair[0] + " in TheCoreSeed.ini")
     hotkey = Hotkey(name=pair[0],P=P,T=T,Z=Z,R=R,default=default)
     return hotkey
 
@@ -76,7 +85,7 @@ def ImportChanges():
     
     hotkeys = []
     for item_pair in seed_parser.items("Hotkeys"):
-        hotkey = get_hotkey(item_pair)
+        hotkey = get_hotkey(item_pair, "Hotkeys")
         for r in races:
             value = hotkey.default
             if parsers[r].has_option("Hotkeys", hotkey.name):
@@ -86,7 +95,7 @@ def ImportChanges():
     
     commands = []
     for item_pair in seed_parser.items("Commands"):
-        hotkey = get_hotkey(item_pair)
+        hotkey = get_hotkey(item_pair, "Commands")
         for r in races:
             if parsers[r].has_option("Commands", hotkey.name):
                 value = parsers[r].get("Commands", hotkey.name)
