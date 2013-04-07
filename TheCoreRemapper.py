@@ -303,10 +303,7 @@ righty_index = {0: False,
 
 def verify_file(filename):
     hotkeys_file = open(filename, 'r')
-    all_items = settings_parser.items('MappingTypes')
     dict = {}
-    for item in all_items:
-        dict[item[0]] = [False, "", item[0], item[1]]
     for line in hotkeys_file:
         line = line.strip()
         if len(line) == 0 or line[0] == "[":
@@ -317,27 +314,6 @@ def verify_file(filename):
             dict[key] = [True, pair[1], key, dict[key][3]]
         else:
             dict[key] = [True, pair[1], key, ""]
-        
-    count = 0
-    for item in dict:
-        if not dict[item][0]:
-            if "HOTS" in dict[item][3]:
-                if SHOW_HOTS_MISSING:
-                    count += 1
-            else:
-                count += 1
-    if count > 0:        
-        print(filename + " is missing " + str(count) + " hotkeys: ")
-        #print "NOTE: Capitalization is not correct. Check settings.ini for correct capitalization."
-        for item in dict:
-            if not dict[item][0]:
-                if "HOTS" in dict[item][3]:
-                    if SHOW_HOTS_MISSING:
-                        print("HOTS: " + dict[item][2])
-                else:
-                    print(dict[item][2])
-    else:
-        print(filename + " contains all hotkeys.")
 
     # Check for duplicates
     if SHOW_DUPLICATES:
@@ -450,7 +426,8 @@ def generate_layout(filename, race, layout, layoutIndex):
                 output += pair[1]
         else:
             try:
-                maptypes = settings_parser.get("MappingTypes", key).split(",")
+                #maptypes = settings_parser.get("MappingTypes", key).split(",")
+                maptypes = ["A","A","A","A"] # Only use ability maps
                 output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, 0)
             except:
                 output += pair[1]
