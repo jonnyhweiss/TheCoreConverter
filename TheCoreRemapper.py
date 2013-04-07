@@ -590,7 +590,7 @@ def generate_other_files():
                 translate_file(shift_hand_size(layout_filename, False, "S", False), False)
                 
 generate_seed_files()
-
+generate_other_files()
 
 #Quick test to see if 4 seed files are error free
 #	Todo:	expand this to every single file in every directory
