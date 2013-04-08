@@ -259,10 +259,15 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','MorphMorphalisk/Queen','BuildCreepTumor/Queen','Transfusion/Queen'],#Queen
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
                    ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Swarm Host Burrowed
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostBurrowDown'],#Swarm Host HotS Campaign
+                   ['Stop','Attack','SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostBurrowUp','LocustLaunchCreeper/SwarmHostSplitBBurrowed'],#Swarm Host HotS Campaign Burrowed
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BlindingCloud/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','Baneling/Zergling'],#Zergling
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','K5Leviathan/K5Kerrigan','MindBolt/K5Kerrigan','PsionicLift/K5Kerrigan','WildMutation/K5Kerrigan'],#__Zerg Heroes
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','K5Leviathan/K5Kerrigan','MindBolt/K5Kerrigan','PsionicLift/K5Kerrigan','WildMutation/K5Kerrigan'],#__Zerg Heroes Kerrigan
                    ['K5Leviathan/K5KerriganBurrowed','MindBolt/K5KerriganBurrowed','PsionicLift/K5KerriganBurrowed','WildMutation/K5KerriganBurrowed','BurrowUp'],
+                   ['SwarmQueenParasiticInvasion/LargeSwarmQueen','SwarmQueenZergling/LargeSwarmQueen','SwarmQueenRoach/LargeSwarmQueen','GrowHugeQueen/LargeSwarmQueen'],#Niadra
+                   ['SwarmQueenParasiticInvasion/HugeSwarmQueen','SwarmQueenZergling/HugeSwarmQueen','SwarmQueenRoach/HugeSwarmQueen','SwarmQueenHydralisk/HugeSwarmQueen'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','Drag/Dehaka','DehakaHeal/Dehaka','DehakaMirrorImage/Dehaka'],#Dehaka
                    ['zerggroundarmor1/EvolutionChamber','zergmeleeweapons1/EvolutionChamber','zergmissileweapons1/EvolutionChamber'],#__Zerg Buildings__ #Evolution Chamber
                    ['LurkerDen/HydraliskDen','MuscularAugments/HydraliskDen','hydraliskspeed/HydraliskDen'],#Hydralisk Den
                    ['ResearchLocustLifetimeIncrease/InfestationPit','EvolveInfestorEnergyUpgrade/InfestationPit','ResearchNeuralParasite/InfestationPit'],#Infestation Pit
