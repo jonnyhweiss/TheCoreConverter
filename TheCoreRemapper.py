@@ -64,7 +64,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Heal/Medivac','BonesHeal/Stetmann','NanoRepair/ScienceVessel','MedicHeal/Medic','MercMedicHeal/MercMedic'],
                ['CloakOnBanshee','RogueGhostCloak/Spectre','WraithCloakOn/Wraith'],
                ['CloakOff','WraithCloakOff/Wraith'],
-               ['WeaponsFree/Ghost','SpectreWeaponsFree/Spectre'],
+#               ['WeaponsFree/Ghost','SpectreWeaponsFree/Spectre'], thanks to HotS Spectre key now unbinds if set to same as HoldFire, Ghost HoldFire & weapons free toggle works correctly
                ['GhostHoldFire/Ghost','SpectreHoldFire/Spectre'],
                ['NukeArm/GhostAcademy','SpectreNukeArm/GhostAcademy'],
                ['NukeCalldown/Ghost','SpectreNukeCalldown/Spectre','HeroNukeCalldown/Nova','HeroNukeCalldown/Tosh','OdinNukeCalldown/Odin'],
@@ -164,27 +164,27 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['BanelingNest/Drone','EvolutionChamber/Drone','Extractor/Drone','Hatchery/Drone','RoachWarren/Drone','SpawningPool/Drone','SporeCrawler/Drone','SpineCrawler/Drone'],
                    ['HydraliskDen/Drone','InfestationPit/Drone','NydusNetwork/Drone','Spire/Drone','UltraliskCavern/Drone'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Interceptor/Carrier'],#__Protoss Units__ #Carrier
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','PsiStorm/HighTemplar','Feedback/HighTemplar','AWrp'],#HighTemplar
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','PsiStorm/HighTemplar','Feedback/HighTemplar','AWrp'],#High Templar
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MassRecall/Mothership','Vortex/Mothership'],#Mothership WoL
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipMassRecall/Mothership','TemporalField/Mothership'],#Mothership HotS
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipCoreWeapon/MothershipCore','MothershipCoreMassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#MothershipCore
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','MothershipCoreWeapon/MothershipCore','MothershipCoreMassRecall/MothershipCore','TemporalField/MothershipCore','MorphToMothership/MothershipCore'],#Mothership Core
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','OracleRevelation/Oracle','OracleWeaponOff/Oracle','OracleWeaponOn/Oracle','LightofAiur/Oracle'],#Oracle
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','GravitonBeam/Phoenix'],#Phoenix
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','ForceField/Sentry','GuardianShield/Sentry','Hallucination/Sentry'],#Sentry
                    ['ArchonHallucination/Sentry','ColossusHallucination/Sentry','HighTemplarHallucination/Sentry','ImmortalHallucination/Sentry','OracleHallucination/Sentry','PhoenixHallucination/Sentry','ProbeHallucination/Sentry','StalkerHallucination/Sentry','VoidRayHallucination/Sentry','WarpPrismHallucination/Sentry','ZealotHallucination/Sentry'],
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Blink/Stalker'],#Stalker
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','VoidRaySwarmDamageBoost/VoidRay'],#VoidRay
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','PhasingMode/WarpPrism','TransportMode/WarpPrism'],#WarpPrism
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BunkerLoad','BunkerUnloadAll','PhasingMode/WarpPrism','TransportMode/WarpPrism'],#Warp Prism
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Rally','Charge/Zealot'],#Zealot
-                   ['ProtossAirWeaponsLevel1/CyberneticsCore','ProtossAirArmorLevel1/CyberneticsCore','ResearchWarpGate/CyberneticsCore','ResearchHallucination/CyberneticsCore'],#__Protoss Buildings__ #CyberneticsCore
-                   ['AnionPulseCrystals/FleetBeacon','ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon','ResearchVoidRaySpeedUpgrade/FleetBeacon','SpeedUpgrade/FleetBeacon'],#FleetBeacon
+                   ['ProtossAirWeaponsLevel1/CyberneticsCore','ProtossAirArmorLevel1/CyberneticsCore','ResearchWarpGate/CyberneticsCore','ResearchHallucination/CyberneticsCore'],#__Protoss Buildings__ #Cybernetics Core
+                   ['AnionPulseCrystals/FleetBeacon','ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon','ResearchVoidRaySpeedUpgrade/FleetBeacon','SpeedUpgrade/FleetBeacon'],#Fleet Beacon
                    ['ProtossGroundWeaponsLevel1/Forge','ProtossGroundArmorLevel1/Forge','ProtossShieldsLevel1/Forge'],#Forge
                    ['Rally','Zealot','Stalker','Sentry','HighTemplar','DarkTemplar','UpgradeToWarpGate/Gateway'],#Gateway
                    ['Rally','Zealot','Stalker','Sentry','HighTemplar','DarkTemplar','MorphBackToGateway/WarpGate'],
-                   ['ResearchGraviticDrive/RoboticsBay','ResearchExtendedThermalLance/RoboticsBay','ResearchGraviticBooster/RoboticsBay'],#RoboticsBay
-                   ['Rally','Immortal/RoboticsFacility','Colossus/RoboticsFacility','Observer/RoboticsFacility','WarpPrism/RoboticsFacility'],#RoboticsFacility
+                   ['ResearchGraviticDrive/RoboticsBay','ResearchExtendedThermalLance/RoboticsBay','ResearchGraviticBooster/RoboticsBay'],#Robotics Bay
+                   ['Rally','Immortal/RoboticsFacility','Colossus/RoboticsFacility','Observer/RoboticsFacility','WarpPrism/RoboticsFacility'],#Robotics Facility
                    ['Rally','Tempest/Stargate','VoidRay/Stargate','Phoenix/Stargate','Oracle/Stargate','Carrier/Stargate','WarpInScout/Stargate'],#Stargate
-                   ['ResearchHighTemplarEnergyUpgrade/TemplarArchive','ResearchPsiStorm/TemplarArchive'],#TemplarArchive
+                   ['ResearchHighTemplarEnergyUpgrade/TemplarArchive','ResearchPsiStorm/TemplarArchive'],#Templar Archives
                    ['ResearchCharge/TwilightCouncil','ResearchStalkerTeleport/TwilightCouncil'],#TwilightCouncil
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','CloakOnBanshee','CloakOff'],#__Terran units__ #Banshee
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','YamatoGun','MissilePods/Battlecruiser','DefensiveMatrix/Battlecruiser'],#Battlecruiser
@@ -258,11 +258,16 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','SpawnChangeling/Overseer','Contaminate/Overseer'],#Overseer
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','MorphMorphalisk/Queen','BuildCreepTumor/Queen','Transfusion/Queen'],#Queen
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHost/SwarmHostMP','SwarmHostBurrowDown'],#Swarm Host
-                   ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Swarm Host Bur
+                   ['Attack','SetRallyPointSwarmHost/SwarmHostBurrowedMP','SwarmHost/SwarmHostBurrowedMP','SwarmHostBurrowUp'],#Swarm Host Burrowed
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostBurrowDown'],#Swarm Host HotS Campaign
+                   ['Stop','Attack','SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostBurrowUp','LocustLaunchCreeper/SwarmHostSplitBBurrowed'],#Swarm Host HotS Campaign Burrowed
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BlindingCloud/Viper','FaceEmbrace/Viper','ViperConsume/Viper'],#Viper
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','Baneling/Zergling'],#Zergling
-                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','K5Leviathan/K5Kerrigan','MindBolt/K5Kerrigan','PsionicLift/K5Kerrigan','WildMutation/K5Kerrigan'],#__Zerg Heroes
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','K5Leviathan/K5Kerrigan','MindBolt/K5Kerrigan','PsionicLift/K5Kerrigan','WildMutation/K5Kerrigan'],#__Zerg Heroes Kerrigan
                    ['K5Leviathan/K5KerriganBurrowed','MindBolt/K5KerriganBurrowed','PsionicLift/K5KerriganBurrowed','WildMutation/K5KerriganBurrowed','BurrowUp'],
+                   ['SwarmQueenParasiticInvasion/LargeSwarmQueen','SwarmQueenZergling/LargeSwarmQueen','SwarmQueenRoach/LargeSwarmQueen','GrowHugeQueen/LargeSwarmQueen'],#Niadra
+                   ['SwarmQueenParasiticInvasion/HugeSwarmQueen','SwarmQueenZergling/HugeSwarmQueen','SwarmQueenRoach/HugeSwarmQueen','SwarmQueenHydralisk/HugeSwarmQueen'],
+                   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','BurrowDown','Drag/Dehaka','DehakaHeal/Dehaka','DehakaMirrorImage/Dehaka'],#Dehaka
                    ['zerggroundarmor1/EvolutionChamber','zergmeleeweapons1/EvolutionChamber','zergmissileweapons1/EvolutionChamber'],#__Zerg Buildings__ #Evolution Chamber
                    ['LurkerDen/HydraliskDen','MuscularAugments/HydraliskDen','hydraliskspeed/HydraliskDen'],#Hydralisk Den
                    ['ResearchLocustLifetimeIncrease/InfestationPit','EvolveInfestorEnergyUpgrade/InfestationPit','ResearchNeuralParasite/InfestationPit'],#Infestation Pit
@@ -274,7 +279,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['zergflyerattack1','zergflyerarmor1','GreaterSpire/Spire'],#Spire
                    ['Stop','Attack','SporeCrawlerUproot/SporeCrawler'],#Spore Crawler
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SporeCrawlerRoot/SporeCrawlerUprooted'],
-                   ['Cancel','EvolveChitinousPlating/UltraliskCavern']]#UltraliskCavern
+                   ['Cancel','EvolveChitinousPlating/UltraliskCavern']]#Ultralisk Cavern
 
 # Read the settings
 settings_parser = SafeConfigParser()
