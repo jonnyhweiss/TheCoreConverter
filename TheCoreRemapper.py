@@ -30,18 +30,18 @@ CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGrou
                       'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4', 'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9']
 
 # Add to this please.
-GENERAL_KEYS = ['Music','Sound','PTT','ChatCancel','DialogDismiss','MenuAchievements','MenuGame','MenuMessages',
+GENERAL_KEYS = ['Music','Sound','PTT','DialogDismiss','MenuAchievements','MenuGame','MenuMessages',
                 'LeaderResources','LeaderIncome','LeaderSpending','LeaderUnits','LeaderUnitsLost','LeaderProduction','LeaderArmy',
                 'LeaderAPM','LeaderCPM','ObserveAllPlayers','ObserveAutoCamera','ObserveClearSelection','ObservePlayer0','ObservePlayer1',
                 'ObservePlayer2','ObservePlayer3','ObservePlayer4','ObservePlayer5','ObservePlayer6','ObservePlayer7','ObservePlayer8',
                 'ObservePlayer9','ObservePlayer10','ObservePlayer11','ObservePlayer12','ObservePlayer13','ObservePlayer14','ObservePlayer15',
-                'ObserveSelected', 'ObserveStatusBars','StatPanelResources','StatPanelArmySupply','StatPanelUnitsLost','StatPanelAPM','StatPanelCPM',
+                'ObserveSelected','ObservePreview','ObserveStatusBars','StatPanelResources','StatPanelArmySupply','StatPanelUnitsLost','StatPanelAPM','StatPanelCPM',
                 'ToggleWorldPanel', 'CinematicSkip','AlertRecall','CameraFollow','GameTooltipsOn','IdleWorker','MinimapColors','MinimapPing',
                 'MinimapTerrain','PauseGame','QuickPing','QuickSave','ReplayPlayPause','ReplayRestart','ReplaySkipBack','ReplaySkipNext','ReplaySpeedDec',
                 'ReplaySpeedInc','ReplayStop','ReplayHide','SelectionCancelDrag','SubgroupNext','SubgroupPrev','TeamResources','TownCamera','WarpIn',
-                'Cancel','CancelCocoon','CancelMutateMorph','CancelUpgradeMorph',
+                'Cancel','CancelCocoon','CancelMutateMorph','CancelUpgradeMorph','ChatCancel',
+				'ChatAll','ChatDefault','ChatIndividual','ChatRecipient','ChatAllies',
                 'StatusAll','StatusOwner','StatusEnemy','StatusAlly','MenuHelp','NamePanel','ArmySelect','SelectBuilder', 'ToggleVersusModeSides']
-# 'ChatRecipient',
 
 HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
 
