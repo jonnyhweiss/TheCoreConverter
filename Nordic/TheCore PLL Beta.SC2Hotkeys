@@ -4,9 +4,9 @@ AllowSetConflicts=1
 [Hotkeys]
 Music=F11
 Sound=F9
-PTT=Control+BackSlash
+PTT=Control+Slash
 ChatAll=Shift+Enter
-ChatAllies=Control+1
+ChatAllies=Control+Backspace
 ChatCancel=Q,Escape
 ChatDefault=Enter
 ChatIndividual=Control+Shift+Enter
