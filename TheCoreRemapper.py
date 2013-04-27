@@ -9,7 +9,10 @@
 #
 ################################################## 
 from configparser import SafeConfigParser
-import os
+import os, sys
+
+TRANSLATE = not "US" in sys.argv
+ONLY_SEED = "LM" in sys.argv
 
 GLOBAL = -1
 LMM = 0
@@ -484,6 +487,8 @@ def shift_hand_size(filename, shift_right, hand_size, is_righty):
     return newfilename
 
 def translate_file(filename, is_righty):
+    if not TRANSLATE:
+        return
     layouts = I18N_parser.sections()
     for l in layouts:
         hotkeys_file = open(filename, 'r')
@@ -566,16 +571,16 @@ def generate_other_files():
         for layout in layouts:
             index = layoutIndices[layout]
             layout_filename = generate_layout(filename, race, layout, index)
-            translate_file(layout_filename, righty_index[index])
             if righty_index[index]:
                 translate_file(shift_hand_size(layout_filename, True, "S", True), True)
                 translate_file(shift_hand_size(layout_filename, False, "L", True), True)
             else:
                 translate_file(shift_hand_size(layout_filename, True, "L", False), False)
                 translate_file(shift_hand_size(layout_filename, False, "S", False), False)
-                
+
 generate_seed_files()
-generate_other_files()
+if not ONLY_SEED:
+    generate_other_files()
 
 #Quick test to see if 4 seed files are error free
 #	Todo:	expand this to every single file in every directory
