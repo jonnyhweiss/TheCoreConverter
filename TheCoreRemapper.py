@@ -571,6 +571,7 @@ def generate_other_files():
         for layout in layouts:
             index = layoutIndices[layout]
             layout_filename = generate_layout(filename, race, layout, index)
+            translate_file(layout_filename, righty_index[index])
             if righty_index[index]:
                 translate_file(shift_hand_size(layout_filename, True, "S", True), True)
                 translate_file(shift_hand_size(layout_filename, False, "L", True), True)
