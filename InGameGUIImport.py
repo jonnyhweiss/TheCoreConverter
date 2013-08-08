@@ -97,9 +97,10 @@ def ImportChanges():
     for item_pair in seed_parser.items("Commands"):
         hotkey = get_hotkey(item_pair, "Commands")
         for r in races:
+            value = hotkey.default
             if parsers[r].has_option("Commands", hotkey.name):
                 value = parsers[r].get("Commands", hotkey.name)
-                setattr(hotkey, r, value)
+            setattr(hotkey, r, value)
         commands.append(hotkey)
     
     SaveSeedFile(hotkeys, commands)
