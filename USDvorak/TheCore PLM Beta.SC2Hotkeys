@@ -691,6 +691,7 @@ StimFirebat/Firebat=P
 Stimpack/BarracksTechLab=SemiColon
 Stimpack/BarracksTechReactor=SemiColon
 Stop=K
+StopGenerateCreep=SemiColon
 StopGenerateCreep/Overlord=SemiColon
 StopPlanetaryFortress/PlanetaryFortress=K
 StukovCrystalChannel/InfestedStukov=L

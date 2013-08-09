@@ -691,6 +691,7 @@ StimFirebat/Firebat=Period
 Stimpack/BarracksTechLab=Period
 Stimpack/BarracksTechReactor=Period
 Stop=E
+StopGenerateCreep=I
 StopGenerateCreep/Overlord=I
 StopPlanetaryFortress/PlanetaryFortress=E
 StukovCrystalChannel/InfestedStukov=R
