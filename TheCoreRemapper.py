@@ -131,7 +131,7 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Zergling/Larva','MorphToSwarmling/Larva','MorphToRaptor/Larva'],
                ['LocustLaunch/SwarmHostBurrowed','LocustFlyingLaunch/SwarmHostSplitABurrowed','LocustFlyingLaunch/SwarmHostSplitARooted','LocustLaunch/SwarmHostRooted','LocustLaunchCreeper/SwarmHostSplitBBurrowed','LocustLaunchCreeper/SwarmHostSplitBRooted'],
                ['BurrowDown','BurrowHydraliskImpalerDown','BurrowHydraliskLurkerDown','ImpalerBurrowDown','LurkerBurrowDown'],
-               ['BurrowUp','BurrowHydraliskImpalerUp','BurrowHydraliskLurkerUp','ImpalerBurrowUp','LurkerBurrowUp','SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'],
+               ['BurrowUp','BurrowHydraliskImpalerUp','BurrowHydraliskLurkerUp','ImpalerBurrowUp','LurkerBurrowUp'],#'SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'
                ['SwarmHostDeepBurrow/SwarmHostSplitB','SwarmHostDeepBurrow/SwarmHostSplitBBurrowed','SwarmHostDeepBurrow/SwarmHostSplitBRooted'],
                ['SwarmHostRoot/SwarmHost','SwarmHostRoot/SwarmHostSplitA','SwarmHostRoot/SwarmHostSplitB'],
                ['SwarmHostUproot/SwarmHostRooted','SwarmHostUproot/SwarmHostSplitARooted','SwarmHostUproot/SwarmHostSplitBRooted'],
@@ -148,10 +148,10 @@ SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['SwarmQueenCorpser/LargeSwarmQueen','SwarmQueenCorpser/HugeSwarmQueen','SwarmQueenCorpser/SwarmQueen','SwarmQueenRoach/HugeSwarmQueen','SwarmQueenRoach/LargeSwarmQueen','SwarmQueenRoach/SwarmQueenEgg','SwarmQueenVile/HugeSwarmQueen','SwarmQueenVile/LargeSwarmQueen','SwarmQueenVile/SwarmQueen'],
                ['SwarmQueenRaptor/HugeSwarmQueen','SwarmQueenRaptor/LargeSwarmQueen','SwarmQueenRaptor/SwarmQueen','SwarmQueenSwarmling/HugeSwarmQueen','SwarmQueenSwarmling/LargeSwarmQueen','SwarmQueenSwarmling/SwarmQueen','SwarmQueenZergling/HugeSwarmQueen','SwarmQueenZergling/LargeSwarmQueen','SwarmQueenZergling/SwarmQueen','SwarmQueenZergling/SwarmQueenEgg'],
                ['GreaterSpire/Spire','GreaterSpireBroodlord/Spire'],
-               ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair'],
-               ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
+               ['RespawnZergling/Hatchery','RespawnZergling/Hive','RespawnZergling/Lair']]
+               #['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
                
-CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],#__Town Halls__ #Nexus WoL
+CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Mothership/Nexus'],
                    ['Cancel','Stop','Attack','Rally','Probe/Nexus','TimeWarp/Nexus','MothershipCore/Nexus'],#Nexus HotS
                    ['SelectBuilder','Cancel','Lift','Rally','CommandCenterLoad','CommandCenterUnloadAll','SCV','OrbitalCommand/CommandCenter','UpgradeToPlanetaryFortress/CommandCenter'],#CC
                    ['Cancel','Lift','Rally','SCV','CalldownMULE/OrbitalCommand','SupplyDrop/OrbitalCommand','Scan/OrbitalCommand'],#OC
