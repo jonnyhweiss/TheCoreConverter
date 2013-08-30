@@ -490,6 +490,7 @@ OracleHallucination/Sentry=E
 OracleRevelation/Oracle=H
 OracleWeaponOff=R
 OracleWeaponOff/Oracle=R
+OracleWeaponOn=E
 OracleWeaponOn/Oracle=E
 OrbitalCommand/CommandCenter=G
 Overlord/Larva=R

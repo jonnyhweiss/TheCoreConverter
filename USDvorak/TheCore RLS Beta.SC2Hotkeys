@@ -490,6 +490,7 @@ OracleHallucination/Sentry=Period
 OracleRevelation/Oracle=E
 OracleWeaponOff=CapsLock
 OracleWeaponOff/Oracle=CapsLock
+OracleWeaponOn=Period
 OracleWeaponOn/Oracle=Period
 OrbitalCommand/CommandCenter=U
 Overlord/Larva=E

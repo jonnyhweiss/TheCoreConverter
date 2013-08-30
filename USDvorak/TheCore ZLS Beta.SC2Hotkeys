@@ -490,6 +490,7 @@ OracleHallucination/Sentry=Comma
 OracleRevelation/Oracle=I
 OracleWeaponOff=Period
 OracleWeaponOff/Oracle=Period
+OracleWeaponOn=Comma
 OracleWeaponOn/Oracle=Comma
 OrbitalCommand/CommandCenter=U
 Overlord/Larva=Period
