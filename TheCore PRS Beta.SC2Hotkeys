@@ -65,7 +65,7 @@ ToggleWorldPanel=Control+Minus
 CinematicSkip=Escape,8
 AlertRecall=Control+Shift+Alt+F10
 ArmySelect=Tab
-CameraCenter=Alt,Shift+Comma
+CameraCenter=Alt
 CameraFollow=Control+Shift+Alt+Tab
 CameraTurnLeft=Backspace
 CameraTurnRight=
@@ -141,8 +141,8 @@ CameraView2=Shift+Apostrophe
 CameraView3=Shift+SemiColon
 CameraView4=Shift+Equals
 CameraView5=Shift+0
-CameraView6=Control+K,Shift+Minus
-CameraView7=Control+O,Shift+BracketClose
+CameraView6=Control+K
+CameraView7=Control+O
 
 [Commands]
 250mmStrikeCannons/Thor=O
