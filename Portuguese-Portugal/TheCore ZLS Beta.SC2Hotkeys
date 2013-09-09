@@ -141,8 +141,8 @@ CameraView2=Shift+A
 CameraView3=Shift+3
 CameraView4=Shift+2
 CameraView5=Shift+1
-CameraView6=Control+W
-CameraView7=Control+Shift+W
+CameraView6=Control+E
+CameraView7=Control+Shift+E
 
 [Commands]
 250mmStrikeCannons/Thor=W
@@ -675,12 +675,12 @@ SpectreWeaponsFree/Spectre=V
 SpiderMine/Vulture=E
 SpiderMineReplenish/Vulture=W
 SpineCrawler/Drone=W
-SpineCrawlerRoot/SpineCrawlerUprooted=G
-SpineCrawlerUproot/SpineCrawler=W
+SpineCrawlerRoot/SpineCrawlerUprooted=W
+SpineCrawlerUproot/SpineCrawler=E
 Spire/Drone=E
 SporeCrawler/Drone=F
-SporeCrawlerRoot/SporeCrawlerUprooted=G
-SporeCrawlerUproot/SporeCrawler=W
+SporeCrawlerRoot/SporeCrawlerUprooted=W
+SporeCrawlerUproot/SporeCrawler=E
 Stalker=F
 StalkerHallucination/Nexus=R
 StalkerHallucination/Sentry=R

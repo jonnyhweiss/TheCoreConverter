@@ -141,8 +141,8 @@ CameraView2=Shift+A
 CameraView3=Shift+3
 CameraView4=Shift+2
 CameraView5=Shift+1
-CameraView6=Control+Comma
-CameraView7=Control+Shift+Comma
+CameraView6=Control+Period
+CameraView7=Control+Shift+Period
 
 [Commands]
 250mmStrikeCannons/Thor=Comma
@@ -675,12 +675,12 @@ SpectreWeaponsFree/Spectre=K
 SpiderMine/Vulture=Period
 SpiderMineReplenish/Vulture=Comma
 SpineCrawler/Drone=Comma
-SpineCrawlerRoot/SpineCrawlerUprooted=I
-SpineCrawlerUproot/SpineCrawler=Comma
+SpineCrawlerRoot/SpineCrawlerUprooted=Comma
+SpineCrawlerUproot/SpineCrawler=Period
 Spire/Drone=Period
 SporeCrawler/Drone=U
-SporeCrawlerRoot/SporeCrawlerUprooted=I
-SporeCrawlerUproot/SporeCrawler=Comma
+SporeCrawlerRoot/SporeCrawlerUprooted=Comma
+SporeCrawlerUproot/SporeCrawler=Period
 Stalker=U
 StalkerHallucination/Nexus=P
 StalkerHallucination/Sentry=P
