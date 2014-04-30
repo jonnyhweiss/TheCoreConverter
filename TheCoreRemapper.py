@@ -418,27 +418,32 @@ def generate_layout(filename, race, layout, layoutIndex):
         values = pair[1].split(",")
         output += key + "="
         
-        if key in CAMERA_KEYS:
-            if "R" in layout:
-                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-            else:
-                output += pair[1]
-        #elif race == "Z" and "MM" in layout and key in ZERG_CONTROL_GROUP_SPECIAL:
-        #    output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, 0)
-        elif key in CONTROL_GROUP_KEYS:
-            output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, 0)
-        elif key in GENERAL_KEYS:
-            if "R" in layout:
-                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-            else:
-                output += pair[1]
-        else:
-            try:
-                #maptypes = settings_parser.get("MappingTypes", key).split(",")
-                maptypes = ["A","A","A","A"] # Only use ability maps
-                output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, 0)
-            except:
-                output += pair[1]
+		# No need to distinguish between map types anymore. Just use GlobalMaps
+		try:
+			output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
+		except:
+			output += pair[1]
+        # if key in CAMERA_KEYS:
+            # if "R" in layout:
+                # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
+            # else:
+                # output += pair[1]
+        # #elif race == "Z" and "MM" in layout and key in ZERG_CONTROL_GROUP_SPECIAL:
+        # #    output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, 0)
+        # elif key in CONTROL_GROUP_KEYS:
+            # output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, 0)
+        # elif key in GENERAL_KEYS:
+            # if "R" in layout:
+                # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
+            # else:
+                # output += pair[1]
+        # else:
+            # try:
+                # #maptypes = settings_parser.get("MappingTypes", key).split(",")
+                # maptypes = ["A","A","A","A"] # Only use ability maps
+                # output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, 0)
+            # except:
+                # output += pair[1]
         output += "\n"
     hotkeys_file.close()
     newfilename = filename.replace("LM", layout)
