@@ -419,10 +419,10 @@ def generate_layout(filename, race, layout, layoutIndex):
         output += key + "="
         
 		# No need to distinguish between map types anymore. Just use GlobalMaps
-		try:
-			output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-		except:
-			output += pair[1]
+        try:
+            output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
+        except:
+            output += pair[1]
         # if key in CAMERA_KEYS:
             # if "R" in layout:
                 # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
