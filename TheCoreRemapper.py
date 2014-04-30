@@ -47,7 +47,7 @@ GENERAL_KEYS = ['Music','Sound','PTT','DialogDismiss','MenuAchievements','MenuGa
 				'CameraTurnLeft','CameraTurnRight','CameraCenter',
                 'StatusAll','StatusOwner','StatusEnemy','StatusAlly','MenuHelp','NamePanel','ArmySelect','SelectBuilder', 'ToggleVersusModeSides']
 
-HAND_SHIFT_EXCLUDE = ['AllowSetConflicts']
+EXCLUDE_MAPPING = ['AllowSetConflicts']
 
 SAME_CHECKS = [['Pylon/Probe','SupplyDepot/SCV','SupplyDepotDrop/SCV'],
                ['Assimilator/Probe','Extractor/Drone','Refinery/SCV','AutomatedRefinery/SCV','AutomatedExtractor/Drone'],
@@ -419,9 +419,12 @@ def generate_layout(filename, race, layout, layoutIndex):
         output += key + "="
         
 		# No need to distinguish between map types anymore. Just use GlobalMaps
-        try:
-            output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-        except:
+        if key in EXCLUDE_MAPPING:
+            try:
+                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
+            except:
+                output += pair[1]
+        else:
             output += pair[1]
         # if key in CAMERA_KEYS:
             # if "R" in layout:
@@ -471,9 +474,7 @@ def shift_hand_size(filename, shift_right, hand_size, is_righty):
         values = pair[1].split(",")
         output += key + "="
         
-        if key in HAND_SHIFT_EXCLUDE:
-            output += pair[1]
-        elif shift_right:
+        if shift_right:
             output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
         else:
             output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)        
