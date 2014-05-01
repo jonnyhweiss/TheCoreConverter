@@ -1,5 +1,5 @@
 [Settings]
-AllowSetConflicts=BracketClose
+AllowSetConflicts=1
 
 [Hotkeys]
 Music=F11
