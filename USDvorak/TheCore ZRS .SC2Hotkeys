@@ -116,6 +116,7 @@ ReplaySpeedDec=H
 ReplaySpeedInc=Z
 ReplayStop=Control+Shift+Equals
 ReplayHide=Shift+9
+SmartCommand=RightMouseButton
 SelectionCancelDrag=BackSlash,Escape
 StatusAll=Control+Shift+Alt+F9
 StatusOwner=Control+Alt+F10

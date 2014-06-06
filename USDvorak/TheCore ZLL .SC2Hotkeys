@@ -116,6 +116,7 @@ ReplaySpeedDec=H
 ReplaySpeedInc=SemiColon
 ReplayStop=Control+Shift+Comma
 ReplayHide=Shift+6
+SmartCommand=RightMouseButton
 SelectionCancelDrag=Apostrophe,Escape
 StatusAll=Control+Shift+Alt+F4
 StatusOwner=Control+Alt+F2
